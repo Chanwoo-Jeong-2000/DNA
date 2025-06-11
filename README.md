@@ -20,14 +20,19 @@ pip install pandas
 |:--------------------------------------------------------- |:----------:|:----------:|
 | LightGCN |  |  |
 | LightGCN + DNA |  |  |
+| Improv. |  |  | 
 | IMPGCN |  |  |
 | IMPGCN + DNA |  |  |
+| Improv. |  |  | 
 | SimGCL |  |  |
 | SimGCL + DNA |  |  |
+| Improv. |  |  | 
 | LayerGCN |  |  |
 | LayerGCN + DNA |  |  |
+| Improv. |  |  | 
 | XSimGCL |  |  |
 | XSimGCL + DNA |  |  |
+| Improv. |  |  | 
 
 ## Results on Gowalla
 
