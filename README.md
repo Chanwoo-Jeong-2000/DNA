@@ -13,6 +13,29 @@ pip install six
 pip install pandas
 ```
 
+# Results
+
+## Results on Yelp
+| Model                                                     | Recall@20  | NDCG@20    |
+|:--------------------------------------------------------- |:----------:|:----------:|
+| LightGCN |  |  |
+| LightGCN + DNA |  |  |
+| IMPGCN |  |  |
+| IMPGCN + DNA |  |  |
+| SimGCL |  |  |
+| SimGCL + DNA |  |  |
+| LayerGCN |  |  |
+| LayerGCN + DNA |  |  |
+| XSimGCL |  |  |
+| XSimGCL + DNA |  |  |
+
+## Results on Gowalla
+
+
+## Results on Amazon-CD
+
+
+
 # Run
 Instead of **[dataset]**, substitute **Amazon-CD**, **Gowalla**, **Yelp** to run the code.
 ##### DNA-LightGCN
