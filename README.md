@@ -11,6 +11,8 @@ pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-2.0.0+c
 pip install torch-geometric
 pip install six
 pip install pandas
+pip install PyYAML==6.0.2
+pip install numba
 ```
 
 # Results
