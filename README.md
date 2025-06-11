@@ -19,24 +19,24 @@ pip install pandas
 
 | Model                                                     | Recall@20  | NDCG@20    |
 |:--------------------------------------------------------- |:----------:|:----------:|
-| LightGCN |  |  |
-| LightGCN + DNA |  |  |
+| LightGCN | 0.0957 ± 0.0004 |  ±  |
+| LightGCN + DNA |  ±  |  ±  |
 | Improv. |  |  |
 ||||
-| IMPGCN |  |  |
-| IMPGCN + DNA |  |  |
+| IMPGCN |  ±  |  ±  |
+| IMPGCN + DNA |  ±  |  ±  |
 | Improv. |  |  | 
 ||||
-| SimGCL |  |  |
-| SimGCL + DNA |  |  |
+| SimGCL |  ±  |  ±  |
+| SimGCL + DNA |  ±  |  ±  |
 | Improv. |  |  | 
 ||||
-| LayerGCN |  |  |
-| LayerGCN + DNA |  |  |
+| LayerGCN |  ±  |  ±  |
+| LayerGCN + DNA |  ±  |  ±  |
 | Improv. |  |  | 
 ||||
-| XSimGCL |  |  |
-| XSimGCL + DNA |  |  |
+| XSimGCL |  ±  |  ±  |
+| XSimGCL + DNA |  ±  |  ±  |
 | Improv. |  |  |
 
 ## Results on Gowalla
@@ -67,7 +67,7 @@ pip install pandas
 
 | Model                                                     | Recall@20  | NDCG@20    |
 |:--------------------------------------------------------- |:----------:|:----------:|
-| LightGCN | \pm |  |
+| LightGCN |  |  |
 | LightGCN + DNA |  |  |
 | Improv. |  |  |
 ||||
