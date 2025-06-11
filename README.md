@@ -16,64 +16,76 @@ pip install pandas
 # Results
 
 ## Results on Yelp
-| Model                                                     | Recall@20  | NDCG@20    |
-|:--------------------------------------------------------- |:----------:|:----------:|
-| LightGCN |  |  |
-| LightGCN + DNA |  |  |
-| Improv. |  |  |
-||||
-| IMPGCN |  |  |
-| IMPGCN + DNA |  |  |
-| Improv. |  |  | 
-||||
-| SimGCL |  |  |
-| SimGCL + DNA |  |  |
-| Improv. |  |  | 
-||||
-| LayerGCN |  |  |
-| LayerGCN + DNA |  |  |
-| Improv. |  |  | 
-||||
-| XSimGCL |  |  |
-| XSimGCL + DNA |  |  |
-| Improv. |  |  |
-
-| Model                                                     | Recall@20  | NDCG@20    |
-|:--------------------------------------------------------- |:----------:|:----------:|
-| LightGCN |  |  |
-| LightGCN + DNA |  |  |
-| IMPGCN |  |  |
-| IMPGCN + DNA |  |  |
-| SimGCL |  |  |
-| SimGCL + DNA |  |  |
-| LayerGCN |  |  |
-| LayerGCN + DNA |  |  |
-| XSimGCL |  |  |
-| XSimGCL + DNA |  |  |
 
 | Model                                                     | Recall@20  | NDCG@20    |
 |:--------------------------------------------------------- |:----------:|:----------:|
 | LightGCN |  |  |
 | LightGCN + DNA |  |  |
 | Improv. |  |  |
+||||
 | IMPGCN |  |  |
 | IMPGCN + DNA |  |  |
 | Improv. |  |  | 
+||||
 | SimGCL |  |  |
 | SimGCL + DNA |  |  |
 | Improv. |  |  | 
+||||
 | LayerGCN |  |  |
 | LayerGCN + DNA |  |  |
 | Improv. |  |  | 
+||||
 | XSimGCL |  |  |
 | XSimGCL + DNA |  |  |
 | Improv. |  |  |
 
 ## Results on Gowalla
 
+| Model                                                     | Recall@20  | NDCG@20    |
+|:--------------------------------------------------------- |:----------:|:----------:|
+| LightGCN |  |  |
+| LightGCN + DNA |  |  |
+| Improv. |  |  |
+||||
+| IMPGCN |  |  |
+| IMPGCN + DNA |  |  |
+| Improv. |  |  | 
+||||
+| SimGCL |  |  |
+| SimGCL + DNA |  |  |
+| Improv. |  |  | 
+||||
+| LayerGCN |  |  |
+| LayerGCN + DNA |  |  |
+| Improv. |  |  | 
+||||
+| XSimGCL |  |  |
+| XSimGCL + DNA |  |  |
+| Improv. |  |  |
 
 ## Results on Amazon-CD
 
+| Model                                                     | Recall@20  | NDCG@20    |
+|:--------------------------------------------------------- |:----------:|:----------:|
+| LightGCN | \pm |  |
+| LightGCN + DNA |  |  |
+| Improv. |  |  |
+||||
+| IMPGCN |  |  |
+| IMPGCN + DNA |  |  |
+| Improv. |  |  | 
+||||
+| SimGCL |  |  |
+| SimGCL + DNA |  |  |
+| Improv. |  |  | 
+||||
+| LayerGCN |  |  |
+| LayerGCN + DNA |  |  |
+| Improv. |  |  | 
+||||
+| XSimGCL |  |  |
+| XSimGCL + DNA |  |  |
+| Improv. |  |  |
 
 
 # Run
