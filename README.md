@@ -19,8 +19,8 @@ pip install pandas
 
 | Model                                                     | Recall@20  | NDCG@20    |
 |:--------------------------------------------------------- |:----------:|:----------:|
-| LightGCN | 0.0957 ± 0.0004 |  ±  |
-| LightGCN + DNA |  ±  |  ±  |
+| LightGCN | 0.0957 ± 0.0004 | 0.0811 ± 0.0003 |
+| LightGCN + DNA | 0.0998 ± 0.0004 | 0.0847 ± 0.0005 |
 | Improv. |  |  |
 ||||
 | IMPGCN |  ±  |  ±  |
@@ -32,7 +32,7 @@ pip install pandas
 | Improv. |  |  | 
 ||||
 | LayerGCN |  ±  |  ±  |
-| LayerGCN + DNA |  ±  |  ±  |
+| LayerGCN + DNA | 0.1023 ± 0.0002 | 0.0877 ± 0.0001 |
 | Improv. |  |  | 
 ||||
 | XSimGCL |  ±  |  ±  |
@@ -43,48 +43,48 @@ pip install pandas
 
 | Model                                                     | Recall@20  | NDCG@20    |
 |:--------------------------------------------------------- |:----------:|:----------:|
-| LightGCN |  |  |
-| LightGCN + DNA |  |  |
+| LightGCN | 0.2103 ± 0.0011 | 0.1255 ± 0.0009 |
+| LightGCN + DNA | 0.2097 ± 0.0008 | 0.1267 ± 0.0004 |
 | Improv. |  |  |
 ||||
-| IMPGCN |  |  |
-| IMPGCN + DNA |  |  |
+| IMPGCN |  ±  |  ±  |
+| IMPGCN + DNA |  ±  |  ±  |
 | Improv. |  |  | 
 ||||
-| SimGCL |  |  |
-| SimGCL + DNA |  |  |
+| SimGCL |  ±  |  ±  |
+| SimGCL + DNA |  ±  |  ±  |
 | Improv. |  |  | 
 ||||
-| LayerGCN |  |  |
-| LayerGCN + DNA |  |  |
+| LayerGCN |  ±  |  ±  |
+| LayerGCN + DNA | 0.2310 ± 0.0002 | 0.1415 ± 0.0002 |
 | Improv. |  |  | 
 ||||
-| XSimGCL |  |  |
-| XSimGCL + DNA |  |  |
+| XSimGCL |  ±  |  ±  |
+| XSimGCL + DNA |  ±  |  ±  |
 | Improv. |  |  |
 
 ## Results on Amazon-CD
 
 | Model                                                     | Recall@20  | NDCG@20    |
 |:--------------------------------------------------------- |:----------:|:----------:|
-| LightGCN |  |  |
-| LightGCN + DNA |  |  |
+| LightGCN | 0.1475 ± 0.0009 | 0.0925 ± 0.0006 |
+| LightGCN + DNA | 0.1526 ± 0.0007 | 0.0980 ± 0.0005 |
 | Improv. |  |  |
 ||||
-| IMPGCN |  |  |
-| IMPGCN + DNA |  |  |
+| IMPGCN |  ±  |  ±  |
+| IMPGCN + DNA |  ±  |  ±  |
 | Improv. |  |  | 
 ||||
-| SimGCL |  |  |
-| SimGCL + DNA |  |  |
+| SimGCL |  ±  |  ±  |
+| SimGCL + DNA |  ±  |  ±  |
 | Improv. |  |  | 
 ||||
-| LayerGCN |  |  |
-| LayerGCN + DNA |  |  |
+| LayerGCN |  ±  |  ±  |
+| LayerGCN + DNA | 0.1536 ± 0.0001 | 0.1001 ± 0.0001 |
 | Improv. |  |  | 
 ||||
-| XSimGCL |  |  |
-| XSimGCL + DNA |  |  |
+| XSimGCL |  ±  |  ±  |
+| XSimGCL + DNA |  ±  |  ±  |
 | Improv. |  |  |
 
 
