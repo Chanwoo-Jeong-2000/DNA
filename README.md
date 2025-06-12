@@ -48,5 +48,8 @@ Instead of **[dataset]**, substitute **Amazon-CD**, **Gowalla**, **Yelp** to run
 python main_DNA-LightGCN.py --dataset [dataset]
 ```
 
+# Settings
+All benchmark models are implemented according to the configurations outlined in their respective original papers. The scaling factor α in our proposed methodology is tuned within the range [1.0, 5.0] using a step size of 0.5. The experiments are conducted using a single NVIDIA GeForce RTX 2080 Ti GPU.
+
 # Compare with our results
 The **results4comparison** folder contains the results of our experiment. Each file includes the loss and performance metrics for every epoch, as well as the hyperparameters, dataset statistics, and training time. You can compare our results with your own reproduced results.
