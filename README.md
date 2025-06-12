@@ -42,10 +42,35 @@ pip install numba
 
 
 # Run
-Instead of **[dataset]**, substitute **Amazon-CD**, **Gowalla**, **Yelp** to run the code.
-##### DNA-LightGCN
+
+##### DNA-LightGCN and LightGCN (original)
 ```
-python main_DNA-LightGCN.py --dataset [dataset]
+cd LightGCN
+sh run_DNA-LightGCN.sh
+```
+
+##### DNA-IMPGCN and IMPGCN (original)
+```
+cd IMRec
+sh run_DNA-IMPGCN.sh
+```
+
+##### DNA-LayerGCN and LayerGCN (original)
+```
+cd IMRec
+sh run_DNA-LayerGCN.sh
+```
+
+##### DNA-SimGCL and SimGCL (original)
+```
+cd SELFRec
+sh run_DNA-SimGCL.sh
+```
+
+##### DNA-XSimGCL and XSimGCL (original)
+```
+cd SELFRec
+sh run_DNA-XSimGCL.sh
 ```
 
 # Settings
