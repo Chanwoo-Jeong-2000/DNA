@@ -47,3 +47,6 @@ Instead of **[dataset]**, substitute **Amazon-CD**, **Gowalla**, **Yelp** to run
 ```
 python main_DNA-LightGCN.py --dataset [dataset]
 ```
+
+# Compare with our results
+The **results4comparison** folder contains the results of our experiment. Each file includes the loss and performance metrics for every epoch, as well as the hyperparameters, dataset statistics, and training time. You can compare our results with your own reproduced results.
