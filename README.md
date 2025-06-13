@@ -116,9 +116,10 @@ We compare DNA-XSimGCL (our best configuration) against Adap-τ, a recent debias
 |  | Yelp || Gowalla || Amazon-CD ||
 |-|-|-|-|-|-|-|
 |               | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        |
+|XSimGCL |0.1089|0.0938|0.2294|0.1399|0.1579|0.1008|
 |Adap-τ |0.1052|0.0908|0.2329|0.1408|0.1632|0.1045|
-|DNA-XSimGCL|**0.1108**|**0.0946**|**0.2411**|**0.1478**|**0.1698**|**0.1122**|
-|Improv.|+5.32%|+4.19%|+3.52%|+4.97%|+4.04%|+7.37%|
+|DNA-XSimGCL|**0.1106**|**0.0945**|**0.2405**|**0.1473**|**0.1698**|**0.1121**|
+|Improv.|||||||
 
 
 # Settings
