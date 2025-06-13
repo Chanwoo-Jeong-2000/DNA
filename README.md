@@ -102,9 +102,9 @@ We investigate how DNA's effectiveness changes with varying GCN depths (1-6 laye
 |# layers|| Yelp || Gowalla || Amazon-CD ||
 |-|-|-|-|-|-|-|-|
 |             |  | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        |
-|1 layers|LightGCN |||||||
+|1 layers|LightGCN |0.0852|0.0716|0.2045|0.1224|0.1317|0.0815|
 ||DNA-LightGCN|0.0928|0.0781|0.2047|0.1232|0.1412|0.0900|
-|2 layers|LightGCN |||||0.1428|0.0895|
+|2 layers|LightGCN |0.0911||0.0772|||0.1428|0.0895|
 ||DNA-LightGCN|0.0917|0.0782|||0.1422|0.0912|
 |3 layers|LightGCN |0.0952|0.0806|0.2090|0.1245|0.1471|0.0920|
 ||DNA-LightGCN|0.0993|0.0839|0.2097|0.1268|0.1535|0.0989|
