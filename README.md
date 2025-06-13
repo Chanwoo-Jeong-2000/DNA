@@ -84,7 +84,7 @@ We test two variants:
 |  | Yelp || Gowalla || Amazon-CD ||
 |-|-|-|-|-|-|-|
 |               | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        |
-|Cosine Similarity w/o $\beta$ | ||||||
+|Cosine Similarity w/o $\beta$ |0.0836|0.0697|0.1382|0.0740|0.1353|0.0836|
 |Cosine Similarity w/ $\beta$ |0.0876|0.0749|0.1767|0.1067|0.1377|0.0869|
 |DNA|0.0993|0.0839|0.2097|0.1268|0.1535|0.0989|
 
