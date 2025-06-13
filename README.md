@@ -110,7 +110,7 @@ We investigate how DNA's effectiveness changes with varying GCN depths (1-6 laye
 ||DNA-LightGCN|0.0993|0.0839|0.2097|0.1268|0.1535|0.0989|
 |4 layers|LightGCN |0.0988|0.0839|0.2044|0.1208|0.1516|0.0951|
 ||DNA-LightGCN|0.0944|0.0807|0.2002|0.1217|0.1466|0.0939|
-|5 layers|LightGCN |0.0995|0.0846|||0.1518|0.0949|
+|5 layers|LightGCN |0.0995|0.0846|0.1996|0.1180|0.1518|0.0949|
 ||DNA-LightGCN|0.0996|0.0844|0.2036|0.1225|0.1570|0.1005|
 |6 layers|LightGCN |0.0989|0.0839|||0.1509|0.0934|
 ||DNA-LightGCN|0.0924|0.0791|||0.1486|0.0948|
