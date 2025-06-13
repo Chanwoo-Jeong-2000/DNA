@@ -76,17 +76,17 @@ Enhanced version of Table 1 from the main paper, including mean and standard dev
 # Additional Experiments Addressing Reviewers' Concerns
 
 #### Comparison with Cosine Similarity Baseline (For reviewer 1, 2, and 4)
-We compare DNA against cosine similarity (normalizing both user and item embeddings). 
+We compare DNA-LightGCN against cosine similarity (normalizing both user and item embeddings). 
 We test two variants:
-- Cosine similarity without $\beta$: Standard cosine similarity scoring
-- Cosine similarity with $\beta$: Adding learnable bias term to cosine similarity
+- Cosine similarity without $\beta$: Standard cosine similarity scoring with LightGCN
+- Cosine similarity with $\beta$: Adding learnable bias term to cosine similarity with LightGCN
 
 |  | Yelp || Gowalla || Amazon-CD ||
 |-|-|-|-|-|-|-|
 |               | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        |
 |Cosine Similarity w/o $\beta$ |0.0836|0.0697|0.1382|0.0740|0.1353|0.0836|
 |Cosine Similarity w/ $\beta$ |0.0876|0.0749|0.1767|0.1067|0.1377|0.0869|
-|DNA|**0.0993**|**0.0839**|**0.2097**|**0.1268**|**0.1535**|**0.0989**|
+|DNA-LightGCN|**0.0993**|**0.0839**|**0.2097**|**0.1268**|**0.1535**|**0.0989**|
 
 #### Impact of GCN Layer Depth on DNA Performance (For reviewer 3)
 We investigate how DNA's effectiveness changes with varying GCN depths (1-6 layers) using LightGCN as the base model.
