@@ -80,9 +80,14 @@ All improvements are statistically significant based on paired t-tests (p ≤ 0.
 
 #### Comparison with Cosine Similarity Baseline (For reviewer 1, 2, and 4)
 We compare DNA against cosine similarity baselines using LightGCN as the backbone. We test three configurations:
-- Cosine similarity without $\beta$: Standard cosine similarity (normalizing both user and item embeddings)
-- Cosine similarity with $\beta$: Cosine similarity with an additional learnable bias term $\beta$
-- DNA-LightGCN: Item normalization with learnable $\beta$, preserving user magnitudes
+- Cosine similarity: Standard cosine similarity (normalizing both user and item embeddings)
+- Cosine similarity + β: Cosine similarity with an additional learnable bias term β
+- DNA-LightGCN: Item normalization with learnable β, preserving user magnitudes
+  
+Specifically:
+- Cosine similarity: ŷ_ui = cos(θ_ui)
+- Cosine similarity + β: ŷ_ui = cos(θ_ui) + β_i
+- DNA: ŷ_ui = e_u^T · e_i^norm + β_i
 
 |  | Yelp || Gowalla || Amazon-CD ||
 |-|-|-|-|-|-|-|
