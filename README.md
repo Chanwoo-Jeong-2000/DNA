@@ -96,15 +96,15 @@ We investigate how DNA's effectiveness changes with varying GCN depths (1-6 laye
 |             |  | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        |
 |1 layers|LightGCN |||||||
 ||DNA-LightGCN|||||0.1412|0.0900|
-|2 layers|LightGCN |||||||
+|2 layers|LightGCN |||||0.1428|0.0895|
 ||DNA-LightGCN|||||0.1422|0.0912|
-|3 layers|LightGCN |||||||
+|3 layers|LightGCN |||||0.1471|0.0920|
 ||DNA-LightGCN|||||0.1535|0.0989|
-|4 layers|LightGCN |||||||
+|4 layers|LightGCN |||||0.1516|0.0951|
 ||DNA-LightGCN|||||0.1466|0.0939|
-|5 layers|LightGCN |||||||
+|5 layers|LightGCN |||||0.1518|0.0949|
 ||DNA-LightGCN|||||0.1570|0.1005|
-|6 layers|LightGCN |||||||
+|6 layers|LightGCN |||||0.1509|0.0934|
 ||DNA-LightGCN|||||0.1486|0.0948|
 
 #### Comparison with State-of-the-Art Debiasing Method (For reviewer 4)
