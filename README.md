@@ -95,16 +95,16 @@ We investigate how DNA's effectiveness changes with varying GCN depths (1-6 laye
 |-|-|-|-|-|-|-|-|
 |             |  | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        |
 |1 layers|LightGCN |||||||
-||DNA-LightGCN|||0.2047|0.1232|0.1412|0.0900|
+||DNA-LightGCN|0.0928|0.0781|0.2047|0.1232|0.1412|0.0900|
 |2 layers|LightGCN |||||0.1428|0.0895|
-||DNA-LightGCN|||||0.1422|0.0912|
-|3 layers|LightGCN |||||0.1471|0.0920|
-||DNA-LightGCN|||0.2097|0.1268|0.1535|0.0989|
-|4 layers|LightGCN |||||0.1516|0.0951|
-||DNA-LightGCN|||0.2002|0.1217|0.1466|0.0939|
-|5 layers|LightGCN |||||0.1518|0.0949|
+||DNA-LightGCN|0.0917|0.0782|||0.1422|0.0912|
+|3 layers|LightGCN |0.0952|0.0806|0.2090|0.1245|0.1471|0.0920|
+||DNA-LightGCN|0.0993|0.0839|0.2097|0.1268|0.1535|0.0989|
+|4 layers|LightGCN |0.0988|0.0839|0.2044|0.1208|0.1516|0.0951|
+||DNA-LightGCN|0.0944|0.0807|0.2002|0.1217|0.1466|0.0939|
+|5 layers|LightGCN |0.0995|0.0846|||0.1518|0.0949|
 ||DNA-LightGCN|||||0.1570|0.1005|
-|6 layers|LightGCN |||||0.1509|0.0934|
+|6 layers|LightGCN |0.0989|0.0839|||0.1509|0.0934|
 ||DNA-LightGCN|||||0.1486|0.0948|
 
 #### Comparison with State-of-the-Art Debiasing Method (For reviewer 4)
@@ -113,9 +113,9 @@ We compare DNA-XSimGCL (our best configuration) against Adap-$\tau$, a recent de
 |  | Yelp || Gowalla || Amazon-CD ||
 |-|-|-|-|-|-|-|
 |               | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        |
-|Adap-$\tau$ |||||||
-|DNA-XSimGCL|||||||
-|Improv.|||||||
+|Adap-$\tau$ |0.1052|0.0908|0.2329|0.1408|0.1632|0.1045|
+|DNA-XSimGCL|**0.1108**|**0.0946**|**0.2411**|**0.1478**|**0.1698**|**0.1122**|
+|Improv.|+5.32%|+4.19%|+3.52%|+4.97%|+4.04%|+7.37%|
 
 
 # Settings
