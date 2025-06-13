@@ -76,10 +76,10 @@ Enhanced version of Table 1 from the main paper, including mean and standard dev
 # Additional Experiments Addressing Reviewers' Concerns
 
 #### Comparison with Cosine Similarity Baseline (For reviewer 1, 2, and 4)
-We compare DNA-LightGCN against cosine similarity (normalizing both user and item embeddings). 
-We test two variants:
-- Cosine similarity without $\beta$: Standard cosine similarity scoring with LightGCN
-- Cosine similarity with $\beta$: Adding learnable bias term to cosine similarity with LightGCN
+We compare DNA against cosine similarity baselines using LightGCN as the backbone. We test three configurations:
+- Cosine similarity without $\beta$: Standard cosine similarity (normalizing both user and item embeddings)
+- Cosine similarity with $\beta$: Cosine similarity with an additional learnable bias term $\beta$
+- DNA-LightGCN: Item normalization with learnable β, preserving user magnitudes
 
 |  | Yelp || Gowalla || Amazon-CD ||
 |-|-|-|-|-|-|-|
