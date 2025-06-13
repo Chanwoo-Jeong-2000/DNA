@@ -108,12 +108,12 @@ We investigate how DNA's effectiveness changes with varying GCN depths (1-6 laye
 ||DNA-LightGCN|||||0.1486|0.0948|
 
 #### Comparison with State-of-the-Art Debiasing Method (For reviewer 4)
-We compare DNA-XSimGCL (our best configuration) against Adap-$\tau$, a recent debiasing method that modifies the loss function to sampled softmax (SSM) with global temperature adjustments.
+We compare DNA-XSimGCL (our best configuration) against Adap-τ, a recent debiasing method that modifies the loss function to sampled softmax (SSM) with global temperature adjustments.
 
 |  | Yelp || Gowalla || Amazon-CD ||
 |-|-|-|-|-|-|-|
 |               | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        | Recall@20    | NDCG@20        |
-|Adap-$\tau$ |0.1052|0.0908|0.2329|0.1408|0.1632|0.1045|
+|Adap-τ |0.1052|0.0908|0.2329|0.1408|0.1632|0.1045|
 |DNA-XSimGCL|**0.1108**|**0.0946**|**0.2411**|**0.1478**|**0.1698**|**0.1122**|
 |Improv.|+5.32%|+4.19%|+3.52%|+4.97%|+4.04%|+7.37%|
 
