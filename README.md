@@ -124,7 +124,7 @@ We compare DNA-XSimGCL (our best configuration) against Adap-τ, a recent debias
 |XSimGCL |0.1089|0.0938|0.2294|0.1399|0.1579|0.1008|
 |Adap-τ |0.1052|0.0908|0.2329|0.1408|0.1632|0.1049|
 |DNA-XSimGCL|**0.1106**|**0.0945**|**0.2405**|**0.1473**|**0.1698**|**0.1121**|
-|Improv.|||||||
+|Improv.|+5.13%|+4.07%|+3.26%|+4.62%|+4.04%|+6.86%|
 
 
 # Settings
