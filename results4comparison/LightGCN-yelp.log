@@ -1,0 +1,2854 @@
+##############################
+This model is LightGCN!
+ramdom_seed: 2020
+gpu_id: 2
+dataset: Yelp
+batch_size: 2048
+embedding_dim: 64
+layers: 3
+learning_rate: 0.001
+evaluation_step: 1
+early_stopping_step: 50
+top_k: [5, 10, 15, 20]
+epochs: 1000
+##############################
+
+data loading...
+HeteroData(
+  user={ num_nodes=29601 },
+  item={ num_nodes=24734 },
+  (user, rates, item)={
+    edge_index=[2, 1069128],
+    edge_label_index=[2, 305466],
+  },
+  (item, rated_by, user)={ edge_index=[2, 1069128] }
+)
+Data(edge_index=[2, 2138256], edge_label_index=[2, 305466], node_type=[54335], edge_type=[2138256])
+done!
+
+Epoch: 001, Loss: 0.3349
+Precision@5:  0.0253, Recall@5:  0.0123, NDCG@5:  0.0272
+Precision@10: 0.0226, Recall@10: 0.0220, NDCG@10: 0.0277
+Precision@15: 0.0209, Recall@15: 0.0303, NDCG@15: 0.0301
+Precision@20: 0.0196, Recall@20: 0.0377, NDCG@20: 0.0326
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 002, Loss: 0.1939
+Precision@5:  0.0269, Recall@5:  0.0134, NDCG@5:  0.0285
+Precision@10: 0.0234, Recall@10: 0.0232, NDCG@10: 0.0288
+Precision@15: 0.0216, Recall@15: 0.0319, NDCG@15: 0.0312
+Precision@20: 0.0203, Recall@20: 0.0398, NDCG@20: 0.0340
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 003, Loss: 0.1843
+Precision@5:  0.0278, Recall@5:  0.0141, NDCG@5:  0.0298
+Precision@10: 0.0244, Recall@10: 0.0243, NDCG@10: 0.0303
+Precision@15: 0.0224, Recall@15: 0.0336, NDCG@15: 0.0328
+Precision@20: 0.0208, Recall@20: 0.0412, NDCG@20: 0.0355
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 004, Loss: 0.1765
+Precision@5:  0.0285, Recall@5:  0.0145, NDCG@5:  0.0305
+Precision@10: 0.0248, Recall@10: 0.0250, NDCG@10: 0.0309
+Precision@15: 0.0227, Recall@15: 0.0342, NDCG@15: 0.0334
+Precision@20: 0.0213, Recall@20: 0.0424, NDCG@20: 0.0363
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 005, Loss: 0.1712
+Precision@5:  0.0291, Recall@5:  0.0149, NDCG@5:  0.0312
+Precision@10: 0.0251, Recall@10: 0.0254, NDCG@10: 0.0315
+Precision@15: 0.0231, Recall@15: 0.0350, NDCG@15: 0.0342
+Precision@20: 0.0219, Recall@20: 0.0441, NDCG@20: 0.0375
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 006, Loss: 0.1668
+Precision@5:  0.0297, Recall@5:  0.0154, NDCG@5:  0.0320
+Precision@10: 0.0256, Recall@10: 0.0260, NDCG@10: 0.0321
+Precision@15: 0.0236, Recall@15: 0.0358, NDCG@15: 0.0350
+Precision@20: 0.0225, Recall@20: 0.0452, NDCG@20: 0.0384
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 007, Loss: 0.1610
+Precision@5:  0.0299, Recall@5:  0.0154, NDCG@5:  0.0323
+Precision@10: 0.0265, Recall@10: 0.0270, NDCG@10: 0.0331
+Precision@15: 0.0243, Recall@15: 0.0369, NDCG@15: 0.0359
+Precision@20: 0.0229, Recall@20: 0.0463, NDCG@20: 0.0393
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 008, Loss: 0.1559
+Precision@5:  0.0310, Recall@5:  0.0159, NDCG@5:  0.0335
+Precision@10: 0.0272, Recall@10: 0.0279, NDCG@10: 0.0341
+Precision@15: 0.0249, Recall@15: 0.0380, NDCG@15: 0.0370
+Precision@20: 0.0236, Recall@20: 0.0478, NDCG@20: 0.0405
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 009, Loss: 0.1505
+Precision@5:  0.0315, Recall@5:  0.0163, NDCG@5:  0.0341
+Precision@10: 0.0280, Recall@10: 0.0289, NDCG@10: 0.0351
+Precision@15: 0.0256, Recall@15: 0.0392, NDCG@15: 0.0380
+Precision@20: 0.0241, Recall@20: 0.0492, NDCG@20: 0.0415
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 010, Loss: 0.1449
+Precision@5:  0.0323, Recall@5:  0.0167, NDCG@5:  0.0349
+Precision@10: 0.0286, Recall@10: 0.0295, NDCG@10: 0.0358
+Precision@15: 0.0264, Recall@15: 0.0407, NDCG@15: 0.0391
+Precision@20: 0.0246, Recall@20: 0.0504, NDCG@20: 0.0425
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 011, Loss: 0.1403
+Precision@5:  0.0327, Recall@5:  0.0169, NDCG@5:  0.0352
+Precision@10: 0.0291, Recall@10: 0.0302, NDCG@10: 0.0363
+Precision@15: 0.0268, Recall@15: 0.0414, NDCG@15: 0.0396
+Precision@20: 0.0250, Recall@20: 0.0512, NDCG@20: 0.0431
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 012, Loss: 0.1371
+Precision@5:  0.0332, Recall@5:  0.0173, NDCG@5:  0.0359
+Precision@10: 0.0298, Recall@10: 0.0309, NDCG@10: 0.0371
+Precision@15: 0.0272, Recall@15: 0.0420, NDCG@15: 0.0404
+Precision@20: 0.0254, Recall@20: 0.0522, NDCG@20: 0.0439
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 013, Loss: 0.1329
+Precision@5:  0.0340, Recall@5:  0.0177, NDCG@5:  0.0366
+Precision@10: 0.0301, Recall@10: 0.0314, NDCG@10: 0.0377
+Precision@15: 0.0276, Recall@15: 0.0428, NDCG@15: 0.0410
+Precision@20: 0.0258, Recall@20: 0.0530, NDCG@20: 0.0446
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 014, Loss: 0.1307
+Precision@5:  0.0344, Recall@5:  0.0179, NDCG@5:  0.0369
+Precision@10: 0.0304, Recall@10: 0.0317, NDCG@10: 0.0380
+Precision@15: 0.0280, Recall@15: 0.0435, NDCG@15: 0.0415
+Precision@20: 0.0260, Recall@20: 0.0533, NDCG@20: 0.0450
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 015, Loss: 0.1280
+Precision@5:  0.0348, Recall@5:  0.0181, NDCG@5:  0.0373
+Precision@10: 0.0308, Recall@10: 0.0321, NDCG@10: 0.0385
+Precision@15: 0.0282, Recall@15: 0.0438, NDCG@15: 0.0418
+Precision@20: 0.0262, Recall@20: 0.0537, NDCG@20: 0.0454
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 016, Loss: 0.1256
+Precision@5:  0.0349, Recall@5:  0.0181, NDCG@5:  0.0374
+Precision@10: 0.0310, Recall@10: 0.0325, NDCG@10: 0.0387
+Precision@15: 0.0282, Recall@15: 0.0438, NDCG@15: 0.0419
+Precision@20: 0.0265, Recall@20: 0.0544, NDCG@20: 0.0457
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 017, Loss: 0.1233
+Precision@5:  0.0353, Recall@5:  0.0184, NDCG@5:  0.0378
+Precision@10: 0.0312, Recall@10: 0.0326, NDCG@10: 0.0390
+Precision@15: 0.0285, Recall@15: 0.0442, NDCG@15: 0.0423
+Precision@20: 0.0268, Recall@20: 0.0548, NDCG@20: 0.0461
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 018, Loss: 0.1209
+Precision@5:  0.0355, Recall@5:  0.0186, NDCG@5:  0.0380
+Precision@10: 0.0313, Recall@10: 0.0327, NDCG@10: 0.0391
+Precision@15: 0.0287, Recall@15: 0.0445, NDCG@15: 0.0426
+Precision@20: 0.0270, Recall@20: 0.0553, NDCG@20: 0.0465
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 019, Loss: 0.1196
+Precision@5:  0.0359, Recall@5:  0.0187, NDCG@5:  0.0383
+Precision@10: 0.0318, Recall@10: 0.0331, NDCG@10: 0.0396
+Precision@15: 0.0291, Recall@15: 0.0452, NDCG@15: 0.0431
+Precision@20: 0.0273, Recall@20: 0.0559, NDCG@20: 0.0469
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 020, Loss: 0.1180
+Precision@5:  0.0364, Recall@5:  0.0189, NDCG@5:  0.0388
+Precision@10: 0.0320, Recall@10: 0.0333, NDCG@10: 0.0399
+Precision@15: 0.0295, Recall@15: 0.0457, NDCG@15: 0.0436
+Precision@20: 0.0274, Recall@20: 0.0565, NDCG@20: 0.0473
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 021, Loss: 0.1163
+Precision@5:  0.0367, Recall@5:  0.0191, NDCG@5:  0.0392
+Precision@10: 0.0324, Recall@10: 0.0338, NDCG@10: 0.0404
+Precision@15: 0.0297, Recall@15: 0.0461, NDCG@15: 0.0440
+Precision@20: 0.0277, Recall@20: 0.0569, NDCG@20: 0.0478
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 022, Loss: 0.1148
+Precision@5:  0.0370, Recall@5:  0.0193, NDCG@5:  0.0396
+Precision@10: 0.0327, Recall@10: 0.0341, NDCG@10: 0.0409
+Precision@15: 0.0299, Recall@15: 0.0465, NDCG@15: 0.0445
+Precision@20: 0.0280, Recall@20: 0.0576, NDCG@20: 0.0484
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 023, Loss: 0.1134
+Precision@5:  0.0375, Recall@5:  0.0195, NDCG@5:  0.0402
+Precision@10: 0.0331, Recall@10: 0.0345, NDCG@10: 0.0415
+Precision@15: 0.0303, Recall@15: 0.0470, NDCG@15: 0.0451
+Precision@20: 0.0283, Recall@20: 0.0583, NDCG@20: 0.0490
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 024, Loss: 0.1114
+Precision@5:  0.0382, Recall@5:  0.0199, NDCG@5:  0.0409
+Precision@10: 0.0335, Recall@10: 0.0349, NDCG@10: 0.0420
+Precision@15: 0.0308, Recall@15: 0.0478, NDCG@15: 0.0458
+Precision@20: 0.0287, Recall@20: 0.0589, NDCG@20: 0.0497
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 025, Loss: 0.1104
+Precision@5:  0.0384, Recall@5:  0.0199, NDCG@5:  0.0412
+Precision@10: 0.0338, Recall@10: 0.0351, NDCG@10: 0.0423
+Precision@15: 0.0310, Recall@15: 0.0483, NDCG@15: 0.0461
+Precision@20: 0.0290, Recall@20: 0.0597, NDCG@20: 0.0502
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 026, Loss: 0.1096
+Precision@5:  0.0389, Recall@5:  0.0202, NDCG@5:  0.0418
+Precision@10: 0.0342, Recall@10: 0.0357, NDCG@10: 0.0429
+Precision@15: 0.0314, Recall@15: 0.0489, NDCG@15: 0.0468
+Precision@20: 0.0292, Recall@20: 0.0601, NDCG@20: 0.0507
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 027, Loss: 0.1071
+Precision@5:  0.0395, Recall@5:  0.0205, NDCG@5:  0.0424
+Precision@10: 0.0347, Recall@10: 0.0362, NDCG@10: 0.0435
+Precision@15: 0.0316, Recall@15: 0.0492, NDCG@15: 0.0472
+Precision@20: 0.0295, Recall@20: 0.0606, NDCG@20: 0.0512
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 028, Loss: 0.1059
+Precision@5:  0.0400, Recall@5:  0.0207, NDCG@5:  0.0428
+Precision@10: 0.0350, Recall@10: 0.0363, NDCG@10: 0.0438
+Precision@15: 0.0319, Recall@15: 0.0495, NDCG@15: 0.0475
+Precision@20: 0.0298, Recall@20: 0.0613, NDCG@20: 0.0517
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 029, Loss: 0.1042
+Precision@5:  0.0406, Recall@5:  0.0211, NDCG@5:  0.0435
+Precision@10: 0.0351, Recall@10: 0.0364, NDCG@10: 0.0442
+Precision@15: 0.0320, Recall@15: 0.0496, NDCG@15: 0.0479
+Precision@20: 0.0300, Recall@20: 0.0617, NDCG@20: 0.0522
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 030, Loss: 0.1030
+Precision@5:  0.0407, Recall@5:  0.0211, NDCG@5:  0.0437
+Precision@10: 0.0355, Recall@10: 0.0369, NDCG@10: 0.0446
+Precision@15: 0.0323, Recall@15: 0.0502, NDCG@15: 0.0484
+Precision@20: 0.0303, Recall@20: 0.0623, NDCG@20: 0.0526
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 031, Loss: 0.1020
+Precision@5:  0.0412, Recall@5:  0.0215, NDCG@5:  0.0442
+Precision@10: 0.0356, Recall@10: 0.0368, NDCG@10: 0.0448
+Precision@15: 0.0328, Recall@15: 0.0508, NDCG@15: 0.0489
+Precision@20: 0.0305, Recall@20: 0.0627, NDCG@20: 0.0531
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 032, Loss: 0.1008
+Precision@5:  0.0414, Recall@5:  0.0215, NDCG@5:  0.0445
+Precision@10: 0.0360, Recall@10: 0.0372, NDCG@10: 0.0453
+Precision@15: 0.0329, Recall@15: 0.0508, NDCG@15: 0.0491
+Precision@20: 0.0307, Recall@20: 0.0633, NDCG@20: 0.0535
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 033, Loss: 0.0999
+Precision@5:  0.0416, Recall@5:  0.0216, NDCG@5:  0.0448
+Precision@10: 0.0361, Recall@10: 0.0373, NDCG@10: 0.0455
+Precision@15: 0.0330, Recall@15: 0.0511, NDCG@15: 0.0494
+Precision@20: 0.0309, Recall@20: 0.0636, NDCG@20: 0.0538
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 034, Loss: 0.0986
+Precision@5:  0.0418, Recall@5:  0.0218, NDCG@5:  0.0450
+Precision@10: 0.0365, Recall@10: 0.0378, NDCG@10: 0.0459
+Precision@15: 0.0332, Recall@15: 0.0515, NDCG@15: 0.0497
+Precision@20: 0.0311, Recall@20: 0.0638, NDCG@20: 0.0541
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 035, Loss: 0.0977
+Precision@5:  0.0422, Recall@5:  0.0220, NDCG@5:  0.0454
+Precision@10: 0.0369, Recall@10: 0.0383, NDCG@10: 0.0463
+Precision@15: 0.0335, Recall@15: 0.0518, NDCG@15: 0.0500
+Precision@20: 0.0314, Recall@20: 0.0645, NDCG@20: 0.0545
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 036, Loss: 0.0968
+Precision@5:  0.0422, Recall@5:  0.0220, NDCG@5:  0.0454
+Precision@10: 0.0372, Recall@10: 0.0385, NDCG@10: 0.0465
+Precision@15: 0.0336, Recall@15: 0.0521, NDCG@15: 0.0502
+Precision@20: 0.0315, Recall@20: 0.0648, NDCG@20: 0.0547
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 037, Loss: 0.0964
+Precision@5:  0.0423, Recall@5:  0.0220, NDCG@5:  0.0457
+Precision@10: 0.0375, Recall@10: 0.0388, NDCG@10: 0.0469
+Precision@15: 0.0339, Recall@15: 0.0526, NDCG@15: 0.0507
+Precision@20: 0.0318, Recall@20: 0.0655, NDCG@20: 0.0553
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 038, Loss: 0.0955
+Precision@5:  0.0426, Recall@5:  0.0222, NDCG@5:  0.0460
+Precision@10: 0.0376, Recall@10: 0.0390, NDCG@10: 0.0472
+Precision@15: 0.0343, Recall@15: 0.0532, NDCG@15: 0.0513
+Precision@20: 0.0322, Recall@20: 0.0665, NDCG@20: 0.0559
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 039, Loss: 0.0941
+Precision@5:  0.0427, Recall@5:  0.0222, NDCG@5:  0.0460
+Precision@10: 0.0377, Recall@10: 0.0391, NDCG@10: 0.0473
+Precision@15: 0.0344, Recall@15: 0.0534, NDCG@15: 0.0514
+Precision@20: 0.0322, Recall@20: 0.0663, NDCG@20: 0.0559
+EarlyStopping counter: 1 out of 50
+
+Epoch: 040, Loss: 0.0938
+Precision@5:  0.0432, Recall@5:  0.0224, NDCG@5:  0.0465
+Precision@10: 0.0379, Recall@10: 0.0394, NDCG@10: 0.0477
+Precision@15: 0.0347, Recall@15: 0.0537, NDCG@15: 0.0518
+Precision@20: 0.0325, Recall@20: 0.0670, NDCG@20: 0.0565
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 041, Loss: 0.0930
+Precision@5:  0.0437, Recall@5:  0.0227, NDCG@5:  0.0470
+Precision@10: 0.0382, Recall@10: 0.0396, NDCG@10: 0.0480
+Precision@15: 0.0350, Recall@15: 0.0542, NDCG@15: 0.0522
+Precision@20: 0.0326, Recall@20: 0.0673, NDCG@20: 0.0568
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 042, Loss: 0.0922
+Precision@5:  0.0436, Recall@5:  0.0227, NDCG@5:  0.0468
+Precision@10: 0.0383, Recall@10: 0.0398, NDCG@10: 0.0480
+Precision@15: 0.0352, Recall@15: 0.0545, NDCG@15: 0.0523
+Precision@20: 0.0328, Recall@20: 0.0676, NDCG@20: 0.0569
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 043, Loss: 0.0918
+Precision@5:  0.0439, Recall@5:  0.0229, NDCG@5:  0.0472
+Precision@10: 0.0386, Recall@10: 0.0400, NDCG@10: 0.0484
+Precision@15: 0.0353, Recall@15: 0.0547, NDCG@15: 0.0526
+Precision@20: 0.0329, Recall@20: 0.0677, NDCG@20: 0.0571
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 044, Loss: 0.0914
+Precision@5:  0.0442, Recall@5:  0.0229, NDCG@5:  0.0474
+Precision@10: 0.0389, Recall@10: 0.0403, NDCG@10: 0.0487
+Precision@15: 0.0355, Recall@15: 0.0550, NDCG@15: 0.0529
+Precision@20: 0.0330, Recall@20: 0.0680, NDCG@20: 0.0574
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 045, Loss: 0.0905
+Precision@5:  0.0446, Recall@5:  0.0231, NDCG@5:  0.0478
+Precision@10: 0.0389, Recall@10: 0.0403, NDCG@10: 0.0488
+Precision@15: 0.0356, Recall@15: 0.0552, NDCG@15: 0.0531
+Precision@20: 0.0332, Recall@20: 0.0684, NDCG@20: 0.0577
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 046, Loss: 0.0892
+Precision@5:  0.0449, Recall@5:  0.0232, NDCG@5:  0.0481
+Precision@10: 0.0391, Recall@10: 0.0405, NDCG@10: 0.0491
+Precision@15: 0.0356, Recall@15: 0.0553, NDCG@15: 0.0533
+Precision@20: 0.0335, Recall@20: 0.0687, NDCG@20: 0.0581
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 047, Loss: 0.0889
+Precision@5:  0.0448, Recall@5:  0.0233, NDCG@5:  0.0480
+Precision@10: 0.0394, Recall@10: 0.0410, NDCG@10: 0.0493
+Precision@15: 0.0358, Recall@15: 0.0554, NDCG@15: 0.0534
+Precision@20: 0.0336, Recall@20: 0.0692, NDCG@20: 0.0582
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 048, Loss: 0.0881
+Precision@5:  0.0452, Recall@5:  0.0236, NDCG@5:  0.0485
+Precision@10: 0.0395, Recall@10: 0.0410, NDCG@10: 0.0496
+Precision@15: 0.0361, Recall@15: 0.0559, NDCG@15: 0.0538
+Precision@20: 0.0339, Recall@20: 0.0699, NDCG@20: 0.0588
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 049, Loss: 0.0879
+Precision@5:  0.0455, Recall@5:  0.0237, NDCG@5:  0.0488
+Precision@10: 0.0398, Recall@10: 0.0414, NDCG@10: 0.0500
+Precision@15: 0.0363, Recall@15: 0.0564, NDCG@15: 0.0542
+Precision@20: 0.0342, Recall@20: 0.0706, NDCG@20: 0.0593
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 050, Loss: 0.0872
+Precision@5:  0.0456, Recall@5:  0.0239, NDCG@5:  0.0491
+Precision@10: 0.0401, Recall@10: 0.0417, NDCG@10: 0.0503
+Precision@15: 0.0365, Recall@15: 0.0569, NDCG@15: 0.0546
+Precision@20: 0.0343, Recall@20: 0.0709, NDCG@20: 0.0595
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 051, Loss: 0.0864
+Precision@5:  0.0459, Recall@5:  0.0240, NDCG@5:  0.0494
+Precision@10: 0.0403, Recall@10: 0.0420, NDCG@10: 0.0506
+Precision@15: 0.0368, Recall@15: 0.0571, NDCG@15: 0.0549
+Precision@20: 0.0345, Recall@20: 0.0712, NDCG@20: 0.0599
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 052, Loss: 0.0863
+Precision@5:  0.0462, Recall@5:  0.0242, NDCG@5:  0.0497
+Precision@10: 0.0404, Recall@10: 0.0420, NDCG@10: 0.0508
+Precision@15: 0.0370, Recall@15: 0.0574, NDCG@15: 0.0552
+Precision@20: 0.0346, Recall@20: 0.0713, NDCG@20: 0.0601
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 053, Loss: 0.0859
+Precision@5:  0.0461, Recall@5:  0.0242, NDCG@5:  0.0497
+Precision@10: 0.0406, Recall@10: 0.0421, NDCG@10: 0.0510
+Precision@15: 0.0371, Recall@15: 0.0575, NDCG@15: 0.0553
+Precision@20: 0.0347, Recall@20: 0.0717, NDCG@20: 0.0603
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 054, Loss: 0.0854
+Precision@5:  0.0465, Recall@5:  0.0243, NDCG@5:  0.0501
+Precision@10: 0.0408, Recall@10: 0.0423, NDCG@10: 0.0512
+Precision@15: 0.0372, Recall@15: 0.0579, NDCG@15: 0.0556
+Precision@20: 0.0349, Recall@20: 0.0720, NDCG@20: 0.0606
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 055, Loss: 0.0845
+Precision@5:  0.0466, Recall@5:  0.0244, NDCG@5:  0.0503
+Precision@10: 0.0408, Recall@10: 0.0423, NDCG@10: 0.0513
+Precision@15: 0.0375, Recall@15: 0.0582, NDCG@15: 0.0559
+Precision@20: 0.0350, Recall@20: 0.0722, NDCG@20: 0.0608
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 056, Loss: 0.0847
+Precision@5:  0.0469, Recall@5:  0.0245, NDCG@5:  0.0505
+Precision@10: 0.0409, Recall@10: 0.0425, NDCG@10: 0.0515
+Precision@15: 0.0376, Recall@15: 0.0581, NDCG@15: 0.0560
+Precision@20: 0.0352, Recall@20: 0.0723, NDCG@20: 0.0610
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 057, Loss: 0.0835
+Precision@5:  0.0470, Recall@5:  0.0245, NDCG@5:  0.0507
+Precision@10: 0.0412, Recall@10: 0.0430, NDCG@10: 0.0519
+Precision@15: 0.0377, Recall@15: 0.0585, NDCG@15: 0.0563
+Precision@20: 0.0353, Recall@20: 0.0727, NDCG@20: 0.0613
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 058, Loss: 0.0835
+Precision@5:  0.0474, Recall@5:  0.0248, NDCG@5:  0.0511
+Precision@10: 0.0415, Recall@10: 0.0433, NDCG@10: 0.0523
+Precision@15: 0.0379, Recall@15: 0.0589, NDCG@15: 0.0567
+Precision@20: 0.0354, Recall@20: 0.0728, NDCG@20: 0.0616
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 059, Loss: 0.0828
+Precision@5:  0.0475, Recall@5:  0.0248, NDCG@5:  0.0512
+Precision@10: 0.0416, Recall@10: 0.0434, NDCG@10: 0.0524
+Precision@15: 0.0382, Recall@15: 0.0592, NDCG@15: 0.0570
+Precision@20: 0.0357, Recall@20: 0.0734, NDCG@20: 0.0619
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 060, Loss: 0.0824
+Precision@5:  0.0478, Recall@5:  0.0249, NDCG@5:  0.0513
+Precision@10: 0.0419, Recall@10: 0.0436, NDCG@10: 0.0526
+Precision@15: 0.0384, Recall@15: 0.0597, NDCG@15: 0.0572
+Precision@20: 0.0357, Recall@20: 0.0735, NDCG@20: 0.0621
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 061, Loss: 0.0818
+Precision@5:  0.0481, Recall@5:  0.0252, NDCG@5:  0.0518
+Precision@10: 0.0421, Recall@10: 0.0440, NDCG@10: 0.0530
+Precision@15: 0.0384, Recall@15: 0.0597, NDCG@15: 0.0574
+Precision@20: 0.0360, Recall@20: 0.0743, NDCG@20: 0.0626
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 062, Loss: 0.0815
+Precision@5:  0.0485, Recall@5:  0.0253, NDCG@5:  0.0521
+Precision@10: 0.0422, Recall@10: 0.0441, NDCG@10: 0.0531
+Precision@15: 0.0387, Recall@15: 0.0602, NDCG@15: 0.0578
+Precision@20: 0.0362, Recall@20: 0.0747, NDCG@20: 0.0629
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 063, Loss: 0.0809
+Precision@5:  0.0487, Recall@5:  0.0256, NDCG@5:  0.0525
+Precision@10: 0.0424, Recall@10: 0.0441, NDCG@10: 0.0534
+Precision@15: 0.0388, Recall@15: 0.0604, NDCG@15: 0.0580
+Precision@20: 0.0362, Recall@20: 0.0749, NDCG@20: 0.0631
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 064, Loss: 0.0810
+Precision@5:  0.0488, Recall@5:  0.0256, NDCG@5:  0.0526
+Precision@10: 0.0423, Recall@10: 0.0440, NDCG@10: 0.0535
+Precision@15: 0.0389, Recall@15: 0.0604, NDCG@15: 0.0582
+Precision@20: 0.0364, Recall@20: 0.0753, NDCG@20: 0.0634
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 065, Loss: 0.0804
+Precision@5:  0.0491, Recall@5:  0.0258, NDCG@5:  0.0529
+Precision@10: 0.0426, Recall@10: 0.0445, NDCG@10: 0.0538
+Precision@15: 0.0391, Recall@15: 0.0608, NDCG@15: 0.0585
+Precision@20: 0.0364, Recall@20: 0.0751, NDCG@20: 0.0635
+EarlyStopping counter: 1 out of 50
+
+Epoch: 066, Loss: 0.0798
+Precision@5:  0.0493, Recall@5:  0.0258, NDCG@5:  0.0533
+Precision@10: 0.0428, Recall@10: 0.0445, NDCG@10: 0.0541
+Precision@15: 0.0391, Recall@15: 0.0608, NDCG@15: 0.0586
+Precision@20: 0.0365, Recall@20: 0.0756, NDCG@20: 0.0638
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 067, Loss: 0.0793
+Precision@5:  0.0493, Recall@5:  0.0256, NDCG@5:  0.0533
+Precision@10: 0.0429, Recall@10: 0.0447, NDCG@10: 0.0543
+Precision@15: 0.0393, Recall@15: 0.0610, NDCG@15: 0.0589
+Precision@20: 0.0368, Recall@20: 0.0759, NDCG@20: 0.0641
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 068, Loss: 0.0790
+Precision@5:  0.0494, Recall@5:  0.0258, NDCG@5:  0.0534
+Precision@10: 0.0429, Recall@10: 0.0446, NDCG@10: 0.0542
+Precision@15: 0.0395, Recall@15: 0.0614, NDCG@15: 0.0591
+Precision@20: 0.0369, Recall@20: 0.0763, NDCG@20: 0.0643
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 069, Loss: 0.0783
+Precision@5:  0.0493, Recall@5:  0.0257, NDCG@5:  0.0534
+Precision@10: 0.0430, Recall@10: 0.0449, NDCG@10: 0.0544
+Precision@15: 0.0397, Recall@15: 0.0618, NDCG@15: 0.0593
+Precision@20: 0.0370, Recall@20: 0.0767, NDCG@20: 0.0645
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 070, Loss: 0.0781
+Precision@5:  0.0496, Recall@5:  0.0260, NDCG@5:  0.0536
+Precision@10: 0.0433, Recall@10: 0.0450, NDCG@10: 0.0546
+Precision@15: 0.0397, Recall@15: 0.0619, NDCG@15: 0.0594
+Precision@20: 0.0371, Recall@20: 0.0770, NDCG@20: 0.0647
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 071, Loss: 0.0783
+Precision@5:  0.0499, Recall@5:  0.0261, NDCG@5:  0.0537
+Precision@10: 0.0436, Recall@10: 0.0455, NDCG@10: 0.0549
+Precision@15: 0.0398, Recall@15: 0.0619, NDCG@15: 0.0595
+Precision@20: 0.0371, Recall@20: 0.0769, NDCG@20: 0.0647
+EarlyStopping counter: 1 out of 50
+
+Epoch: 072, Loss: 0.0775
+Precision@5:  0.0499, Recall@5:  0.0260, NDCG@5:  0.0536
+Precision@10: 0.0436, Recall@10: 0.0453, NDCG@10: 0.0548
+Precision@15: 0.0397, Recall@15: 0.0618, NDCG@15: 0.0594
+Precision@20: 0.0373, Recall@20: 0.0771, NDCG@20: 0.0648
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 073, Loss: 0.0771
+Precision@5:  0.0501, Recall@5:  0.0260, NDCG@5:  0.0539
+Precision@10: 0.0438, Recall@10: 0.0457, NDCG@10: 0.0551
+Precision@15: 0.0398, Recall@15: 0.0619, NDCG@15: 0.0596
+Precision@20: 0.0374, Recall@20: 0.0775, NDCG@20: 0.0650
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 074, Loss: 0.0772
+Precision@5:  0.0500, Recall@5:  0.0260, NDCG@5:  0.0539
+Precision@10: 0.0437, Recall@10: 0.0456, NDCG@10: 0.0551
+Precision@15: 0.0399, Recall@15: 0.0622, NDCG@15: 0.0597
+Precision@20: 0.0376, Recall@20: 0.0777, NDCG@20: 0.0652
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 075, Loss: 0.0764
+Precision@5:  0.0500, Recall@5:  0.0260, NDCG@5:  0.0540
+Precision@10: 0.0438, Recall@10: 0.0457, NDCG@10: 0.0552
+Precision@15: 0.0400, Recall@15: 0.0624, NDCG@15: 0.0599
+Precision@20: 0.0376, Recall@20: 0.0779, NDCG@20: 0.0654
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 076, Loss: 0.0760
+Precision@5:  0.0498, Recall@5:  0.0261, NDCG@5:  0.0539
+Precision@10: 0.0438, Recall@10: 0.0458, NDCG@10: 0.0552
+Precision@15: 0.0403, Recall@15: 0.0627, NDCG@15: 0.0601
+Precision@20: 0.0377, Recall@20: 0.0777, NDCG@20: 0.0654
+EarlyStopping counter: 1 out of 50
+
+Epoch: 077, Loss: 0.0758
+Precision@5:  0.0505, Recall@5:  0.0264, NDCG@5:  0.0544
+Precision@10: 0.0439, Recall@10: 0.0458, NDCG@10: 0.0555
+Precision@15: 0.0405, Recall@15: 0.0630, NDCG@15: 0.0605
+Precision@20: 0.0379, Recall@20: 0.0782, NDCG@20: 0.0658
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 078, Loss: 0.0754
+Precision@5:  0.0504, Recall@5:  0.0262, NDCG@5:  0.0544
+Precision@10: 0.0443, Recall@10: 0.0464, NDCG@10: 0.0559
+Precision@15: 0.0407, Recall@15: 0.0633, NDCG@15: 0.0607
+Precision@20: 0.0379, Recall@20: 0.0784, NDCG@20: 0.0660
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 079, Loss: 0.0752
+Precision@5:  0.0508, Recall@5:  0.0265, NDCG@5:  0.0547
+Precision@10: 0.0444, Recall@10: 0.0465, NDCG@10: 0.0559
+Precision@15: 0.0408, Recall@15: 0.0637, NDCG@15: 0.0609
+Precision@20: 0.0379, Recall@20: 0.0786, NDCG@20: 0.0661
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 080, Loss: 0.0752
+Precision@5:  0.0508, Recall@5:  0.0265, NDCG@5:  0.0547
+Precision@10: 0.0446, Recall@10: 0.0466, NDCG@10: 0.0561
+Precision@15: 0.0407, Recall@15: 0.0638, NDCG@15: 0.0610
+Precision@20: 0.0380, Recall@20: 0.0788, NDCG@20: 0.0662
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 081, Loss: 0.0749
+Precision@5:  0.0509, Recall@5:  0.0266, NDCG@5:  0.0549
+Precision@10: 0.0445, Recall@10: 0.0467, NDCG@10: 0.0562
+Precision@15: 0.0409, Recall@15: 0.0639, NDCG@15: 0.0612
+Precision@20: 0.0382, Recall@20: 0.0793, NDCG@20: 0.0665
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 082, Loss: 0.0744
+Precision@5:  0.0513, Recall@5:  0.0268, NDCG@5:  0.0552
+Precision@10: 0.0446, Recall@10: 0.0469, NDCG@10: 0.0563
+Precision@15: 0.0408, Recall@15: 0.0637, NDCG@15: 0.0611
+Precision@20: 0.0381, Recall@20: 0.0790, NDCG@20: 0.0665
+EarlyStopping counter: 1 out of 50
+
+Epoch: 083, Loss: 0.0740
+Precision@5:  0.0515, Recall@5:  0.0269, NDCG@5:  0.0554
+Precision@10: 0.0448, Recall@10: 0.0470, NDCG@10: 0.0565
+Precision@15: 0.0409, Recall@15: 0.0638, NDCG@15: 0.0613
+Precision@20: 0.0383, Recall@20: 0.0796, NDCG@20: 0.0668
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 084, Loss: 0.0735
+Precision@5:  0.0512, Recall@5:  0.0267, NDCG@5:  0.0554
+Precision@10: 0.0449, Recall@10: 0.0472, NDCG@10: 0.0568
+Precision@15: 0.0412, Recall@15: 0.0644, NDCG@15: 0.0617
+Precision@20: 0.0384, Recall@20: 0.0797, NDCG@20: 0.0671
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 085, Loss: 0.0735
+Precision@5:  0.0516, Recall@5:  0.0270, NDCG@5:  0.0556
+Precision@10: 0.0452, Recall@10: 0.0474, NDCG@10: 0.0569
+Precision@15: 0.0411, Recall@15: 0.0644, NDCG@15: 0.0617
+Precision@20: 0.0384, Recall@20: 0.0799, NDCG@20: 0.0671
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 086, Loss: 0.0732
+Precision@5:  0.0519, Recall@5:  0.0272, NDCG@5:  0.0560
+Precision@10: 0.0451, Recall@10: 0.0472, NDCG@10: 0.0571
+Precision@15: 0.0413, Recall@15: 0.0647, NDCG@15: 0.0621
+Precision@20: 0.0384, Recall@20: 0.0798, NDCG@20: 0.0673
+EarlyStopping counter: 1 out of 50
+
+Epoch: 087, Loss: 0.0729
+Precision@5:  0.0519, Recall@5:  0.0274, NDCG@5:  0.0563
+Precision@10: 0.0454, Recall@10: 0.0477, NDCG@10: 0.0575
+Precision@15: 0.0414, Recall@15: 0.0649, NDCG@15: 0.0624
+Precision@20: 0.0384, Recall@20: 0.0799, NDCG@20: 0.0676
+EarlyStopping counter: 2 out of 50
+
+Epoch: 088, Loss: 0.0730
+Precision@5:  0.0522, Recall@5:  0.0275, NDCG@5:  0.0565
+Precision@10: 0.0453, Recall@10: 0.0474, NDCG@10: 0.0574
+Precision@15: 0.0415, Recall@15: 0.0649, NDCG@15: 0.0624
+Precision@20: 0.0386, Recall@20: 0.0802, NDCG@20: 0.0677
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 089, Loss: 0.0728
+Precision@5:  0.0523, Recall@5:  0.0275, NDCG@5:  0.0565
+Precision@10: 0.0454, Recall@10: 0.0475, NDCG@10: 0.0575
+Precision@15: 0.0415, Recall@15: 0.0650, NDCG@15: 0.0624
+Precision@20: 0.0386, Recall@20: 0.0803, NDCG@20: 0.0678
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 090, Loss: 0.0720
+Precision@5:  0.0522, Recall@5:  0.0274, NDCG@5:  0.0567
+Precision@10: 0.0457, Recall@10: 0.0478, NDCG@10: 0.0578
+Precision@15: 0.0418, Recall@15: 0.0655, NDCG@15: 0.0629
+Precision@20: 0.0388, Recall@20: 0.0808, NDCG@20: 0.0682
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 091, Loss: 0.0720
+Precision@5:  0.0523, Recall@5:  0.0273, NDCG@5:  0.0567
+Precision@10: 0.0457, Recall@10: 0.0479, NDCG@10: 0.0579
+Precision@15: 0.0419, Recall@15: 0.0658, NDCG@15: 0.0630
+Precision@20: 0.0388, Recall@20: 0.0809, NDCG@20: 0.0682
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 092, Loss: 0.0719
+Precision@5:  0.0522, Recall@5:  0.0273, NDCG@5:  0.0566
+Precision@10: 0.0459, Recall@10: 0.0482, NDCG@10: 0.0580
+Precision@15: 0.0419, Recall@15: 0.0657, NDCG@15: 0.0629
+Precision@20: 0.0390, Recall@20: 0.0811, NDCG@20: 0.0683
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 093, Loss: 0.0714
+Precision@5:  0.0523, Recall@5:  0.0274, NDCG@5:  0.0566
+Precision@10: 0.0458, Recall@10: 0.0480, NDCG@10: 0.0578
+Precision@15: 0.0419, Recall@15: 0.0657, NDCG@15: 0.0629
+Precision@20: 0.0391, Recall@20: 0.0813, NDCG@20: 0.0683
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 094, Loss: 0.0709
+Precision@5:  0.0526, Recall@5:  0.0276, NDCG@5:  0.0569
+Precision@10: 0.0460, Recall@10: 0.0482, NDCG@10: 0.0582
+Precision@15: 0.0420, Recall@15: 0.0660, NDCG@15: 0.0631
+Precision@20: 0.0391, Recall@20: 0.0815, NDCG@20: 0.0686
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 095, Loss: 0.0706
+Precision@5:  0.0526, Recall@5:  0.0277, NDCG@5:  0.0570
+Precision@10: 0.0459, Recall@10: 0.0481, NDCG@10: 0.0581
+Precision@15: 0.0419, Recall@15: 0.0658, NDCG@15: 0.0631
+Precision@20: 0.0391, Recall@20: 0.0814, NDCG@20: 0.0686
+EarlyStopping counter: 1 out of 50
+
+Epoch: 096, Loss: 0.0708
+Precision@5:  0.0527, Recall@5:  0.0277, NDCG@5:  0.0571
+Precision@10: 0.0462, Recall@10: 0.0485, NDCG@10: 0.0584
+Precision@15: 0.0420, Recall@15: 0.0659, NDCG@15: 0.0632
+Precision@20: 0.0391, Recall@20: 0.0814, NDCG@20: 0.0687
+EarlyStopping counter: 2 out of 50
+
+Epoch: 097, Loss: 0.0707
+Precision@5:  0.0527, Recall@5:  0.0279, NDCG@5:  0.0570
+Precision@10: 0.0462, Recall@10: 0.0485, NDCG@10: 0.0583
+Precision@15: 0.0421, Recall@15: 0.0661, NDCG@15: 0.0633
+Precision@20: 0.0392, Recall@20: 0.0813, NDCG@20: 0.0687
+EarlyStopping counter: 3 out of 50
+
+Epoch: 098, Loss: 0.0703
+Precision@5:  0.0529, Recall@5:  0.0279, NDCG@5:  0.0573
+Precision@10: 0.0461, Recall@10: 0.0485, NDCG@10: 0.0585
+Precision@15: 0.0423, Recall@15: 0.0663, NDCG@15: 0.0636
+Precision@20: 0.0393, Recall@20: 0.0817, NDCG@20: 0.0690
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 099, Loss: 0.0700
+Precision@5:  0.0528, Recall@5:  0.0278, NDCG@5:  0.0571
+Precision@10: 0.0463, Recall@10: 0.0485, NDCG@10: 0.0585
+Precision@15: 0.0422, Recall@15: 0.0662, NDCG@15: 0.0635
+Precision@20: 0.0393, Recall@20: 0.0819, NDCG@20: 0.0689
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 100, Loss: 0.0695
+Precision@5:  0.0534, Recall@5:  0.0281, NDCG@5:  0.0576
+Precision@10: 0.0465, Recall@10: 0.0489, NDCG@10: 0.0588
+Precision@15: 0.0423, Recall@15: 0.0663, NDCG@15: 0.0637
+Precision@20: 0.0393, Recall@20: 0.0819, NDCG@20: 0.0691
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 101, Loss: 0.0696
+Precision@5:  0.0533, Recall@5:  0.0281, NDCG@5:  0.0575
+Precision@10: 0.0466, Recall@10: 0.0489, NDCG@10: 0.0588
+Precision@15: 0.0423, Recall@15: 0.0664, NDCG@15: 0.0636
+Precision@20: 0.0395, Recall@20: 0.0823, NDCG@20: 0.0692
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 102, Loss: 0.0692
+Precision@5:  0.0534, Recall@5:  0.0282, NDCG@5:  0.0577
+Precision@10: 0.0467, Recall@10: 0.0490, NDCG@10: 0.0590
+Precision@15: 0.0424, Recall@15: 0.0665, NDCG@15: 0.0638
+Precision@20: 0.0394, Recall@20: 0.0821, NDCG@20: 0.0693
+EarlyStopping counter: 1 out of 50
+
+Epoch: 103, Loss: 0.0693
+Precision@5:  0.0535, Recall@5:  0.0282, NDCG@5:  0.0579
+Precision@10: 0.0468, Recall@10: 0.0491, NDCG@10: 0.0592
+Precision@15: 0.0424, Recall@15: 0.0665, NDCG@15: 0.0640
+Precision@20: 0.0395, Recall@20: 0.0822, NDCG@20: 0.0695
+EarlyStopping counter: 2 out of 50
+
+Epoch: 104, Loss: 0.0687
+Precision@5:  0.0538, Recall@5:  0.0282, NDCG@5:  0.0581
+Precision@10: 0.0468, Recall@10: 0.0493, NDCG@10: 0.0593
+Precision@15: 0.0425, Recall@15: 0.0667, NDCG@15: 0.0641
+Precision@20: 0.0396, Recall@20: 0.0826, NDCG@20: 0.0697
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 105, Loss: 0.0684
+Precision@5:  0.0541, Recall@5:  0.0285, NDCG@5:  0.0585
+Precision@10: 0.0470, Recall@10: 0.0494, NDCG@10: 0.0595
+Precision@15: 0.0426, Recall@15: 0.0667, NDCG@15: 0.0643
+Precision@20: 0.0396, Recall@20: 0.0824, NDCG@20: 0.0697
+EarlyStopping counter: 1 out of 50
+
+Epoch: 106, Loss: 0.0686
+Precision@5:  0.0543, Recall@5:  0.0285, NDCG@5:  0.0587
+Precision@10: 0.0470, Recall@10: 0.0494, NDCG@10: 0.0596
+Precision@15: 0.0426, Recall@15: 0.0668, NDCG@15: 0.0644
+Precision@20: 0.0398, Recall@20: 0.0828, NDCG@20: 0.0701
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 107, Loss: 0.0684
+Precision@5:  0.0543, Recall@5:  0.0286, NDCG@5:  0.0588
+Precision@10: 0.0471, Recall@10: 0.0495, NDCG@10: 0.0598
+Precision@15: 0.0428, Recall@15: 0.0671, NDCG@15: 0.0647
+Precision@20: 0.0398, Recall@20: 0.0829, NDCG@20: 0.0702
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 108, Loss: 0.0677
+Precision@5:  0.0545, Recall@5:  0.0286, NDCG@5:  0.0589
+Precision@10: 0.0472, Recall@10: 0.0495, NDCG@10: 0.0598
+Precision@15: 0.0429, Recall@15: 0.0674, NDCG@15: 0.0648
+Precision@20: 0.0399, Recall@20: 0.0830, NDCG@20: 0.0702
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 109, Loss: 0.0676
+Precision@5:  0.0545, Recall@5:  0.0286, NDCG@5:  0.0590
+Precision@10: 0.0473, Recall@10: 0.0497, NDCG@10: 0.0601
+Precision@15: 0.0430, Recall@15: 0.0673, NDCG@15: 0.0650
+Precision@20: 0.0399, Recall@20: 0.0831, NDCG@20: 0.0704
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 110, Loss: 0.0674
+Precision@5:  0.0542, Recall@5:  0.0285, NDCG@5:  0.0590
+Precision@10: 0.0474, Recall@10: 0.0496, NDCG@10: 0.0602
+Precision@15: 0.0430, Recall@15: 0.0673, NDCG@15: 0.0650
+Precision@20: 0.0400, Recall@20: 0.0833, NDCG@20: 0.0705
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 111, Loss: 0.0670
+Precision@5:  0.0547, Recall@5:  0.0287, NDCG@5:  0.0592
+Precision@10: 0.0473, Recall@10: 0.0496, NDCG@10: 0.0601
+Precision@15: 0.0431, Recall@15: 0.0676, NDCG@15: 0.0652
+Precision@20: 0.0401, Recall@20: 0.0835, NDCG@20: 0.0707
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 112, Loss: 0.0670
+Precision@5:  0.0549, Recall@5:  0.0289, NDCG@5:  0.0595
+Precision@10: 0.0473, Recall@10: 0.0496, NDCG@10: 0.0602
+Precision@15: 0.0430, Recall@15: 0.0672, NDCG@15: 0.0651
+Precision@20: 0.0402, Recall@20: 0.0837, NDCG@20: 0.0709
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 113, Loss: 0.0667
+Precision@5:  0.0545, Recall@5:  0.0287, NDCG@5:  0.0594
+Precision@10: 0.0473, Recall@10: 0.0496, NDCG@10: 0.0603
+Precision@15: 0.0431, Recall@15: 0.0674, NDCG@15: 0.0653
+Precision@20: 0.0401, Recall@20: 0.0834, NDCG@20: 0.0708
+EarlyStopping counter: 1 out of 50
+
+Epoch: 114, Loss: 0.0666
+Precision@5:  0.0546, Recall@5:  0.0287, NDCG@5:  0.0594
+Precision@10: 0.0476, Recall@10: 0.0498, NDCG@10: 0.0605
+Precision@15: 0.0432, Recall@15: 0.0675, NDCG@15: 0.0653
+Precision@20: 0.0403, Recall@20: 0.0838, NDCG@20: 0.0710
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 115, Loss: 0.0662
+Precision@5:  0.0547, Recall@5:  0.0286, NDCG@5:  0.0594
+Precision@10: 0.0476, Recall@10: 0.0500, NDCG@10: 0.0605
+Precision@15: 0.0433, Recall@15: 0.0676, NDCG@15: 0.0654
+Precision@20: 0.0402, Recall@20: 0.0834, NDCG@20: 0.0708
+EarlyStopping counter: 1 out of 50
+
+Epoch: 116, Loss: 0.0665
+Precision@5:  0.0546, Recall@5:  0.0287, NDCG@5:  0.0593
+Precision@10: 0.0478, Recall@10: 0.0501, NDCG@10: 0.0606
+Precision@15: 0.0432, Recall@15: 0.0678, NDCG@15: 0.0654
+Precision@20: 0.0403, Recall@20: 0.0836, NDCG@20: 0.0709
+EarlyStopping counter: 2 out of 50
+
+Epoch: 117, Loss: 0.0662
+Precision@5:  0.0546, Recall@5:  0.0287, NDCG@5:  0.0592
+Precision@10: 0.0478, Recall@10: 0.0501, NDCG@10: 0.0605
+Precision@15: 0.0435, Recall@15: 0.0680, NDCG@15: 0.0655
+Precision@20: 0.0404, Recall@20: 0.0840, NDCG@20: 0.0710
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 118, Loss: 0.0657
+Precision@5:  0.0550, Recall@5:  0.0288, NDCG@5:  0.0595
+Precision@10: 0.0479, Recall@10: 0.0500, NDCG@10: 0.0607
+Precision@15: 0.0435, Recall@15: 0.0680, NDCG@15: 0.0656
+Precision@20: 0.0406, Recall@20: 0.0842, NDCG@20: 0.0713
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 119, Loss: 0.0659
+Precision@5:  0.0549, Recall@5:  0.0288, NDCG@5:  0.0595
+Precision@10: 0.0481, Recall@10: 0.0502, NDCG@10: 0.0608
+Precision@15: 0.0437, Recall@15: 0.0683, NDCG@15: 0.0659
+Precision@20: 0.0407, Recall@20: 0.0842, NDCG@20: 0.0714
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 120, Loss: 0.0658
+Precision@5:  0.0549, Recall@5:  0.0288, NDCG@5:  0.0595
+Precision@10: 0.0479, Recall@10: 0.0502, NDCG@10: 0.0607
+Precision@15: 0.0438, Recall@15: 0.0684, NDCG@15: 0.0659
+Precision@20: 0.0407, Recall@20: 0.0842, NDCG@20: 0.0714
+EarlyStopping counter: 1 out of 50
+
+Epoch: 121, Loss: 0.0647
+Precision@5:  0.0550, Recall@5:  0.0288, NDCG@5:  0.0596
+Precision@10: 0.0480, Recall@10: 0.0503, NDCG@10: 0.0608
+Precision@15: 0.0438, Recall@15: 0.0684, NDCG@15: 0.0659
+Precision@20: 0.0406, Recall@20: 0.0842, NDCG@20: 0.0714
+EarlyStopping counter: 2 out of 50
+
+Epoch: 122, Loss: 0.0649
+Precision@5:  0.0549, Recall@5:  0.0286, NDCG@5:  0.0595
+Precision@10: 0.0481, Recall@10: 0.0505, NDCG@10: 0.0610
+Precision@15: 0.0438, Recall@15: 0.0686, NDCG@15: 0.0660
+Precision@20: 0.0408, Recall@20: 0.0843, NDCG@20: 0.0715
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 123, Loss: 0.0647
+Precision@5:  0.0551, Recall@5:  0.0289, NDCG@5:  0.0596
+Precision@10: 0.0481, Recall@10: 0.0503, NDCG@10: 0.0609
+Precision@15: 0.0440, Recall@15: 0.0688, NDCG@15: 0.0661
+Precision@20: 0.0408, Recall@20: 0.0847, NDCG@20: 0.0716
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 124, Loss: 0.0645
+Precision@5:  0.0552, Recall@5:  0.0291, NDCG@5:  0.0598
+Precision@10: 0.0481, Recall@10: 0.0502, NDCG@10: 0.0610
+Precision@15: 0.0438, Recall@15: 0.0686, NDCG@15: 0.0661
+Precision@20: 0.0409, Recall@20: 0.0848, NDCG@20: 0.0718
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 125, Loss: 0.0645
+Precision@5:  0.0553, Recall@5:  0.0291, NDCG@5:  0.0600
+Precision@10: 0.0481, Recall@10: 0.0503, NDCG@10: 0.0610
+Precision@15: 0.0438, Recall@15: 0.0684, NDCG@15: 0.0661
+Precision@20: 0.0409, Recall@20: 0.0852, NDCG@20: 0.0720
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 126, Loss: 0.0641
+Precision@5:  0.0552, Recall@5:  0.0292, NDCG@5:  0.0600
+Precision@10: 0.0480, Recall@10: 0.0502, NDCG@10: 0.0610
+Precision@15: 0.0439, Recall@15: 0.0685, NDCG@15: 0.0662
+Precision@20: 0.0410, Recall@20: 0.0852, NDCG@20: 0.0721
+EarlyStopping counter: 1 out of 50
+
+Epoch: 127, Loss: 0.0644
+Precision@5:  0.0553, Recall@5:  0.0290, NDCG@5:  0.0601
+Precision@10: 0.0481, Recall@10: 0.0505, NDCG@10: 0.0612
+Precision@15: 0.0439, Recall@15: 0.0687, NDCG@15: 0.0663
+Precision@20: 0.0411, Recall@20: 0.0851, NDCG@20: 0.0721
+EarlyStopping counter: 2 out of 50
+
+Epoch: 128, Loss: 0.0637
+Precision@5:  0.0556, Recall@5:  0.0293, NDCG@5:  0.0605
+Precision@10: 0.0479, Recall@10: 0.0502, NDCG@10: 0.0612
+Precision@15: 0.0440, Recall@15: 0.0689, NDCG@15: 0.0665
+Precision@20: 0.0410, Recall@20: 0.0853, NDCG@20: 0.0723
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 129, Loss: 0.0639
+Precision@5:  0.0557, Recall@5:  0.0292, NDCG@5:  0.0606
+Precision@10: 0.0481, Recall@10: 0.0503, NDCG@10: 0.0613
+Precision@15: 0.0440, Recall@15: 0.0688, NDCG@15: 0.0665
+Precision@20: 0.0412, Recall@20: 0.0856, NDCG@20: 0.0725
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 130, Loss: 0.0638
+Precision@5:  0.0558, Recall@5:  0.0294, NDCG@5:  0.0606
+Precision@10: 0.0480, Recall@10: 0.0502, NDCG@10: 0.0612
+Precision@15: 0.0442, Recall@15: 0.0689, NDCG@15: 0.0666
+Precision@20: 0.0411, Recall@20: 0.0852, NDCG@20: 0.0723
+EarlyStopping counter: 1 out of 50
+
+Epoch: 131, Loss: 0.0639
+Precision@5:  0.0557, Recall@5:  0.0293, NDCG@5:  0.0605
+Precision@10: 0.0482, Recall@10: 0.0505, NDCG@10: 0.0614
+Precision@15: 0.0440, Recall@15: 0.0689, NDCG@15: 0.0666
+Precision@20: 0.0410, Recall@20: 0.0852, NDCG@20: 0.0723
+EarlyStopping counter: 2 out of 50
+
+Epoch: 132, Loss: 0.0632
+Precision@5:  0.0561, Recall@5:  0.0296, NDCG@5:  0.0609
+Precision@10: 0.0481, Recall@10: 0.0504, NDCG@10: 0.0615
+Precision@15: 0.0441, Recall@15: 0.0690, NDCG@15: 0.0667
+Precision@20: 0.0413, Recall@20: 0.0856, NDCG@20: 0.0726
+EarlyStopping counter: 3 out of 50
+
+Epoch: 133, Loss: 0.0632
+Precision@5:  0.0558, Recall@5:  0.0294, NDCG@5:  0.0607
+Precision@10: 0.0483, Recall@10: 0.0505, NDCG@10: 0.0616
+Precision@15: 0.0442, Recall@15: 0.0692, NDCG@15: 0.0668
+Precision@20: 0.0413, Recall@20: 0.0857, NDCG@20: 0.0726
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 134, Loss: 0.0629
+Precision@5:  0.0558, Recall@5:  0.0294, NDCG@5:  0.0607
+Precision@10: 0.0483, Recall@10: 0.0506, NDCG@10: 0.0616
+Precision@15: 0.0443, Recall@15: 0.0693, NDCG@15: 0.0669
+Precision@20: 0.0414, Recall@20: 0.0860, NDCG@20: 0.0728
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 135, Loss: 0.0625
+Precision@5:  0.0561, Recall@5:  0.0296, NDCG@5:  0.0610
+Precision@10: 0.0486, Recall@10: 0.0509, NDCG@10: 0.0619
+Precision@15: 0.0443, Recall@15: 0.0693, NDCG@15: 0.0671
+Precision@20: 0.0415, Recall@20: 0.0862, NDCG@20: 0.0731
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 136, Loss: 0.0629
+Precision@5:  0.0562, Recall@5:  0.0297, NDCG@5:  0.0611
+Precision@10: 0.0485, Recall@10: 0.0508, NDCG@10: 0.0618
+Precision@15: 0.0445, Recall@15: 0.0695, NDCG@15: 0.0672
+Precision@20: 0.0414, Recall@20: 0.0860, NDCG@20: 0.0729
+EarlyStopping counter: 1 out of 50
+
+Epoch: 137, Loss: 0.0624
+Precision@5:  0.0563, Recall@5:  0.0298, NDCG@5:  0.0610
+Precision@10: 0.0487, Recall@10: 0.0512, NDCG@10: 0.0619
+Precision@15: 0.0446, Recall@15: 0.0699, NDCG@15: 0.0672
+Precision@20: 0.0415, Recall@20: 0.0860, NDCG@20: 0.0729
+EarlyStopping counter: 2 out of 50
+
+Epoch: 138, Loss: 0.0622
+Precision@5:  0.0560, Recall@5:  0.0295, NDCG@5:  0.0606
+Precision@10: 0.0489, Recall@10: 0.0511, NDCG@10: 0.0619
+Precision@15: 0.0445, Recall@15: 0.0695, NDCG@15: 0.0670
+Precision@20: 0.0416, Recall@20: 0.0862, NDCG@20: 0.0729
+EarlyStopping counter: 3 out of 50
+
+Epoch: 139, Loss: 0.0618
+Precision@5:  0.0559, Recall@5:  0.0295, NDCG@5:  0.0608
+Precision@10: 0.0489, Recall@10: 0.0512, NDCG@10: 0.0620
+Precision@15: 0.0446, Recall@15: 0.0699, NDCG@15: 0.0673
+Precision@20: 0.0415, Recall@20: 0.0862, NDCG@20: 0.0730
+EarlyStopping counter: 4 out of 50
+
+Epoch: 140, Loss: 0.0618
+Precision@5:  0.0556, Recall@5:  0.0295, NDCG@5:  0.0607
+Precision@10: 0.0490, Recall@10: 0.0514, NDCG@10: 0.0623
+Precision@15: 0.0447, Recall@15: 0.0700, NDCG@15: 0.0674
+Precision@20: 0.0416, Recall@20: 0.0864, NDCG@20: 0.0732
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 141, Loss: 0.0616
+Precision@5:  0.0561, Recall@5:  0.0297, NDCG@5:  0.0609
+Precision@10: 0.0489, Recall@10: 0.0512, NDCG@10: 0.0621
+Precision@15: 0.0446, Recall@15: 0.0698, NDCG@15: 0.0673
+Precision@20: 0.0416, Recall@20: 0.0864, NDCG@20: 0.0732
+EarlyStopping counter: 1 out of 50
+
+Epoch: 142, Loss: 0.0618
+Precision@5:  0.0564, Recall@5:  0.0298, NDCG@5:  0.0612
+Precision@10: 0.0488, Recall@10: 0.0512, NDCG@10: 0.0621
+Precision@15: 0.0447, Recall@15: 0.0700, NDCG@15: 0.0675
+Precision@20: 0.0416, Recall@20: 0.0867, NDCG@20: 0.0733
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 143, Loss: 0.0615
+Precision@5:  0.0565, Recall@5:  0.0299, NDCG@5:  0.0612
+Precision@10: 0.0489, Recall@10: 0.0514, NDCG@10: 0.0622
+Precision@15: 0.0447, Recall@15: 0.0698, NDCG@15: 0.0674
+Precision@20: 0.0418, Recall@20: 0.0869, NDCG@20: 0.0734
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 144, Loss: 0.0607
+Precision@5:  0.0565, Recall@5:  0.0298, NDCG@5:  0.0611
+Precision@10: 0.0490, Recall@10: 0.0514, NDCG@10: 0.0622
+Precision@15: 0.0448, Recall@15: 0.0701, NDCG@15: 0.0675
+Precision@20: 0.0416, Recall@20: 0.0865, NDCG@20: 0.0732
+EarlyStopping counter: 1 out of 50
+
+Epoch: 145, Loss: 0.0609
+Precision@5:  0.0568, Recall@5:  0.0301, NDCG@5:  0.0615
+Precision@10: 0.0491, Recall@10: 0.0517, NDCG@10: 0.0624
+Precision@15: 0.0448, Recall@15: 0.0704, NDCG@15: 0.0677
+Precision@20: 0.0418, Recall@20: 0.0868, NDCG@20: 0.0735
+EarlyStopping counter: 2 out of 50
+
+Epoch: 146, Loss: 0.0609
+Precision@5:  0.0570, Recall@5:  0.0302, NDCG@5:  0.0616
+Precision@10: 0.0493, Recall@10: 0.0518, NDCG@10: 0.0625
+Precision@15: 0.0449, Recall@15: 0.0703, NDCG@15: 0.0677
+Precision@20: 0.0417, Recall@20: 0.0867, NDCG@20: 0.0734
+EarlyStopping counter: 3 out of 50
+
+Epoch: 147, Loss: 0.0606
+Precision@5:  0.0566, Recall@5:  0.0299, NDCG@5:  0.0613
+Precision@10: 0.0494, Recall@10: 0.0520, NDCG@10: 0.0626
+Precision@15: 0.0449, Recall@15: 0.0704, NDCG@15: 0.0678
+Precision@20: 0.0417, Recall@20: 0.0868, NDCG@20: 0.0735
+EarlyStopping counter: 4 out of 50
+
+Epoch: 148, Loss: 0.0606
+Precision@5:  0.0568, Recall@5:  0.0302, NDCG@5:  0.0614
+Precision@10: 0.0494, Recall@10: 0.0519, NDCG@10: 0.0626
+Precision@15: 0.0449, Recall@15: 0.0701, NDCG@15: 0.0677
+Precision@20: 0.0418, Recall@20: 0.0870, NDCG@20: 0.0736
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 149, Loss: 0.0605
+Precision@5:  0.0571, Recall@5:  0.0303, NDCG@5:  0.0616
+Precision@10: 0.0493, Recall@10: 0.0518, NDCG@10: 0.0626
+Precision@15: 0.0446, Recall@15: 0.0700, NDCG@15: 0.0675
+Precision@20: 0.0417, Recall@20: 0.0867, NDCG@20: 0.0734
+EarlyStopping counter: 1 out of 50
+
+Epoch: 150, Loss: 0.0603
+Precision@5:  0.0572, Recall@5:  0.0303, NDCG@5:  0.0617
+Precision@10: 0.0493, Recall@10: 0.0517, NDCG@10: 0.0626
+Precision@15: 0.0448, Recall@15: 0.0702, NDCG@15: 0.0678
+Precision@20: 0.0419, Recall@20: 0.0869, NDCG@20: 0.0737
+EarlyStopping counter: 2 out of 50
+
+Epoch: 151, Loss: 0.0600
+Precision@5:  0.0571, Recall@5:  0.0301, NDCG@5:  0.0616
+Precision@10: 0.0494, Recall@10: 0.0519, NDCG@10: 0.0626
+Precision@15: 0.0449, Recall@15: 0.0702, NDCG@15: 0.0677
+Precision@20: 0.0419, Recall@20: 0.0867, NDCG@20: 0.0736
+EarlyStopping counter: 3 out of 50
+
+Epoch: 152, Loss: 0.0601
+Precision@5:  0.0572, Recall@5:  0.0302, NDCG@5:  0.0617
+Precision@10: 0.0493, Recall@10: 0.0518, NDCG@10: 0.0626
+Precision@15: 0.0450, Recall@15: 0.0704, NDCG@15: 0.0679
+Precision@20: 0.0419, Recall@20: 0.0868, NDCG@20: 0.0736
+EarlyStopping counter: 4 out of 50
+
+Epoch: 153, Loss: 0.0594
+Precision@5:  0.0573, Recall@5:  0.0303, NDCG@5:  0.0618
+Precision@10: 0.0495, Recall@10: 0.0520, NDCG@10: 0.0628
+Precision@15: 0.0450, Recall@15: 0.0704, NDCG@15: 0.0679
+Precision@20: 0.0420, Recall@20: 0.0865, NDCG@20: 0.0737
+EarlyStopping counter: 5 out of 50
+
+Epoch: 154, Loss: 0.0594
+Precision@5:  0.0576, Recall@5:  0.0305, NDCG@5:  0.0622
+Precision@10: 0.0496, Recall@10: 0.0521, NDCG@10: 0.0630
+Precision@15: 0.0450, Recall@15: 0.0702, NDCG@15: 0.0680
+Precision@20: 0.0421, Recall@20: 0.0869, NDCG@20: 0.0740
+EarlyStopping counter: 6 out of 50
+
+Epoch: 155, Loss: 0.0592
+Precision@5:  0.0578, Recall@5:  0.0306, NDCG@5:  0.0623
+Precision@10: 0.0497, Recall@10: 0.0521, NDCG@10: 0.0631
+Precision@15: 0.0452, Recall@15: 0.0704, NDCG@15: 0.0682
+Precision@20: 0.0421, Recall@20: 0.0871, NDCG@20: 0.0740
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 156, Loss: 0.0590
+Precision@5:  0.0575, Recall@5:  0.0305, NDCG@5:  0.0622
+Precision@10: 0.0500, Recall@10: 0.0525, NDCG@10: 0.0635
+Precision@15: 0.0453, Recall@15: 0.0705, NDCG@15: 0.0684
+Precision@20: 0.0420, Recall@20: 0.0870, NDCG@20: 0.0741
+EarlyStopping counter: 1 out of 50
+
+Epoch: 157, Loss: 0.0593
+Precision@5:  0.0578, Recall@5:  0.0307, NDCG@5:  0.0625
+Precision@10: 0.0500, Recall@10: 0.0525, NDCG@10: 0.0636
+Precision@15: 0.0451, Recall@15: 0.0704, NDCG@15: 0.0683
+Precision@20: 0.0421, Recall@20: 0.0874, NDCG@20: 0.0743
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 158, Loss: 0.0583
+Precision@5:  0.0575, Recall@5:  0.0304, NDCG@5:  0.0623
+Precision@10: 0.0497, Recall@10: 0.0523, NDCG@10: 0.0634
+Precision@15: 0.0453, Recall@15: 0.0705, NDCG@15: 0.0685
+Precision@20: 0.0422, Recall@20: 0.0874, NDCG@20: 0.0744
+EarlyStopping counter: 1 out of 50
+
+Epoch: 159, Loss: 0.0593
+Precision@5:  0.0575, Recall@5:  0.0304, NDCG@5:  0.0624
+Precision@10: 0.0498, Recall@10: 0.0524, NDCG@10: 0.0635
+Precision@15: 0.0454, Recall@15: 0.0710, NDCG@15: 0.0687
+Precision@20: 0.0423, Recall@20: 0.0878, NDCG@20: 0.0746
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 160, Loss: 0.0589
+Precision@5:  0.0577, Recall@5:  0.0305, NDCG@5:  0.0625
+Precision@10: 0.0501, Recall@10: 0.0526, NDCG@10: 0.0636
+Precision@15: 0.0455, Recall@15: 0.0712, NDCG@15: 0.0687
+Precision@20: 0.0424, Recall@20: 0.0878, NDCG@20: 0.0746
+EarlyStopping counter: 1 out of 50
+
+Epoch: 161, Loss: 0.0584
+Precision@5:  0.0578, Recall@5:  0.0304, NDCG@5:  0.0626
+Precision@10: 0.0502, Recall@10: 0.0527, NDCG@10: 0.0638
+Precision@15: 0.0455, Recall@15: 0.0710, NDCG@15: 0.0688
+Precision@20: 0.0424, Recall@20: 0.0878, NDCG@20: 0.0747
+EarlyStopping counter: 2 out of 50
+
+Epoch: 162, Loss: 0.0583
+Precision@5:  0.0579, Recall@5:  0.0306, NDCG@5:  0.0627
+Precision@10: 0.0502, Recall@10: 0.0526, NDCG@10: 0.0638
+Precision@15: 0.0455, Recall@15: 0.0712, NDCG@15: 0.0689
+Precision@20: 0.0423, Recall@20: 0.0877, NDCG@20: 0.0746
+EarlyStopping counter: 3 out of 50
+
+Epoch: 163, Loss: 0.0584
+Precision@5:  0.0578, Recall@5:  0.0306, NDCG@5:  0.0628
+Precision@10: 0.0502, Recall@10: 0.0528, NDCG@10: 0.0639
+Precision@15: 0.0456, Recall@15: 0.0714, NDCG@15: 0.0691
+Precision@20: 0.0424, Recall@20: 0.0878, NDCG@20: 0.0748
+EarlyStopping counter: 4 out of 50
+
+Epoch: 164, Loss: 0.0582
+Precision@5:  0.0579, Recall@5:  0.0307, NDCG@5:  0.0628
+Precision@10: 0.0503, Recall@10: 0.0532, NDCG@10: 0.0641
+Precision@15: 0.0457, Recall@15: 0.0716, NDCG@15: 0.0692
+Precision@20: 0.0426, Recall@20: 0.0884, NDCG@20: 0.0751
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 165, Loss: 0.0580
+Precision@5:  0.0581, Recall@5:  0.0308, NDCG@5:  0.0632
+Precision@10: 0.0503, Recall@10: 0.0530, NDCG@10: 0.0642
+Precision@15: 0.0456, Recall@15: 0.0715, NDCG@15: 0.0693
+Precision@20: 0.0426, Recall@20: 0.0887, NDCG@20: 0.0754
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 166, Loss: 0.0581
+Precision@5:  0.0582, Recall@5:  0.0309, NDCG@5:  0.0634
+Precision@10: 0.0503, Recall@10: 0.0531, NDCG@10: 0.0644
+Precision@15: 0.0458, Recall@15: 0.0718, NDCG@15: 0.0696
+Precision@20: 0.0426, Recall@20: 0.0885, NDCG@20: 0.0755
+EarlyStopping counter: 1 out of 50
+
+Epoch: 167, Loss: 0.0577
+Precision@5:  0.0581, Recall@5:  0.0308, NDCG@5:  0.0632
+Precision@10: 0.0503, Recall@10: 0.0532, NDCG@10: 0.0643
+Precision@15: 0.0457, Recall@15: 0.0717, NDCG@15: 0.0695
+Precision@20: 0.0427, Recall@20: 0.0887, NDCG@20: 0.0754
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 168, Loss: 0.0572
+Precision@5:  0.0580, Recall@5:  0.0308, NDCG@5:  0.0632
+Precision@10: 0.0505, Recall@10: 0.0533, NDCG@10: 0.0644
+Precision@15: 0.0458, Recall@15: 0.0718, NDCG@15: 0.0695
+Precision@20: 0.0427, Recall@20: 0.0889, NDCG@20: 0.0755
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 169, Loss: 0.0572
+Precision@5:  0.0581, Recall@5:  0.0307, NDCG@5:  0.0632
+Precision@10: 0.0505, Recall@10: 0.0535, NDCG@10: 0.0644
+Precision@15: 0.0459, Recall@15: 0.0719, NDCG@15: 0.0696
+Precision@20: 0.0426, Recall@20: 0.0886, NDCG@20: 0.0754
+EarlyStopping counter: 1 out of 50
+
+Epoch: 170, Loss: 0.0573
+Precision@5:  0.0584, Recall@5:  0.0308, NDCG@5:  0.0631
+Precision@10: 0.0504, Recall@10: 0.0533, NDCG@10: 0.0643
+Precision@15: 0.0459, Recall@15: 0.0720, NDCG@15: 0.0695
+Precision@20: 0.0426, Recall@20: 0.0885, NDCG@20: 0.0752
+EarlyStopping counter: 2 out of 50
+
+Epoch: 171, Loss: 0.0567
+Precision@5:  0.0582, Recall@5:  0.0308, NDCG@5:  0.0634
+Precision@10: 0.0506, Recall@10: 0.0533, NDCG@10: 0.0645
+Precision@15: 0.0461, Recall@15: 0.0723, NDCG@15: 0.0699
+Precision@20: 0.0426, Recall@20: 0.0887, NDCG@20: 0.0755
+EarlyStopping counter: 3 out of 50
+
+Epoch: 172, Loss: 0.0567
+Precision@5:  0.0583, Recall@5:  0.0308, NDCG@5:  0.0634
+Precision@10: 0.0507, Recall@10: 0.0535, NDCG@10: 0.0647
+Precision@15: 0.0460, Recall@15: 0.0721, NDCG@15: 0.0698
+Precision@20: 0.0427, Recall@20: 0.0887, NDCG@20: 0.0756
+EarlyStopping counter: 4 out of 50
+
+Epoch: 173, Loss: 0.0566
+Precision@5:  0.0586, Recall@5:  0.0309, NDCG@5:  0.0636
+Precision@10: 0.0506, Recall@10: 0.0534, NDCG@10: 0.0646
+Precision@15: 0.0462, Recall@15: 0.0725, NDCG@15: 0.0700
+Precision@20: 0.0428, Recall@20: 0.0887, NDCG@20: 0.0756
+EarlyStopping counter: 5 out of 50
+
+Epoch: 174, Loss: 0.0568
+Precision@5:  0.0589, Recall@5:  0.0311, NDCG@5:  0.0639
+Precision@10: 0.0507, Recall@10: 0.0534, NDCG@10: 0.0647
+Precision@15: 0.0463, Recall@15: 0.0725, NDCG@15: 0.0701
+Precision@20: 0.0430, Recall@20: 0.0892, NDCG@20: 0.0759
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 175, Loss: 0.0564
+Precision@5:  0.0587, Recall@5:  0.0309, NDCG@5:  0.0637
+Precision@10: 0.0507, Recall@10: 0.0533, NDCG@10: 0.0647
+Precision@15: 0.0463, Recall@15: 0.0726, NDCG@15: 0.0701
+Precision@20: 0.0429, Recall@20: 0.0892, NDCG@20: 0.0759
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 176, Loss: 0.0568
+Precision@5:  0.0589, Recall@5:  0.0311, NDCG@5:  0.0639
+Precision@10: 0.0507, Recall@10: 0.0533, NDCG@10: 0.0647
+Precision@15: 0.0462, Recall@15: 0.0722, NDCG@15: 0.0700
+Precision@20: 0.0430, Recall@20: 0.0894, NDCG@20: 0.0760
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 177, Loss: 0.0561
+Precision@5:  0.0591, Recall@5:  0.0313, NDCG@5:  0.0641
+Precision@10: 0.0509, Recall@10: 0.0537, NDCG@10: 0.0650
+Precision@15: 0.0463, Recall@15: 0.0727, NDCG@15: 0.0703
+Precision@20: 0.0430, Recall@20: 0.0893, NDCG@20: 0.0761
+EarlyStopping counter: 1 out of 50
+
+Epoch: 178, Loss: 0.0561
+Precision@5:  0.0588, Recall@5:  0.0313, NDCG@5:  0.0639
+Precision@10: 0.0509, Recall@10: 0.0535, NDCG@10: 0.0649
+Precision@15: 0.0463, Recall@15: 0.0726, NDCG@15: 0.0702
+Precision@20: 0.0430, Recall@20: 0.0895, NDCG@20: 0.0761
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 179, Loss: 0.0560
+Precision@5:  0.0594, Recall@5:  0.0315, NDCG@5:  0.0642
+Precision@10: 0.0511, Recall@10: 0.0538, NDCG@10: 0.0651
+Precision@15: 0.0464, Recall@15: 0.0729, NDCG@15: 0.0704
+Precision@20: 0.0430, Recall@20: 0.0893, NDCG@20: 0.0760
+EarlyStopping counter: 1 out of 50
+
+Epoch: 180, Loss: 0.0558
+Precision@5:  0.0593, Recall@5:  0.0315, NDCG@5:  0.0642
+Precision@10: 0.0511, Recall@10: 0.0538, NDCG@10: 0.0651
+Precision@15: 0.0464, Recall@15: 0.0728, NDCG@15: 0.0703
+Precision@20: 0.0430, Recall@20: 0.0894, NDCG@20: 0.0761
+EarlyStopping counter: 2 out of 50
+
+Epoch: 181, Loss: 0.0560
+Precision@5:  0.0590, Recall@5:  0.0313, NDCG@5:  0.0641
+Precision@10: 0.0511, Recall@10: 0.0536, NDCG@10: 0.0651
+Precision@15: 0.0464, Recall@15: 0.0727, NDCG@15: 0.0704
+Precision@20: 0.0433, Recall@20: 0.0898, NDCG@20: 0.0764
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 182, Loss: 0.0554
+Precision@5:  0.0588, Recall@5:  0.0310, NDCG@5:  0.0639
+Precision@10: 0.0512, Recall@10: 0.0538, NDCG@10: 0.0652
+Precision@15: 0.0464, Recall@15: 0.0727, NDCG@15: 0.0704
+Precision@20: 0.0432, Recall@20: 0.0898, NDCG@20: 0.0764
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 183, Loss: 0.0555
+Precision@5:  0.0593, Recall@5:  0.0315, NDCG@5:  0.0644
+Precision@10: 0.0512, Recall@10: 0.0538, NDCG@10: 0.0653
+Precision@15: 0.0465, Recall@15: 0.0727, NDCG@15: 0.0705
+Precision@20: 0.0432, Recall@20: 0.0898, NDCG@20: 0.0764
+EarlyStopping counter: 1 out of 50
+
+Epoch: 184, Loss: 0.0552
+Precision@5:  0.0593, Recall@5:  0.0315, NDCG@5:  0.0643
+Precision@10: 0.0511, Recall@10: 0.0538, NDCG@10: 0.0652
+Precision@15: 0.0467, Recall@15: 0.0730, NDCG@15: 0.0706
+Precision@20: 0.0432, Recall@20: 0.0899, NDCG@20: 0.0765
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 185, Loss: 0.0553
+Precision@5:  0.0597, Recall@5:  0.0316, NDCG@5:  0.0647
+Precision@10: 0.0515, Recall@10: 0.0543, NDCG@10: 0.0656
+Precision@15: 0.0466, Recall@15: 0.0729, NDCG@15: 0.0706
+Precision@20: 0.0433, Recall@20: 0.0897, NDCG@20: 0.0765
+EarlyStopping counter: 1 out of 50
+
+Epoch: 186, Loss: 0.0553
+Precision@5:  0.0599, Recall@5:  0.0318, NDCG@5:  0.0648
+Precision@10: 0.0514, Recall@10: 0.0540, NDCG@10: 0.0655
+Precision@15: 0.0466, Recall@15: 0.0730, NDCG@15: 0.0707
+Precision@20: 0.0431, Recall@20: 0.0894, NDCG@20: 0.0764
+EarlyStopping counter: 2 out of 50
+
+Epoch: 187, Loss: 0.0546
+Precision@5:  0.0598, Recall@5:  0.0317, NDCG@5:  0.0648
+Precision@10: 0.0513, Recall@10: 0.0539, NDCG@10: 0.0655
+Precision@15: 0.0465, Recall@15: 0.0729, NDCG@15: 0.0706
+Precision@20: 0.0432, Recall@20: 0.0897, NDCG@20: 0.0765
+EarlyStopping counter: 3 out of 50
+
+Epoch: 188, Loss: 0.0548
+Precision@5:  0.0598, Recall@5:  0.0316, NDCG@5:  0.0647
+Precision@10: 0.0515, Recall@10: 0.0541, NDCG@10: 0.0656
+Precision@15: 0.0466, Recall@15: 0.0731, NDCG@15: 0.0708
+Precision@20: 0.0431, Recall@20: 0.0898, NDCG@20: 0.0765
+EarlyStopping counter: 4 out of 50
+
+Epoch: 189, Loss: 0.0547
+Precision@5:  0.0599, Recall@5:  0.0317, NDCG@5:  0.0648
+Precision@10: 0.0515, Recall@10: 0.0542, NDCG@10: 0.0657
+Precision@15: 0.0466, Recall@15: 0.0731, NDCG@15: 0.0708
+Precision@20: 0.0432, Recall@20: 0.0897, NDCG@20: 0.0766
+EarlyStopping counter: 5 out of 50
+
+Epoch: 190, Loss: 0.0549
+Precision@5:  0.0599, Recall@5:  0.0318, NDCG@5:  0.0649
+Precision@10: 0.0516, Recall@10: 0.0541, NDCG@10: 0.0657
+Precision@15: 0.0466, Recall@15: 0.0732, NDCG@15: 0.0708
+Precision@20: 0.0432, Recall@20: 0.0898, NDCG@20: 0.0766
+EarlyStopping counter: 6 out of 50
+
+Epoch: 191, Loss: 0.0548
+Precision@5:  0.0600, Recall@5:  0.0317, NDCG@5:  0.0649
+Precision@10: 0.0515, Recall@10: 0.0541, NDCG@10: 0.0656
+Precision@15: 0.0468, Recall@15: 0.0733, NDCG@15: 0.0709
+Precision@20: 0.0433, Recall@20: 0.0899, NDCG@20: 0.0767
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 192, Loss: 0.0545
+Precision@5:  0.0597, Recall@5:  0.0315, NDCG@5:  0.0647
+Precision@10: 0.0516, Recall@10: 0.0542, NDCG@10: 0.0657
+Precision@15: 0.0469, Recall@15: 0.0733, NDCG@15: 0.0710
+Precision@20: 0.0433, Recall@20: 0.0900, NDCG@20: 0.0767
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 193, Loss: 0.0543
+Precision@5:  0.0601, Recall@5:  0.0319, NDCG@5:  0.0650
+Precision@10: 0.0515, Recall@10: 0.0542, NDCG@10: 0.0657
+Precision@15: 0.0470, Recall@15: 0.0735, NDCG@15: 0.0711
+Precision@20: 0.0434, Recall@20: 0.0902, NDCG@20: 0.0768
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 194, Loss: 0.0544
+Precision@5:  0.0600, Recall@5:  0.0319, NDCG@5:  0.0650
+Precision@10: 0.0515, Recall@10: 0.0541, NDCG@10: 0.0657
+Precision@15: 0.0469, Recall@15: 0.0731, NDCG@15: 0.0710
+Precision@20: 0.0433, Recall@20: 0.0900, NDCG@20: 0.0768
+EarlyStopping counter: 1 out of 50
+
+Epoch: 195, Loss: 0.0538
+Precision@5:  0.0603, Recall@5:  0.0319, NDCG@5:  0.0654
+Precision@10: 0.0516, Recall@10: 0.0543, NDCG@10: 0.0660
+Precision@15: 0.0471, Recall@15: 0.0737, NDCG@15: 0.0715
+Precision@20: 0.0435, Recall@20: 0.0901, NDCG@20: 0.0770
+EarlyStopping counter: 2 out of 50
+
+Epoch: 196, Loss: 0.0540
+Precision@5:  0.0604, Recall@5:  0.0320, NDCG@5:  0.0653
+Precision@10: 0.0520, Recall@10: 0.0545, NDCG@10: 0.0661
+Precision@15: 0.0469, Recall@15: 0.0732, NDCG@15: 0.0712
+Precision@20: 0.0435, Recall@20: 0.0904, NDCG@20: 0.0771
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 197, Loss: 0.0532
+Precision@5:  0.0603, Recall@5:  0.0318, NDCG@5:  0.0651
+Precision@10: 0.0519, Recall@10: 0.0544, NDCG@10: 0.0660
+Precision@15: 0.0470, Recall@15: 0.0734, NDCG@15: 0.0712
+Precision@20: 0.0435, Recall@20: 0.0904, NDCG@20: 0.0770
+EarlyStopping counter: 1 out of 50
+
+Epoch: 198, Loss: 0.0537
+Precision@5:  0.0601, Recall@5:  0.0317, NDCG@5:  0.0651
+Precision@10: 0.0517, Recall@10: 0.0542, NDCG@10: 0.0658
+Precision@15: 0.0471, Recall@15: 0.0737, NDCG@15: 0.0713
+Precision@20: 0.0436, Recall@20: 0.0904, NDCG@20: 0.0770
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 199, Loss: 0.0532
+Precision@5:  0.0604, Recall@5:  0.0319, NDCG@5:  0.0653
+Precision@10: 0.0519, Recall@10: 0.0542, NDCG@10: 0.0660
+Precision@15: 0.0471, Recall@15: 0.0738, NDCG@15: 0.0713
+Precision@20: 0.0436, Recall@20: 0.0905, NDCG@20: 0.0771
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 200, Loss: 0.0536
+Precision@5:  0.0600, Recall@5:  0.0317, NDCG@5:  0.0651
+Precision@10: 0.0518, Recall@10: 0.0541, NDCG@10: 0.0659
+Precision@15: 0.0469, Recall@15: 0.0733, NDCG@15: 0.0711
+Precision@20: 0.0436, Recall@20: 0.0908, NDCG@20: 0.0772
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 201, Loss: 0.0532
+Precision@5:  0.0600, Recall@5:  0.0317, NDCG@5:  0.0651
+Precision@10: 0.0520, Recall@10: 0.0546, NDCG@10: 0.0661
+Precision@15: 0.0470, Recall@15: 0.0736, NDCG@15: 0.0712
+Precision@20: 0.0435, Recall@20: 0.0905, NDCG@20: 0.0771
+EarlyStopping counter: 1 out of 50
+
+Epoch: 202, Loss: 0.0534
+Precision@5:  0.0603, Recall@5:  0.0317, NDCG@5:  0.0653
+Precision@10: 0.0519, Recall@10: 0.0546, NDCG@10: 0.0661
+Precision@15: 0.0470, Recall@15: 0.0737, NDCG@15: 0.0713
+Precision@20: 0.0436, Recall@20: 0.0904, NDCG@20: 0.0771
+EarlyStopping counter: 2 out of 50
+
+Epoch: 203, Loss: 0.0535
+Precision@5:  0.0599, Recall@5:  0.0317, NDCG@5:  0.0652
+Precision@10: 0.0520, Recall@10: 0.0545, NDCG@10: 0.0662
+Precision@15: 0.0471, Recall@15: 0.0739, NDCG@15: 0.0715
+Precision@20: 0.0437, Recall@20: 0.0907, NDCG@20: 0.0773
+EarlyStopping counter: 3 out of 50
+
+Epoch: 204, Loss: 0.0534
+Precision@5:  0.0599, Recall@5:  0.0318, NDCG@5:  0.0650
+Precision@10: 0.0521, Recall@10: 0.0548, NDCG@10: 0.0662
+Precision@15: 0.0469, Recall@15: 0.0735, NDCG@15: 0.0712
+Precision@20: 0.0438, Recall@20: 0.0908, NDCG@20: 0.0773
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 205, Loss: 0.0526
+Precision@5:  0.0601, Recall@5:  0.0319, NDCG@5:  0.0651
+Precision@10: 0.0521, Recall@10: 0.0547, NDCG@10: 0.0662
+Precision@15: 0.0471, Recall@15: 0.0738, NDCG@15: 0.0714
+Precision@20: 0.0437, Recall@20: 0.0910, NDCG@20: 0.0773
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 206, Loss: 0.0528
+Precision@5:  0.0603, Recall@5:  0.0318, NDCG@5:  0.0654
+Precision@10: 0.0520, Recall@10: 0.0546, NDCG@10: 0.0663
+Precision@15: 0.0471, Recall@15: 0.0737, NDCG@15: 0.0715
+Precision@20: 0.0438, Recall@20: 0.0911, NDCG@20: 0.0775
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 207, Loss: 0.0526
+Precision@5:  0.0604, Recall@5:  0.0318, NDCG@5:  0.0654
+Precision@10: 0.0521, Recall@10: 0.0548, NDCG@10: 0.0663
+Precision@15: 0.0471, Recall@15: 0.0736, NDCG@15: 0.0714
+Precision@20: 0.0437, Recall@20: 0.0909, NDCG@20: 0.0774
+EarlyStopping counter: 1 out of 50
+
+Epoch: 208, Loss: 0.0524
+Precision@5:  0.0605, Recall@5:  0.0319, NDCG@5:  0.0655
+Precision@10: 0.0521, Recall@10: 0.0548, NDCG@10: 0.0664
+Precision@15: 0.0471, Recall@15: 0.0737, NDCG@15: 0.0715
+Precision@20: 0.0437, Recall@20: 0.0909, NDCG@20: 0.0774
+EarlyStopping counter: 2 out of 50
+
+Epoch: 209, Loss: 0.0521
+Precision@5:  0.0605, Recall@5:  0.0320, NDCG@5:  0.0655
+Precision@10: 0.0521, Recall@10: 0.0548, NDCG@10: 0.0663
+Precision@15: 0.0471, Recall@15: 0.0738, NDCG@15: 0.0715
+Precision@20: 0.0437, Recall@20: 0.0908, NDCG@20: 0.0774
+EarlyStopping counter: 3 out of 50
+
+Epoch: 210, Loss: 0.0523
+Precision@5:  0.0606, Recall@5:  0.0320, NDCG@5:  0.0656
+Precision@10: 0.0523, Recall@10: 0.0549, NDCG@10: 0.0666
+Precision@15: 0.0472, Recall@15: 0.0738, NDCG@15: 0.0717
+Precision@20: 0.0439, Recall@20: 0.0913, NDCG@20: 0.0777
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 211, Loss: 0.0523
+Precision@5:  0.0606, Recall@5:  0.0320, NDCG@5:  0.0656
+Precision@10: 0.0523, Recall@10: 0.0549, NDCG@10: 0.0665
+Precision@15: 0.0473, Recall@15: 0.0740, NDCG@15: 0.0717
+Precision@20: 0.0439, Recall@20: 0.0912, NDCG@20: 0.0777
+EarlyStopping counter: 1 out of 50
+
+Epoch: 212, Loss: 0.0522
+Precision@5:  0.0607, Recall@5:  0.0320, NDCG@5:  0.0656
+Precision@10: 0.0523, Recall@10: 0.0549, NDCG@10: 0.0665
+Precision@15: 0.0473, Recall@15: 0.0741, NDCG@15: 0.0718
+Precision@20: 0.0439, Recall@20: 0.0913, NDCG@20: 0.0777
+EarlyStopping counter: 2 out of 50
+
+Epoch: 213, Loss: 0.0518
+Precision@5:  0.0607, Recall@5:  0.0320, NDCG@5:  0.0656
+Precision@10: 0.0525, Recall@10: 0.0551, NDCG@10: 0.0666
+Precision@15: 0.0474, Recall@15: 0.0741, NDCG@15: 0.0718
+Precision@20: 0.0439, Recall@20: 0.0910, NDCG@20: 0.0776
+EarlyStopping counter: 3 out of 50
+
+Epoch: 214, Loss: 0.0519
+Precision@5:  0.0602, Recall@5:  0.0318, NDCG@5:  0.0653
+Precision@10: 0.0525, Recall@10: 0.0551, NDCG@10: 0.0667
+Precision@15: 0.0474, Recall@15: 0.0741, NDCG@15: 0.0718
+Precision@20: 0.0440, Recall@20: 0.0911, NDCG@20: 0.0777
+EarlyStopping counter: 4 out of 50
+
+Epoch: 215, Loss: 0.0518
+Precision@5:  0.0601, Recall@5:  0.0319, NDCG@5:  0.0653
+Precision@10: 0.0524, Recall@10: 0.0551, NDCG@10: 0.0667
+Precision@15: 0.0474, Recall@15: 0.0741, NDCG@15: 0.0719
+Precision@20: 0.0441, Recall@20: 0.0914, NDCG@20: 0.0779
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 216, Loss: 0.0514
+Precision@5:  0.0603, Recall@5:  0.0319, NDCG@5:  0.0654
+Precision@10: 0.0526, Recall@10: 0.0553, NDCG@10: 0.0667
+Precision@15: 0.0475, Recall@15: 0.0743, NDCG@15: 0.0719
+Precision@20: 0.0440, Recall@20: 0.0913, NDCG@20: 0.0777
+EarlyStopping counter: 1 out of 50
+
+Epoch: 217, Loss: 0.0516
+Precision@5:  0.0605, Recall@5:  0.0321, NDCG@5:  0.0653
+Precision@10: 0.0526, Recall@10: 0.0552, NDCG@10: 0.0666
+Precision@15: 0.0476, Recall@15: 0.0744, NDCG@15: 0.0718
+Precision@20: 0.0440, Recall@20: 0.0913, NDCG@20: 0.0776
+EarlyStopping counter: 2 out of 50
+
+Epoch: 218, Loss: 0.0516
+Precision@5:  0.0605, Recall@5:  0.0320, NDCG@5:  0.0655
+Precision@10: 0.0527, Recall@10: 0.0552, NDCG@10: 0.0667
+Precision@15: 0.0477, Recall@15: 0.0747, NDCG@15: 0.0720
+Precision@20: 0.0441, Recall@20: 0.0917, NDCG@20: 0.0779
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 219, Loss: 0.0517
+Precision@5:  0.0604, Recall@5:  0.0320, NDCG@5:  0.0653
+Precision@10: 0.0527, Recall@10: 0.0551, NDCG@10: 0.0667
+Precision@15: 0.0477, Recall@15: 0.0746, NDCG@15: 0.0720
+Precision@20: 0.0443, Recall@20: 0.0918, NDCG@20: 0.0780
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 220, Loss: 0.0513
+Precision@5:  0.0606, Recall@5:  0.0324, NDCG@5:  0.0656
+Precision@10: 0.0525, Recall@10: 0.0549, NDCG@10: 0.0666
+Precision@15: 0.0478, Recall@15: 0.0749, NDCG@15: 0.0722
+Precision@20: 0.0442, Recall@20: 0.0919, NDCG@20: 0.0780
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 221, Loss: 0.0511
+Precision@5:  0.0607, Recall@5:  0.0323, NDCG@5:  0.0657
+Precision@10: 0.0526, Recall@10: 0.0551, NDCG@10: 0.0668
+Precision@15: 0.0480, Recall@15: 0.0750, NDCG@15: 0.0724
+Precision@20: 0.0443, Recall@20: 0.0921, NDCG@20: 0.0782
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 222, Loss: 0.0512
+Precision@5:  0.0609, Recall@5:  0.0323, NDCG@5:  0.0659
+Precision@10: 0.0527, Recall@10: 0.0551, NDCG@10: 0.0669
+Precision@15: 0.0478, Recall@15: 0.0747, NDCG@15: 0.0723
+Precision@20: 0.0444, Recall@20: 0.0919, NDCG@20: 0.0782
+EarlyStopping counter: 1 out of 50
+
+Epoch: 223, Loss: 0.0510
+Precision@5:  0.0607, Recall@5:  0.0321, NDCG@5:  0.0656
+Precision@10: 0.0526, Recall@10: 0.0550, NDCG@10: 0.0667
+Precision@15: 0.0479, Recall@15: 0.0748, NDCG@15: 0.0722
+Precision@20: 0.0443, Recall@20: 0.0920, NDCG@20: 0.0781
+EarlyStopping counter: 2 out of 50
+
+Epoch: 224, Loss: 0.0508
+Precision@5:  0.0610, Recall@5:  0.0323, NDCG@5:  0.0659
+Precision@10: 0.0527, Recall@10: 0.0552, NDCG@10: 0.0669
+Precision@15: 0.0478, Recall@15: 0.0745, NDCG@15: 0.0722
+Precision@20: 0.0443, Recall@20: 0.0920, NDCG@20: 0.0782
+EarlyStopping counter: 3 out of 50
+
+Epoch: 225, Loss: 0.0512
+Precision@5:  0.0606, Recall@5:  0.0321, NDCG@5:  0.0654
+Precision@10: 0.0527, Recall@10: 0.0551, NDCG@10: 0.0667
+Precision@15: 0.0478, Recall@15: 0.0747, NDCG@15: 0.0721
+Precision@20: 0.0444, Recall@20: 0.0919, NDCG@20: 0.0780
+EarlyStopping counter: 4 out of 50
+
+Epoch: 226, Loss: 0.0508
+Precision@5:  0.0610, Recall@5:  0.0323, NDCG@5:  0.0658
+Precision@10: 0.0529, Recall@10: 0.0554, NDCG@10: 0.0669
+Precision@15: 0.0478, Recall@15: 0.0747, NDCG@15: 0.0721
+Precision@20: 0.0443, Recall@20: 0.0919, NDCG@20: 0.0781
+EarlyStopping counter: 5 out of 50
+
+Epoch: 227, Loss: 0.0505
+Precision@5:  0.0606, Recall@5:  0.0320, NDCG@5:  0.0656
+Precision@10: 0.0529, Recall@10: 0.0553, NDCG@10: 0.0669
+Precision@15: 0.0479, Recall@15: 0.0746, NDCG@15: 0.0722
+Precision@20: 0.0444, Recall@20: 0.0921, NDCG@20: 0.0782
+EarlyStopping counter: 6 out of 50
+
+Epoch: 228, Loss: 0.0503
+Precision@5:  0.0609, Recall@5:  0.0321, NDCG@5:  0.0659
+Precision@10: 0.0529, Recall@10: 0.0554, NDCG@10: 0.0671
+Precision@15: 0.0479, Recall@15: 0.0748, NDCG@15: 0.0724
+Precision@20: 0.0444, Recall@20: 0.0920, NDCG@20: 0.0784
+EarlyStopping counter: 7 out of 50
+
+Epoch: 229, Loss: 0.0504
+Precision@5:  0.0612, Recall@5:  0.0324, NDCG@5:  0.0662
+Precision@10: 0.0530, Recall@10: 0.0556, NDCG@10: 0.0673
+Precision@15: 0.0479, Recall@15: 0.0747, NDCG@15: 0.0724
+Precision@20: 0.0445, Recall@20: 0.0920, NDCG@20: 0.0785
+EarlyStopping counter: 8 out of 50
+
+Epoch: 230, Loss: 0.0508
+Precision@5:  0.0610, Recall@5:  0.0323, NDCG@5:  0.0661
+Precision@10: 0.0533, Recall@10: 0.0558, NDCG@10: 0.0675
+Precision@15: 0.0479, Recall@15: 0.0750, NDCG@15: 0.0726
+Precision@20: 0.0444, Recall@20: 0.0920, NDCG@20: 0.0785
+EarlyStopping counter: 9 out of 50
+
+Epoch: 231, Loss: 0.0507
+Precision@5:  0.0608, Recall@5:  0.0321, NDCG@5:  0.0660
+Precision@10: 0.0529, Recall@10: 0.0554, NDCG@10: 0.0672
+Precision@15: 0.0480, Recall@15: 0.0752, NDCG@15: 0.0726
+Precision@20: 0.0445, Recall@20: 0.0922, NDCG@20: 0.0786
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 232, Loss: 0.0502
+Precision@5:  0.0611, Recall@5:  0.0324, NDCG@5:  0.0663
+Precision@10: 0.0530, Recall@10: 0.0557, NDCG@10: 0.0673
+Precision@15: 0.0480, Recall@15: 0.0750, NDCG@15: 0.0726
+Precision@20: 0.0445, Recall@20: 0.0924, NDCG@20: 0.0787
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 233, Loss: 0.0501
+Precision@5:  0.0615, Recall@5:  0.0325, NDCG@5:  0.0664
+Precision@10: 0.0531, Recall@10: 0.0556, NDCG@10: 0.0673
+Precision@15: 0.0481, Recall@15: 0.0751, NDCG@15: 0.0726
+Precision@20: 0.0444, Recall@20: 0.0923, NDCG@20: 0.0785
+EarlyStopping counter: 1 out of 50
+
+Epoch: 234, Loss: 0.0499
+Precision@5:  0.0611, Recall@5:  0.0323, NDCG@5:  0.0662
+Precision@10: 0.0532, Recall@10: 0.0555, NDCG@10: 0.0674
+Precision@15: 0.0479, Recall@15: 0.0750, NDCG@15: 0.0726
+Precision@20: 0.0446, Recall@20: 0.0924, NDCG@20: 0.0787
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 235, Loss: 0.0499
+Precision@5:  0.0612, Recall@5:  0.0325, NDCG@5:  0.0663
+Precision@10: 0.0531, Recall@10: 0.0554, NDCG@10: 0.0673
+Precision@15: 0.0480, Recall@15: 0.0750, NDCG@15: 0.0726
+Precision@20: 0.0446, Recall@20: 0.0926, NDCG@20: 0.0787
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 236, Loss: 0.0497
+Precision@5:  0.0611, Recall@5:  0.0323, NDCG@5:  0.0660
+Precision@10: 0.0529, Recall@10: 0.0552, NDCG@10: 0.0670
+Precision@15: 0.0482, Recall@15: 0.0754, NDCG@15: 0.0726
+Precision@20: 0.0447, Recall@20: 0.0927, NDCG@20: 0.0786
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 237, Loss: 0.0501
+Precision@5:  0.0607, Recall@5:  0.0322, NDCG@5:  0.0658
+Precision@10: 0.0530, Recall@10: 0.0556, NDCG@10: 0.0672
+Precision@15: 0.0482, Recall@15: 0.0753, NDCG@15: 0.0727
+Precision@20: 0.0447, Recall@20: 0.0926, NDCG@20: 0.0787
+EarlyStopping counter: 1 out of 50
+
+Epoch: 238, Loss: 0.0496
+Precision@5:  0.0611, Recall@5:  0.0323, NDCG@5:  0.0660
+Precision@10: 0.0530, Recall@10: 0.0556, NDCG@10: 0.0672
+Precision@15: 0.0481, Recall@15: 0.0751, NDCG@15: 0.0726
+Precision@20: 0.0446, Recall@20: 0.0925, NDCG@20: 0.0786
+EarlyStopping counter: 2 out of 50
+
+Epoch: 239, Loss: 0.0495
+Precision@5:  0.0613, Recall@5:  0.0324, NDCG@5:  0.0661
+Precision@10: 0.0532, Recall@10: 0.0558, NDCG@10: 0.0673
+Precision@15: 0.0482, Recall@15: 0.0755, NDCG@15: 0.0728
+Precision@20: 0.0449, Recall@20: 0.0932, NDCG@20: 0.0790
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 240, Loss: 0.0495
+Precision@5:  0.0614, Recall@5:  0.0326, NDCG@5:  0.0662
+Precision@10: 0.0530, Recall@10: 0.0558, NDCG@10: 0.0672
+Precision@15: 0.0483, Recall@15: 0.0754, NDCG@15: 0.0728
+Precision@20: 0.0448, Recall@20: 0.0929, NDCG@20: 0.0789
+EarlyStopping counter: 1 out of 50
+
+Epoch: 241, Loss: 0.0496
+Precision@5:  0.0610, Recall@5:  0.0323, NDCG@5:  0.0660
+Precision@10: 0.0532, Recall@10: 0.0561, NDCG@10: 0.0674
+Precision@15: 0.0482, Recall@15: 0.0755, NDCG@15: 0.0728
+Precision@20: 0.0447, Recall@20: 0.0926, NDCG@20: 0.0788
+EarlyStopping counter: 2 out of 50
+
+Epoch: 242, Loss: 0.0493
+Precision@5:  0.0612, Recall@5:  0.0322, NDCG@5:  0.0663
+Precision@10: 0.0532, Recall@10: 0.0560, NDCG@10: 0.0676
+Precision@15: 0.0483, Recall@15: 0.0756, NDCG@15: 0.0730
+Precision@20: 0.0447, Recall@20: 0.0924, NDCG@20: 0.0788
+EarlyStopping counter: 3 out of 50
+
+Epoch: 243, Loss: 0.0489
+Precision@5:  0.0614, Recall@5:  0.0323, NDCG@5:  0.0664
+Precision@10: 0.0533, Recall@10: 0.0561, NDCG@10: 0.0677
+Precision@15: 0.0484, Recall@15: 0.0758, NDCG@15: 0.0731
+Precision@20: 0.0447, Recall@20: 0.0926, NDCG@20: 0.0789
+EarlyStopping counter: 4 out of 50
+
+Epoch: 244, Loss: 0.0488
+Precision@5:  0.0616, Recall@5:  0.0324, NDCG@5:  0.0665
+Precision@10: 0.0535, Recall@10: 0.0562, NDCG@10: 0.0678
+Precision@15: 0.0486, Recall@15: 0.0761, NDCG@15: 0.0733
+Precision@20: 0.0448, Recall@20: 0.0928, NDCG@20: 0.0790
+EarlyStopping counter: 5 out of 50
+
+Epoch: 245, Loss: 0.0492
+Precision@5:  0.0615, Recall@5:  0.0324, NDCG@5:  0.0665
+Precision@10: 0.0532, Recall@10: 0.0559, NDCG@10: 0.0675
+Precision@15: 0.0485, Recall@15: 0.0759, NDCG@15: 0.0732
+Precision@20: 0.0448, Recall@20: 0.0929, NDCG@20: 0.0791
+EarlyStopping counter: 6 out of 50
+
+Epoch: 246, Loss: 0.0490
+Precision@5:  0.0617, Recall@5:  0.0327, NDCG@5:  0.0667
+Precision@10: 0.0531, Recall@10: 0.0557, NDCG@10: 0.0675
+Precision@15: 0.0484, Recall@15: 0.0757, NDCG@15: 0.0732
+Precision@20: 0.0448, Recall@20: 0.0928, NDCG@20: 0.0791
+EarlyStopping counter: 7 out of 50
+
+Epoch: 247, Loss: 0.0487
+Precision@5:  0.0615, Recall@5:  0.0324, NDCG@5:  0.0667
+Precision@10: 0.0532, Recall@10: 0.0558, NDCG@10: 0.0676
+Precision@15: 0.0485, Recall@15: 0.0757, NDCG@15: 0.0733
+Precision@20: 0.0448, Recall@20: 0.0929, NDCG@20: 0.0792
+EarlyStopping counter: 8 out of 50
+
+Epoch: 248, Loss: 0.0488
+Precision@5:  0.0615, Recall@5:  0.0325, NDCG@5:  0.0666
+Precision@10: 0.0531, Recall@10: 0.0558, NDCG@10: 0.0675
+Precision@15: 0.0482, Recall@15: 0.0756, NDCG@15: 0.0730
+Precision@20: 0.0447, Recall@20: 0.0927, NDCG@20: 0.0789
+EarlyStopping counter: 9 out of 50
+
+Epoch: 249, Loss: 0.0489
+Precision@5:  0.0617, Recall@5:  0.0325, NDCG@5:  0.0666
+Precision@10: 0.0533, Recall@10: 0.0560, NDCG@10: 0.0676
+Precision@15: 0.0483, Recall@15: 0.0757, NDCG@15: 0.0730
+Precision@20: 0.0448, Recall@20: 0.0927, NDCG@20: 0.0789
+EarlyStopping counter: 10 out of 50
+
+Epoch: 250, Loss: 0.0486
+Precision@5:  0.0614, Recall@5:  0.0323, NDCG@5:  0.0665
+Precision@10: 0.0532, Recall@10: 0.0559, NDCG@10: 0.0675
+Precision@15: 0.0484, Recall@15: 0.0759, NDCG@15: 0.0731
+Precision@20: 0.0448, Recall@20: 0.0926, NDCG@20: 0.0789
+EarlyStopping counter: 11 out of 50
+
+Epoch: 251, Loss: 0.0483
+Precision@5:  0.0615, Recall@5:  0.0325, NDCG@5:  0.0665
+Precision@10: 0.0532, Recall@10: 0.0560, NDCG@10: 0.0676
+Precision@15: 0.0485, Recall@15: 0.0760, NDCG@15: 0.0732
+Precision@20: 0.0448, Recall@20: 0.0931, NDCG@20: 0.0791
+EarlyStopping counter: 12 out of 50
+
+Epoch: 252, Loss: 0.0483
+Precision@5:  0.0617, Recall@5:  0.0326, NDCG@5:  0.0665
+Precision@10: 0.0535, Recall@10: 0.0562, NDCG@10: 0.0677
+Precision@15: 0.0485, Recall@15: 0.0759, NDCG@15: 0.0732
+Precision@20: 0.0448, Recall@20: 0.0929, NDCG@20: 0.0790
+EarlyStopping counter: 13 out of 50
+
+Epoch: 253, Loss: 0.0481
+Precision@5:  0.0617, Recall@5:  0.0326, NDCG@5:  0.0667
+Precision@10: 0.0536, Recall@10: 0.0564, NDCG@10: 0.0679
+Precision@15: 0.0484, Recall@15: 0.0758, NDCG@15: 0.0732
+Precision@20: 0.0448, Recall@20: 0.0928, NDCG@20: 0.0792
+EarlyStopping counter: 14 out of 50
+
+Epoch: 254, Loss: 0.0483
+Precision@5:  0.0615, Recall@5:  0.0325, NDCG@5:  0.0667
+Precision@10: 0.0535, Recall@10: 0.0564, NDCG@10: 0.0679
+Precision@15: 0.0486, Recall@15: 0.0762, NDCG@15: 0.0734
+Precision@20: 0.0448, Recall@20: 0.0929, NDCG@20: 0.0791
+EarlyStopping counter: 15 out of 50
+
+Epoch: 255, Loss: 0.0480
+Precision@5:  0.0614, Recall@5:  0.0325, NDCG@5:  0.0665
+Precision@10: 0.0535, Recall@10: 0.0563, NDCG@10: 0.0679
+Precision@15: 0.0486, Recall@15: 0.0762, NDCG@15: 0.0734
+Precision@20: 0.0448, Recall@20: 0.0930, NDCG@20: 0.0791
+EarlyStopping counter: 16 out of 50
+
+Epoch: 256, Loss: 0.0479
+Precision@5:  0.0613, Recall@5:  0.0324, NDCG@5:  0.0665
+Precision@10: 0.0536, Recall@10: 0.0564, NDCG@10: 0.0679
+Precision@15: 0.0485, Recall@15: 0.0761, NDCG@15: 0.0733
+Precision@20: 0.0448, Recall@20: 0.0930, NDCG@20: 0.0792
+EarlyStopping counter: 17 out of 50
+
+Epoch: 257, Loss: 0.0479
+Precision@5:  0.0613, Recall@5:  0.0325, NDCG@5:  0.0665
+Precision@10: 0.0535, Recall@10: 0.0564, NDCG@10: 0.0679
+Precision@15: 0.0486, Recall@15: 0.0762, NDCG@15: 0.0734
+Precision@20: 0.0448, Recall@20: 0.0933, NDCG@20: 0.0792
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 258, Loss: 0.0479
+Precision@5:  0.0614, Recall@5:  0.0326, NDCG@5:  0.0665
+Precision@10: 0.0534, Recall@10: 0.0563, NDCG@10: 0.0678
+Precision@15: 0.0484, Recall@15: 0.0760, NDCG@15: 0.0732
+Precision@20: 0.0448, Recall@20: 0.0932, NDCG@20: 0.0792
+EarlyStopping counter: 1 out of 50
+
+Epoch: 259, Loss: 0.0478
+Precision@5:  0.0613, Recall@5:  0.0325, NDCG@5:  0.0665
+Precision@10: 0.0534, Recall@10: 0.0564, NDCG@10: 0.0678
+Precision@15: 0.0483, Recall@15: 0.0756, NDCG@15: 0.0731
+Precision@20: 0.0448, Recall@20: 0.0930, NDCG@20: 0.0791
+EarlyStopping counter: 2 out of 50
+
+Epoch: 260, Loss: 0.0477
+Precision@5:  0.0617, Recall@5:  0.0325, NDCG@5:  0.0667
+Precision@10: 0.0532, Recall@10: 0.0561, NDCG@10: 0.0676
+Precision@15: 0.0485, Recall@15: 0.0759, NDCG@15: 0.0732
+Precision@20: 0.0449, Recall@20: 0.0930, NDCG@20: 0.0791
+EarlyStopping counter: 3 out of 50
+
+Epoch: 261, Loss: 0.0478
+Precision@5:  0.0615, Recall@5:  0.0326, NDCG@5:  0.0666
+Precision@10: 0.0532, Recall@10: 0.0560, NDCG@10: 0.0676
+Precision@15: 0.0484, Recall@15: 0.0759, NDCG@15: 0.0731
+Precision@20: 0.0448, Recall@20: 0.0929, NDCG@20: 0.0790
+EarlyStopping counter: 4 out of 50
+
+Epoch: 262, Loss: 0.0478
+Precision@5:  0.0618, Recall@5:  0.0327, NDCG@5:  0.0668
+Precision@10: 0.0532, Recall@10: 0.0559, NDCG@10: 0.0676
+Precision@15: 0.0481, Recall@15: 0.0756, NDCG@15: 0.0730
+Precision@20: 0.0447, Recall@20: 0.0926, NDCG@20: 0.0789
+EarlyStopping counter: 5 out of 50
+
+Epoch: 263, Loss: 0.0476
+Precision@5:  0.0620, Recall@5:  0.0328, NDCG@5:  0.0671
+Precision@10: 0.0533, Recall@10: 0.0561, NDCG@10: 0.0678
+Precision@15: 0.0483, Recall@15: 0.0758, NDCG@15: 0.0732
+Precision@20: 0.0448, Recall@20: 0.0929, NDCG@20: 0.0792
+EarlyStopping counter: 6 out of 50
+
+Epoch: 264, Loss: 0.0477
+Precision@5:  0.0617, Recall@5:  0.0327, NDCG@5:  0.0669
+Precision@10: 0.0535, Recall@10: 0.0564, NDCG@10: 0.0679
+Precision@15: 0.0482, Recall@15: 0.0757, NDCG@15: 0.0731
+Precision@20: 0.0447, Recall@20: 0.0928, NDCG@20: 0.0791
+EarlyStopping counter: 7 out of 50
+
+Epoch: 265, Loss: 0.0474
+Precision@5:  0.0617, Recall@5:  0.0326, NDCG@5:  0.0670
+Precision@10: 0.0534, Recall@10: 0.0561, NDCG@10: 0.0679
+Precision@15: 0.0485, Recall@15: 0.0758, NDCG@15: 0.0734
+Precision@20: 0.0447, Recall@20: 0.0926, NDCG@20: 0.0791
+EarlyStopping counter: 8 out of 50
+
+Epoch: 266, Loss: 0.0475
+Precision@5:  0.0616, Recall@5:  0.0327, NDCG@5:  0.0668
+Precision@10: 0.0534, Recall@10: 0.0561, NDCG@10: 0.0679
+Precision@15: 0.0484, Recall@15: 0.0757, NDCG@15: 0.0732
+Precision@20: 0.0448, Recall@20: 0.0929, NDCG@20: 0.0792
+EarlyStopping counter: 9 out of 50
+
+Epoch: 267, Loss: 0.0473
+Precision@5:  0.0615, Recall@5:  0.0327, NDCG@5:  0.0667
+Precision@10: 0.0535, Recall@10: 0.0565, NDCG@10: 0.0680
+Precision@15: 0.0484, Recall@15: 0.0759, NDCG@15: 0.0733
+Precision@20: 0.0449, Recall@20: 0.0932, NDCG@20: 0.0793
+EarlyStopping counter: 10 out of 50
+
+Epoch: 268, Loss: 0.0470
+Precision@5:  0.0615, Recall@5:  0.0325, NDCG@5:  0.0667
+Precision@10: 0.0535, Recall@10: 0.0565, NDCG@10: 0.0680
+Precision@15: 0.0485, Recall@15: 0.0760, NDCG@15: 0.0734
+Precision@20: 0.0450, Recall@20: 0.0934, NDCG@20: 0.0794
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 269, Loss: 0.0471
+Precision@5:  0.0615, Recall@5:  0.0326, NDCG@5:  0.0666
+Precision@10: 0.0535, Recall@10: 0.0564, NDCG@10: 0.0679
+Precision@15: 0.0485, Recall@15: 0.0759, NDCG@15: 0.0733
+Precision@20: 0.0449, Recall@20: 0.0934, NDCG@20: 0.0793
+EarlyStopping counter: 1 out of 50
+
+Epoch: 270, Loss: 0.0474
+Precision@5:  0.0617, Recall@5:  0.0327, NDCG@5:  0.0668
+Precision@10: 0.0536, Recall@10: 0.0564, NDCG@10: 0.0680
+Precision@15: 0.0484, Recall@15: 0.0758, NDCG@15: 0.0733
+Precision@20: 0.0449, Recall@20: 0.0931, NDCG@20: 0.0793
+EarlyStopping counter: 2 out of 50
+
+Epoch: 271, Loss: 0.0467
+Precision@5:  0.0617, Recall@5:  0.0329, NDCG@5:  0.0669
+Precision@10: 0.0537, Recall@10: 0.0565, NDCG@10: 0.0682
+Precision@15: 0.0486, Recall@15: 0.0760, NDCG@15: 0.0735
+Precision@20: 0.0448, Recall@20: 0.0928, NDCG@20: 0.0792
+EarlyStopping counter: 3 out of 50
+
+Epoch: 272, Loss: 0.0468
+Precision@5:  0.0617, Recall@5:  0.0327, NDCG@5:  0.0668
+Precision@10: 0.0536, Recall@10: 0.0564, NDCG@10: 0.0681
+Precision@15: 0.0486, Recall@15: 0.0763, NDCG@15: 0.0736
+Precision@20: 0.0449, Recall@20: 0.0933, NDCG@20: 0.0794
+EarlyStopping counter: 4 out of 50
+
+Epoch: 273, Loss: 0.0468
+Precision@5:  0.0613, Recall@5:  0.0325, NDCG@5:  0.0665
+Precision@10: 0.0537, Recall@10: 0.0565, NDCG@10: 0.0680
+Precision@15: 0.0486, Recall@15: 0.0763, NDCG@15: 0.0735
+Precision@20: 0.0450, Recall@20: 0.0935, NDCG@20: 0.0794
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 274, Loss: 0.0469
+Precision@5:  0.0619, Recall@5:  0.0330, NDCG@5:  0.0670
+Precision@10: 0.0535, Recall@10: 0.0564, NDCG@10: 0.0680
+Precision@15: 0.0485, Recall@15: 0.0760, NDCG@15: 0.0734
+Precision@20: 0.0450, Recall@20: 0.0936, NDCG@20: 0.0795
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 275, Loss: 0.0467
+Precision@5:  0.0620, Recall@5:  0.0329, NDCG@5:  0.0671
+Precision@10: 0.0535, Recall@10: 0.0562, NDCG@10: 0.0680
+Precision@15: 0.0486, Recall@15: 0.0762, NDCG@15: 0.0735
+Precision@20: 0.0451, Recall@20: 0.0937, NDCG@20: 0.0796
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 276, Loss: 0.0469
+Precision@5:  0.0617, Recall@5:  0.0327, NDCG@5:  0.0668
+Precision@10: 0.0536, Recall@10: 0.0565, NDCG@10: 0.0681
+Precision@15: 0.0486, Recall@15: 0.0763, NDCG@15: 0.0735
+Precision@20: 0.0451, Recall@20: 0.0937, NDCG@20: 0.0796
+EarlyStopping counter: 1 out of 50
+
+Epoch: 277, Loss: 0.0465
+Precision@5:  0.0619, Recall@5:  0.0329, NDCG@5:  0.0671
+Precision@10: 0.0537, Recall@10: 0.0566, NDCG@10: 0.0683
+Precision@15: 0.0488, Recall@15: 0.0765, NDCG@15: 0.0738
+Precision@20: 0.0452, Recall@20: 0.0939, NDCG@20: 0.0798
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 278, Loss: 0.0463
+Precision@5:  0.0620, Recall@5:  0.0329, NDCG@5:  0.0671
+Precision@10: 0.0538, Recall@10: 0.0566, NDCG@10: 0.0682
+Precision@15: 0.0488, Recall@15: 0.0764, NDCG@15: 0.0738
+Precision@20: 0.0451, Recall@20: 0.0935, NDCG@20: 0.0797
+EarlyStopping counter: 1 out of 50
+
+Epoch: 279, Loss: 0.0465
+Precision@5:  0.0618, Recall@5:  0.0329, NDCG@5:  0.0670
+Precision@10: 0.0539, Recall@10: 0.0565, NDCG@10: 0.0683
+Precision@15: 0.0487, Recall@15: 0.0764, NDCG@15: 0.0737
+Precision@20: 0.0451, Recall@20: 0.0936, NDCG@20: 0.0797
+EarlyStopping counter: 2 out of 50
+
+Epoch: 280, Loss: 0.0459
+Precision@5:  0.0620, Recall@5:  0.0327, NDCG@5:  0.0670
+Precision@10: 0.0537, Recall@10: 0.0564, NDCG@10: 0.0682
+Precision@15: 0.0488, Recall@15: 0.0765, NDCG@15: 0.0738
+Precision@20: 0.0452, Recall@20: 0.0938, NDCG@20: 0.0797
+EarlyStopping counter: 3 out of 50
+
+Epoch: 281, Loss: 0.0462
+Precision@5:  0.0618, Recall@5:  0.0326, NDCG@5:  0.0669
+Precision@10: 0.0536, Recall@10: 0.0562, NDCG@10: 0.0681
+Precision@15: 0.0487, Recall@15: 0.0764, NDCG@15: 0.0737
+Precision@20: 0.0452, Recall@20: 0.0938, NDCG@20: 0.0798
+EarlyStopping counter: 4 out of 50
+
+Epoch: 282, Loss: 0.0464
+Precision@5:  0.0621, Recall@5:  0.0328, NDCG@5:  0.0674
+Precision@10: 0.0536, Recall@10: 0.0564, NDCG@10: 0.0683
+Precision@15: 0.0486, Recall@15: 0.0762, NDCG@15: 0.0738
+Precision@20: 0.0452, Recall@20: 0.0940, NDCG@20: 0.0800
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 283, Loss: 0.0461
+Precision@5:  0.0621, Recall@5:  0.0329, NDCG@5:  0.0673
+Precision@10: 0.0537, Recall@10: 0.0564, NDCG@10: 0.0683
+Precision@15: 0.0486, Recall@15: 0.0763, NDCG@15: 0.0737
+Precision@20: 0.0452, Recall@20: 0.0938, NDCG@20: 0.0798
+EarlyStopping counter: 1 out of 50
+
+Epoch: 284, Loss: 0.0458
+Precision@5:  0.0621, Recall@5:  0.0326, NDCG@5:  0.0674
+Precision@10: 0.0537, Recall@10: 0.0564, NDCG@10: 0.0684
+Precision@15: 0.0486, Recall@15: 0.0763, NDCG@15: 0.0738
+Precision@20: 0.0451, Recall@20: 0.0936, NDCG@20: 0.0799
+EarlyStopping counter: 2 out of 50
+
+Epoch: 285, Loss: 0.0458
+Precision@5:  0.0624, Recall@5:  0.0329, NDCG@5:  0.0678
+Precision@10: 0.0539, Recall@10: 0.0566, NDCG@10: 0.0686
+Precision@15: 0.0486, Recall@15: 0.0763, NDCG@15: 0.0739
+Precision@20: 0.0451, Recall@20: 0.0938, NDCG@20: 0.0799
+EarlyStopping counter: 3 out of 50
+
+Epoch: 286, Loss: 0.0461
+Precision@5:  0.0621, Recall@5:  0.0326, NDCG@5:  0.0673
+Precision@10: 0.0539, Recall@10: 0.0565, NDCG@10: 0.0684
+Precision@15: 0.0489, Recall@15: 0.0767, NDCG@15: 0.0740
+Precision@20: 0.0451, Recall@20: 0.0938, NDCG@20: 0.0798
+EarlyStopping counter: 4 out of 50
+
+Epoch: 287, Loss: 0.0462
+Precision@5:  0.0622, Recall@5:  0.0328, NDCG@5:  0.0674
+Precision@10: 0.0539, Recall@10: 0.0566, NDCG@10: 0.0684
+Precision@15: 0.0487, Recall@15: 0.0764, NDCG@15: 0.0738
+Precision@20: 0.0451, Recall@20: 0.0938, NDCG@20: 0.0798
+EarlyStopping counter: 5 out of 50
+
+Epoch: 288, Loss: 0.0461
+Precision@5:  0.0621, Recall@5:  0.0328, NDCG@5:  0.0672
+Precision@10: 0.0537, Recall@10: 0.0561, NDCG@10: 0.0681
+Precision@15: 0.0488, Recall@15: 0.0764, NDCG@15: 0.0737
+Precision@20: 0.0450, Recall@20: 0.0936, NDCG@20: 0.0796
+EarlyStopping counter: 6 out of 50
+
+Epoch: 289, Loss: 0.0458
+Precision@5:  0.0621, Recall@5:  0.0328, NDCG@5:  0.0671
+Precision@10: 0.0540, Recall@10: 0.0567, NDCG@10: 0.0684
+Precision@15: 0.0488, Recall@15: 0.0764, NDCG@15: 0.0738
+Precision@20: 0.0451, Recall@20: 0.0937, NDCG@20: 0.0797
+EarlyStopping counter: 7 out of 50
+
+Epoch: 290, Loss: 0.0457
+Precision@5:  0.0620, Recall@5:  0.0327, NDCG@5:  0.0670
+Precision@10: 0.0539, Recall@10: 0.0567, NDCG@10: 0.0683
+Precision@15: 0.0488, Recall@15: 0.0767, NDCG@15: 0.0738
+Precision@20: 0.0451, Recall@20: 0.0939, NDCG@20: 0.0798
+EarlyStopping counter: 8 out of 50
+
+Epoch: 291, Loss: 0.0459
+Precision@5:  0.0621, Recall@5:  0.0330, NDCG@5:  0.0671
+Precision@10: 0.0538, Recall@10: 0.0567, NDCG@10: 0.0683
+Precision@15: 0.0488, Recall@15: 0.0766, NDCG@15: 0.0738
+Precision@20: 0.0449, Recall@20: 0.0933, NDCG@20: 0.0795
+EarlyStopping counter: 9 out of 50
+
+Epoch: 292, Loss: 0.0457
+Precision@5:  0.0623, Recall@5:  0.0331, NDCG@5:  0.0673
+Precision@10: 0.0538, Recall@10: 0.0567, NDCG@10: 0.0684
+Precision@15: 0.0486, Recall@15: 0.0763, NDCG@15: 0.0737
+Precision@20: 0.0452, Recall@20: 0.0942, NDCG@20: 0.0799
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 293, Loss: 0.0455
+Precision@5:  0.0621, Recall@5:  0.0329, NDCG@5:  0.0672
+Precision@10: 0.0539, Recall@10: 0.0568, NDCG@10: 0.0684
+Precision@15: 0.0489, Recall@15: 0.0767, NDCG@15: 0.0739
+Precision@20: 0.0452, Recall@20: 0.0943, NDCG@20: 0.0799
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 294, Loss: 0.0455
+Precision@5:  0.0619, Recall@5:  0.0328, NDCG@5:  0.0672
+Precision@10: 0.0539, Recall@10: 0.0566, NDCG@10: 0.0684
+Precision@15: 0.0489, Recall@15: 0.0768, NDCG@15: 0.0741
+Precision@20: 0.0452, Recall@20: 0.0939, NDCG@20: 0.0799
+EarlyStopping counter: 1 out of 50
+
+Epoch: 295, Loss: 0.0453
+Precision@5:  0.0620, Recall@5:  0.0328, NDCG@5:  0.0672
+Precision@10: 0.0538, Recall@10: 0.0564, NDCG@10: 0.0684
+Precision@15: 0.0490, Recall@15: 0.0767, NDCG@15: 0.0740
+Precision@20: 0.0453, Recall@20: 0.0942, NDCG@20: 0.0801
+EarlyStopping counter: 2 out of 50
+
+Epoch: 296, Loss: 0.0452
+Precision@5:  0.0622, Recall@5:  0.0330, NDCG@5:  0.0672
+Precision@10: 0.0540, Recall@10: 0.0566, NDCG@10: 0.0684
+Precision@15: 0.0489, Recall@15: 0.0767, NDCG@15: 0.0739
+Precision@20: 0.0453, Recall@20: 0.0942, NDCG@20: 0.0800
+EarlyStopping counter: 3 out of 50
+
+Epoch: 297, Loss: 0.0450
+Precision@5:  0.0622, Recall@5:  0.0330, NDCG@5:  0.0674
+Precision@10: 0.0539, Recall@10: 0.0566, NDCG@10: 0.0685
+Precision@15: 0.0488, Recall@15: 0.0767, NDCG@15: 0.0740
+Precision@20: 0.0454, Recall@20: 0.0945, NDCG@20: 0.0802
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 298, Loss: 0.0450
+Precision@5:  0.0623, Recall@5:  0.0330, NDCG@5:  0.0675
+Precision@10: 0.0541, Recall@10: 0.0568, NDCG@10: 0.0686
+Precision@15: 0.0489, Recall@15: 0.0768, NDCG@15: 0.0741
+Precision@20: 0.0454, Recall@20: 0.0942, NDCG@20: 0.0801
+EarlyStopping counter: 1 out of 50
+
+Epoch: 299, Loss: 0.0452
+Precision@5:  0.0624, Recall@5:  0.0330, NDCG@5:  0.0675
+Precision@10: 0.0537, Recall@10: 0.0563, NDCG@10: 0.0683
+Precision@15: 0.0489, Recall@15: 0.0768, NDCG@15: 0.0740
+Precision@20: 0.0453, Recall@20: 0.0942, NDCG@20: 0.0801
+EarlyStopping counter: 2 out of 50
+
+Epoch: 300, Loss: 0.0450
+Precision@5:  0.0619, Recall@5:  0.0327, NDCG@5:  0.0673
+Precision@10: 0.0539, Recall@10: 0.0567, NDCG@10: 0.0685
+Precision@15: 0.0490, Recall@15: 0.0768, NDCG@15: 0.0741
+Precision@20: 0.0455, Recall@20: 0.0945, NDCG@20: 0.0802
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 301, Loss: 0.0452
+Precision@5:  0.0618, Recall@5:  0.0327, NDCG@5:  0.0672
+Precision@10: 0.0541, Recall@10: 0.0567, NDCG@10: 0.0686
+Precision@15: 0.0490, Recall@15: 0.0767, NDCG@15: 0.0741
+Precision@20: 0.0454, Recall@20: 0.0946, NDCG@20: 0.0802
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 302, Loss: 0.0450
+Precision@5:  0.0621, Recall@5:  0.0329, NDCG@5:  0.0673
+Precision@10: 0.0541, Recall@10: 0.0570, NDCG@10: 0.0686
+Precision@15: 0.0490, Recall@15: 0.0769, NDCG@15: 0.0741
+Precision@20: 0.0454, Recall@20: 0.0947, NDCG@20: 0.0802
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 303, Loss: 0.0449
+Precision@5:  0.0620, Recall@5:  0.0327, NDCG@5:  0.0673
+Precision@10: 0.0543, Recall@10: 0.0571, NDCG@10: 0.0689
+Precision@15: 0.0489, Recall@15: 0.0770, NDCG@15: 0.0742
+Precision@20: 0.0454, Recall@20: 0.0944, NDCG@20: 0.0803
+EarlyStopping counter: 1 out of 50
+
+Epoch: 304, Loss: 0.0448
+Precision@5:  0.0619, Recall@5:  0.0327, NDCG@5:  0.0673
+Precision@10: 0.0542, Recall@10: 0.0570, NDCG@10: 0.0688
+Precision@15: 0.0489, Recall@15: 0.0768, NDCG@15: 0.0741
+Precision@20: 0.0454, Recall@20: 0.0944, NDCG@20: 0.0803
+EarlyStopping counter: 2 out of 50
+
+Epoch: 305, Loss: 0.0449
+Precision@5:  0.0622, Recall@5:  0.0327, NDCG@5:  0.0676
+Precision@10: 0.0541, Recall@10: 0.0566, NDCG@10: 0.0687
+Precision@15: 0.0490, Recall@15: 0.0771, NDCG@15: 0.0743
+Precision@20: 0.0454, Recall@20: 0.0944, NDCG@20: 0.0803
+EarlyStopping counter: 3 out of 50
+
+Epoch: 306, Loss: 0.0448
+Precision@5:  0.0621, Recall@5:  0.0326, NDCG@5:  0.0674
+Precision@10: 0.0542, Recall@10: 0.0569, NDCG@10: 0.0687
+Precision@15: 0.0489, Recall@15: 0.0766, NDCG@15: 0.0741
+Precision@20: 0.0454, Recall@20: 0.0943, NDCG@20: 0.0802
+EarlyStopping counter: 4 out of 50
+
+Epoch: 307, Loss: 0.0446
+Precision@5:  0.0620, Recall@5:  0.0325, NDCG@5:  0.0674
+Precision@10: 0.0541, Recall@10: 0.0567, NDCG@10: 0.0686
+Precision@15: 0.0490, Recall@15: 0.0768, NDCG@15: 0.0742
+Precision@20: 0.0454, Recall@20: 0.0943, NDCG@20: 0.0802
+EarlyStopping counter: 5 out of 50
+
+Epoch: 308, Loss: 0.0446
+Precision@5:  0.0619, Recall@5:  0.0326, NDCG@5:  0.0673
+Precision@10: 0.0539, Recall@10: 0.0566, NDCG@10: 0.0685
+Precision@15: 0.0491, Recall@15: 0.0768, NDCG@15: 0.0742
+Precision@20: 0.0454, Recall@20: 0.0945, NDCG@20: 0.0803
+EarlyStopping counter: 6 out of 50
+
+Epoch: 309, Loss: 0.0444
+Precision@5:  0.0623, Recall@5:  0.0326, NDCG@5:  0.0675
+Precision@10: 0.0541, Recall@10: 0.0567, NDCG@10: 0.0686
+Precision@15: 0.0490, Recall@15: 0.0768, NDCG@15: 0.0741
+Precision@20: 0.0454, Recall@20: 0.0944, NDCG@20: 0.0802
+EarlyStopping counter: 7 out of 50
+
+Epoch: 310, Loss: 0.0444
+Precision@5:  0.0624, Recall@5:  0.0329, NDCG@5:  0.0676
+Precision@10: 0.0542, Recall@10: 0.0569, NDCG@10: 0.0687
+Precision@15: 0.0488, Recall@15: 0.0767, NDCG@15: 0.0740
+Precision@20: 0.0453, Recall@20: 0.0943, NDCG@20: 0.0801
+EarlyStopping counter: 8 out of 50
+
+Epoch: 311, Loss: 0.0444
+Precision@5:  0.0621, Recall@5:  0.0326, NDCG@5:  0.0673
+Precision@10: 0.0540, Recall@10: 0.0567, NDCG@10: 0.0685
+Precision@15: 0.0488, Recall@15: 0.0765, NDCG@15: 0.0739
+Precision@20: 0.0453, Recall@20: 0.0943, NDCG@20: 0.0800
+EarlyStopping counter: 9 out of 50
+
+Epoch: 312, Loss: 0.0443
+Precision@5:  0.0622, Recall@5:  0.0328, NDCG@5:  0.0676
+Precision@10: 0.0539, Recall@10: 0.0565, NDCG@10: 0.0686
+Precision@15: 0.0488, Recall@15: 0.0764, NDCG@15: 0.0740
+Precision@20: 0.0453, Recall@20: 0.0942, NDCG@20: 0.0802
+EarlyStopping counter: 10 out of 50
+
+Epoch: 313, Loss: 0.0442
+Precision@5:  0.0619, Recall@5:  0.0327, NDCG@5:  0.0673
+Precision@10: 0.0538, Recall@10: 0.0562, NDCG@10: 0.0683
+Precision@15: 0.0488, Recall@15: 0.0764, NDCG@15: 0.0738
+Precision@20: 0.0453, Recall@20: 0.0941, NDCG@20: 0.0799
+EarlyStopping counter: 11 out of 50
+
+Epoch: 314, Loss: 0.0445
+Precision@5:  0.0619, Recall@5:  0.0326, NDCG@5:  0.0671
+Precision@10: 0.0539, Recall@10: 0.0564, NDCG@10: 0.0683
+Precision@15: 0.0488, Recall@15: 0.0765, NDCG@15: 0.0737
+Precision@20: 0.0453, Recall@20: 0.0944, NDCG@20: 0.0799
+EarlyStopping counter: 12 out of 50
+
+Epoch: 315, Loss: 0.0443
+Precision@5:  0.0620, Recall@5:  0.0327, NDCG@5:  0.0674
+Precision@10: 0.0540, Recall@10: 0.0565, NDCG@10: 0.0685
+Precision@15: 0.0488, Recall@15: 0.0767, NDCG@15: 0.0740
+Precision@20: 0.0454, Recall@20: 0.0946, NDCG@20: 0.0802
+EarlyStopping counter: 13 out of 50
+
+Epoch: 316, Loss: 0.0440
+Precision@5:  0.0622, Recall@5:  0.0328, NDCG@5:  0.0675
+Precision@10: 0.0539, Recall@10: 0.0566, NDCG@10: 0.0685
+Precision@15: 0.0489, Recall@15: 0.0767, NDCG@15: 0.0740
+Precision@20: 0.0454, Recall@20: 0.0946, NDCG@20: 0.0802
+EarlyStopping counter: 14 out of 50
+
+Epoch: 317, Loss: 0.0442
+Precision@5:  0.0621, Recall@5:  0.0328, NDCG@5:  0.0675
+Precision@10: 0.0539, Recall@10: 0.0564, NDCG@10: 0.0685
+Precision@15: 0.0491, Recall@15: 0.0770, NDCG@15: 0.0742
+Precision@20: 0.0455, Recall@20: 0.0946, NDCG@20: 0.0803
+EarlyStopping counter: 15 out of 50
+
+Epoch: 318, Loss: 0.0442
+Precision@5:  0.0624, Recall@5:  0.0330, NDCG@5:  0.0679
+Precision@10: 0.0539, Recall@10: 0.0565, NDCG@10: 0.0688
+Precision@15: 0.0491, Recall@15: 0.0772, NDCG@15: 0.0745
+Precision@20: 0.0455, Recall@20: 0.0947, NDCG@20: 0.0805
+EarlyStopping counter: 16 out of 50
+
+Epoch: 319, Loss: 0.0437
+Precision@5:  0.0624, Recall@5:  0.0330, NDCG@5:  0.0679
+Precision@10: 0.0539, Recall@10: 0.0565, NDCG@10: 0.0687
+Precision@15: 0.0491, Recall@15: 0.0772, NDCG@15: 0.0745
+Precision@20: 0.0454, Recall@20: 0.0947, NDCG@20: 0.0805
+EarlyStopping counter: 17 out of 50
+
+Epoch: 320, Loss: 0.0440
+Precision@5:  0.0624, Recall@5:  0.0329, NDCG@5:  0.0679
+Precision@10: 0.0540, Recall@10: 0.0566, NDCG@10: 0.0688
+Precision@15: 0.0491, Recall@15: 0.0772, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0947, NDCG@20: 0.0804
+EarlyStopping counter: 18 out of 50
+
+Epoch: 321, Loss: 0.0437
+Precision@5:  0.0622, Recall@5:  0.0328, NDCG@5:  0.0678
+Precision@10: 0.0540, Recall@10: 0.0566, NDCG@10: 0.0688
+Precision@15: 0.0491, Recall@15: 0.0769, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0948, NDCG@20: 0.0805
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 322, Loss: 0.0439
+Precision@5:  0.0622, Recall@5:  0.0331, NDCG@5:  0.0678
+Precision@10: 0.0541, Recall@10: 0.0566, NDCG@10: 0.0688
+Precision@15: 0.0491, Recall@15: 0.0770, NDCG@15: 0.0745
+Precision@20: 0.0454, Recall@20: 0.0949, NDCG@20: 0.0805
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 323, Loss: 0.0439
+Precision@5:  0.0626, Recall@5:  0.0332, NDCG@5:  0.0680
+Precision@10: 0.0542, Recall@10: 0.0567, NDCG@10: 0.0689
+Precision@15: 0.0490, Recall@15: 0.0770, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0948, NDCG@20: 0.0805
+EarlyStopping counter: 1 out of 50
+
+Epoch: 324, Loss: 0.0435
+Precision@5:  0.0624, Recall@5:  0.0329, NDCG@5:  0.0679
+Precision@10: 0.0540, Recall@10: 0.0566, NDCG@10: 0.0688
+Precision@15: 0.0491, Recall@15: 0.0772, NDCG@15: 0.0745
+Precision@20: 0.0455, Recall@20: 0.0947, NDCG@20: 0.0805
+EarlyStopping counter: 2 out of 50
+
+Epoch: 325, Loss: 0.0437
+Precision@5:  0.0625, Recall@5:  0.0329, NDCG@5:  0.0679
+Precision@10: 0.0541, Recall@10: 0.0567, NDCG@10: 0.0689
+Precision@15: 0.0489, Recall@15: 0.0769, NDCG@15: 0.0743
+Precision@20: 0.0454, Recall@20: 0.0946, NDCG@20: 0.0804
+EarlyStopping counter: 3 out of 50
+
+Epoch: 326, Loss: 0.0438
+Precision@5:  0.0623, Recall@5:  0.0330, NDCG@5:  0.0676
+Precision@10: 0.0542, Recall@10: 0.0568, NDCG@10: 0.0689
+Precision@15: 0.0491, Recall@15: 0.0768, NDCG@15: 0.0743
+Precision@20: 0.0453, Recall@20: 0.0944, NDCG@20: 0.0803
+EarlyStopping counter: 4 out of 50
+
+Epoch: 327, Loss: 0.0437
+Precision@5:  0.0623, Recall@5:  0.0328, NDCG@5:  0.0678
+Precision@10: 0.0542, Recall@10: 0.0569, NDCG@10: 0.0689
+Precision@15: 0.0490, Recall@15: 0.0769, NDCG@15: 0.0743
+Precision@20: 0.0454, Recall@20: 0.0947, NDCG@20: 0.0805
+EarlyStopping counter: 5 out of 50
+
+Epoch: 328, Loss: 0.0433
+Precision@5:  0.0621, Recall@5:  0.0329, NDCG@5:  0.0677
+Precision@10: 0.0539, Recall@10: 0.0566, NDCG@10: 0.0687
+Precision@15: 0.0492, Recall@15: 0.0771, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0947, NDCG@20: 0.0804
+EarlyStopping counter: 6 out of 50
+
+Epoch: 329, Loss: 0.0435
+Precision@5:  0.0623, Recall@5:  0.0329, NDCG@5:  0.0677
+Precision@10: 0.0539, Recall@10: 0.0566, NDCG@10: 0.0687
+Precision@15: 0.0490, Recall@15: 0.0769, NDCG@15: 0.0743
+Precision@20: 0.0454, Recall@20: 0.0947, NDCG@20: 0.0804
+EarlyStopping counter: 7 out of 50
+
+Epoch: 330, Loss: 0.0432
+Precision@5:  0.0623, Recall@5:  0.0329, NDCG@5:  0.0679
+Precision@10: 0.0539, Recall@10: 0.0567, NDCG@10: 0.0688
+Precision@15: 0.0490, Recall@15: 0.0768, NDCG@15: 0.0743
+Precision@20: 0.0454, Recall@20: 0.0946, NDCG@20: 0.0805
+EarlyStopping counter: 8 out of 50
+
+Epoch: 331, Loss: 0.0434
+Precision@5:  0.0623, Recall@5:  0.0329, NDCG@5:  0.0677
+Precision@10: 0.0537, Recall@10: 0.0563, NDCG@10: 0.0685
+Precision@15: 0.0492, Recall@15: 0.0771, NDCG@15: 0.0745
+Precision@20: 0.0455, Recall@20: 0.0947, NDCG@20: 0.0805
+EarlyStopping counter: 9 out of 50
+
+Epoch: 332, Loss: 0.0434
+Precision@5:  0.0623, Recall@5:  0.0330, NDCG@5:  0.0678
+Precision@10: 0.0539, Recall@10: 0.0567, NDCG@10: 0.0688
+Precision@15: 0.0493, Recall@15: 0.0771, NDCG@15: 0.0746
+Precision@20: 0.0455, Recall@20: 0.0947, NDCG@20: 0.0806
+EarlyStopping counter: 10 out of 50
+
+Epoch: 333, Loss: 0.0432
+Precision@5:  0.0623, Recall@5:  0.0330, NDCG@5:  0.0677
+Precision@10: 0.0538, Recall@10: 0.0563, NDCG@10: 0.0685
+Precision@15: 0.0493, Recall@15: 0.0773, NDCG@15: 0.0745
+Precision@20: 0.0455, Recall@20: 0.0947, NDCG@20: 0.0804
+EarlyStopping counter: 11 out of 50
+
+Epoch: 334, Loss: 0.0432
+Precision@5:  0.0625, Recall@5:  0.0330, NDCG@5:  0.0679
+Precision@10: 0.0536, Recall@10: 0.0562, NDCG@10: 0.0685
+Precision@15: 0.0492, Recall@15: 0.0770, NDCG@15: 0.0744
+Precision@20: 0.0455, Recall@20: 0.0948, NDCG@20: 0.0805
+EarlyStopping counter: 12 out of 50
+
+Epoch: 335, Loss: 0.0435
+Precision@5:  0.0620, Recall@5:  0.0326, NDCG@5:  0.0676
+Precision@10: 0.0538, Recall@10: 0.0565, NDCG@10: 0.0687
+Precision@15: 0.0491, Recall@15: 0.0769, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0944, NDCG@20: 0.0804
+EarlyStopping counter: 13 out of 50
+
+Epoch: 336, Loss: 0.0432
+Precision@5:  0.0620, Recall@5:  0.0325, NDCG@5:  0.0675
+Precision@10: 0.0539, Recall@10: 0.0566, NDCG@10: 0.0686
+Precision@15: 0.0491, Recall@15: 0.0771, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0943, NDCG@20: 0.0803
+EarlyStopping counter: 14 out of 50
+
+Epoch: 337, Loss: 0.0433
+Precision@5:  0.0623, Recall@5:  0.0328, NDCG@5:  0.0676
+Precision@10: 0.0541, Recall@10: 0.0566, NDCG@10: 0.0687
+Precision@15: 0.0491, Recall@15: 0.0772, NDCG@15: 0.0744
+Precision@20: 0.0453, Recall@20: 0.0944, NDCG@20: 0.0803
+EarlyStopping counter: 15 out of 50
+
+Epoch: 338, Loss: 0.0431
+Precision@5:  0.0618, Recall@5:  0.0325, NDCG@5:  0.0675
+Precision@10: 0.0541, Recall@10: 0.0568, NDCG@10: 0.0688
+Precision@15: 0.0490, Recall@15: 0.0768, NDCG@15: 0.0743
+Precision@20: 0.0454, Recall@20: 0.0946, NDCG@20: 0.0804
+EarlyStopping counter: 16 out of 50
+
+Epoch: 339, Loss: 0.0430
+Precision@5:  0.0620, Recall@5:  0.0327, NDCG@5:  0.0678
+Precision@10: 0.0539, Recall@10: 0.0567, NDCG@10: 0.0688
+Precision@15: 0.0490, Recall@15: 0.0769, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0947, NDCG@20: 0.0805
+EarlyStopping counter: 17 out of 50
+
+Epoch: 340, Loss: 0.0429
+Precision@5:  0.0619, Recall@5:  0.0327, NDCG@5:  0.0676
+Precision@10: 0.0538, Recall@10: 0.0564, NDCG@10: 0.0686
+Precision@15: 0.0491, Recall@15: 0.0770, NDCG@15: 0.0744
+Precision@20: 0.0453, Recall@20: 0.0946, NDCG@20: 0.0804
+EarlyStopping counter: 18 out of 50
+
+Epoch: 341, Loss: 0.0427
+Precision@5:  0.0622, Recall@5:  0.0328, NDCG@5:  0.0678
+Precision@10: 0.0541, Recall@10: 0.0569, NDCG@10: 0.0689
+Precision@15: 0.0490, Recall@15: 0.0768, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0946, NDCG@20: 0.0805
+EarlyStopping counter: 19 out of 50
+
+Epoch: 342, Loss: 0.0428
+Precision@5:  0.0621, Recall@5:  0.0328, NDCG@5:  0.0679
+Precision@10: 0.0541, Recall@10: 0.0568, NDCG@10: 0.0690
+Precision@15: 0.0490, Recall@15: 0.0770, NDCG@15: 0.0746
+Precision@20: 0.0454, Recall@20: 0.0948, NDCG@20: 0.0807
+EarlyStopping counter: 20 out of 50
+
+Epoch: 343, Loss: 0.0428
+Precision@5:  0.0620, Recall@5:  0.0329, NDCG@5:  0.0678
+Precision@10: 0.0540, Recall@10: 0.0565, NDCG@10: 0.0688
+Precision@15: 0.0491, Recall@15: 0.0772, NDCG@15: 0.0746
+Precision@20: 0.0454, Recall@20: 0.0949, NDCG@20: 0.0806
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 344, Loss: 0.0430
+Precision@5:  0.0618, Recall@5:  0.0327, NDCG@5:  0.0676
+Precision@10: 0.0542, Recall@10: 0.0568, NDCG@10: 0.0689
+Precision@15: 0.0490, Recall@15: 0.0770, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0948, NDCG@20: 0.0805
+EarlyStopping counter: 1 out of 50
+
+Epoch: 345, Loss: 0.0428
+Precision@5:  0.0618, Recall@5:  0.0327, NDCG@5:  0.0675
+Precision@10: 0.0541, Recall@10: 0.0568, NDCG@10: 0.0688
+Precision@15: 0.0490, Recall@15: 0.0769, NDCG@15: 0.0743
+Precision@20: 0.0454, Recall@20: 0.0946, NDCG@20: 0.0804
+EarlyStopping counter: 2 out of 50
+
+Epoch: 346, Loss: 0.0428
+Precision@5:  0.0617, Recall@5:  0.0327, NDCG@5:  0.0673
+Precision@10: 0.0539, Recall@10: 0.0565, NDCG@10: 0.0686
+Precision@15: 0.0490, Recall@15: 0.0769, NDCG@15: 0.0742
+Precision@20: 0.0454, Recall@20: 0.0946, NDCG@20: 0.0803
+EarlyStopping counter: 3 out of 50
+
+Epoch: 347, Loss: 0.0429
+Precision@5:  0.0619, Recall@5:  0.0328, NDCG@5:  0.0674
+Precision@10: 0.0540, Recall@10: 0.0565, NDCG@10: 0.0685
+Precision@15: 0.0488, Recall@15: 0.0766, NDCG@15: 0.0740
+Precision@20: 0.0454, Recall@20: 0.0945, NDCG@20: 0.0802
+EarlyStopping counter: 4 out of 50
+
+Epoch: 348, Loss: 0.0428
+Precision@5:  0.0618, Recall@5:  0.0327, NDCG@5:  0.0675
+Precision@10: 0.0538, Recall@10: 0.0563, NDCG@10: 0.0685
+Precision@15: 0.0488, Recall@15: 0.0765, NDCG@15: 0.0740
+Precision@20: 0.0454, Recall@20: 0.0947, NDCG@20: 0.0803
+EarlyStopping counter: 5 out of 50
+
+Epoch: 349, Loss: 0.0424
+Precision@5:  0.0617, Recall@5:  0.0326, NDCG@5:  0.0673
+Precision@10: 0.0538, Recall@10: 0.0562, NDCG@10: 0.0685
+Precision@15: 0.0488, Recall@15: 0.0765, NDCG@15: 0.0740
+Precision@20: 0.0454, Recall@20: 0.0947, NDCG@20: 0.0803
+EarlyStopping counter: 6 out of 50
+
+Epoch: 350, Loss: 0.0423
+Precision@5:  0.0620, Recall@5:  0.0328, NDCG@5:  0.0674
+Precision@10: 0.0541, Recall@10: 0.0566, NDCG@10: 0.0686
+Precision@15: 0.0491, Recall@15: 0.0766, NDCG@15: 0.0741
+Precision@20: 0.0454, Recall@20: 0.0945, NDCG@20: 0.0802
+EarlyStopping counter: 7 out of 50
+
+Epoch: 351, Loss: 0.0425
+Precision@5:  0.0619, Recall@5:  0.0327, NDCG@5:  0.0674
+Precision@10: 0.0540, Recall@10: 0.0565, NDCG@10: 0.0686
+Precision@15: 0.0489, Recall@15: 0.0764, NDCG@15: 0.0740
+Precision@20: 0.0455, Recall@20: 0.0949, NDCG@20: 0.0804
+EarlyStopping counter: 8 out of 50
+
+Epoch: 352, Loss: 0.0426
+Precision@5:  0.0623, Recall@5:  0.0329, NDCG@5:  0.0677
+Precision@10: 0.0541, Recall@10: 0.0564, NDCG@10: 0.0687
+Precision@15: 0.0491, Recall@15: 0.0767, NDCG@15: 0.0742
+Precision@20: 0.0455, Recall@20: 0.0950, NDCG@20: 0.0805
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 353, Loss: 0.0422
+Precision@5:  0.0618, Recall@5:  0.0326, NDCG@5:  0.0674
+Precision@10: 0.0541, Recall@10: 0.0566, NDCG@10: 0.0687
+Precision@15: 0.0490, Recall@15: 0.0766, NDCG@15: 0.0742
+Precision@20: 0.0456, Recall@20: 0.0952, NDCG@20: 0.0806
+Save: result/Yelp/LightGCN_Yelp.pt
+
+Epoch: 354, Loss: 0.0423
+Precision@5:  0.0620, Recall@5:  0.0328, NDCG@5:  0.0678
+Precision@10: 0.0541, Recall@10: 0.0566, NDCG@10: 0.0689
+Precision@15: 0.0491, Recall@15: 0.0767, NDCG@15: 0.0744
+Precision@20: 0.0457, Recall@20: 0.0951, NDCG@20: 0.0808
+EarlyStopping counter: 1 out of 50
+
+Epoch: 355, Loss: 0.0422
+Precision@5:  0.0620, Recall@5:  0.0327, NDCG@5:  0.0678
+Precision@10: 0.0538, Recall@10: 0.0563, NDCG@10: 0.0687
+Precision@15: 0.0492, Recall@15: 0.0769, NDCG@15: 0.0745
+Precision@20: 0.0457, Recall@20: 0.0950, NDCG@20: 0.0808
+EarlyStopping counter: 2 out of 50
+
+Epoch: 356, Loss: 0.0423
+Precision@5:  0.0621, Recall@5:  0.0328, NDCG@5:  0.0679
+Precision@10: 0.0541, Recall@10: 0.0567, NDCG@10: 0.0689
+Precision@15: 0.0491, Recall@15: 0.0767, NDCG@15: 0.0744
+Precision@20: 0.0455, Recall@20: 0.0948, NDCG@20: 0.0806
+EarlyStopping counter: 3 out of 50
+
+Epoch: 357, Loss: 0.0420
+Precision@5:  0.0623, Recall@5:  0.0330, NDCG@5:  0.0679
+Precision@10: 0.0540, Recall@10: 0.0567, NDCG@10: 0.0688
+Precision@15: 0.0491, Recall@15: 0.0767, NDCG@15: 0.0744
+Precision@20: 0.0455, Recall@20: 0.0948, NDCG@20: 0.0806
+EarlyStopping counter: 4 out of 50
+
+Epoch: 358, Loss: 0.0421
+Precision@5:  0.0619, Recall@5:  0.0327, NDCG@5:  0.0677
+Precision@10: 0.0543, Recall@10: 0.0569, NDCG@10: 0.0691
+Precision@15: 0.0489, Recall@15: 0.0766, NDCG@15: 0.0743
+Precision@20: 0.0454, Recall@20: 0.0945, NDCG@20: 0.0805
+EarlyStopping counter: 5 out of 50
+
+Epoch: 359, Loss: 0.0421
+Precision@5:  0.0623, Recall@5:  0.0330, NDCG@5:  0.0680
+Precision@10: 0.0543, Recall@10: 0.0570, NDCG@10: 0.0692
+Precision@15: 0.0492, Recall@15: 0.0769, NDCG@15: 0.0746
+Precision@20: 0.0454, Recall@20: 0.0944, NDCG@20: 0.0806
+EarlyStopping counter: 6 out of 50
+
+Epoch: 360, Loss: 0.0421
+Precision@5:  0.0620, Recall@5:  0.0327, NDCG@5:  0.0677
+Precision@10: 0.0540, Recall@10: 0.0568, NDCG@10: 0.0689
+Precision@15: 0.0489, Recall@15: 0.0764, NDCG@15: 0.0743
+Precision@20: 0.0455, Recall@20: 0.0944, NDCG@20: 0.0805
+EarlyStopping counter: 7 out of 50
+
+Epoch: 361, Loss: 0.0423
+Precision@5:  0.0620, Recall@5:  0.0327, NDCG@5:  0.0677
+Precision@10: 0.0541, Recall@10: 0.0567, NDCG@10: 0.0689
+Precision@15: 0.0490, Recall@15: 0.0765, NDCG@15: 0.0743
+Precision@20: 0.0455, Recall@20: 0.0944, NDCG@20: 0.0805
+EarlyStopping counter: 8 out of 50
+
+Epoch: 362, Loss: 0.0420
+Precision@5:  0.0620, Recall@5:  0.0328, NDCG@5:  0.0677
+Precision@10: 0.0541, Recall@10: 0.0568, NDCG@10: 0.0689
+Precision@15: 0.0491, Recall@15: 0.0768, NDCG@15: 0.0744
+Precision@20: 0.0455, Recall@20: 0.0944, NDCG@20: 0.0805
+EarlyStopping counter: 9 out of 50
+
+Epoch: 363, Loss: 0.0421
+Precision@5:  0.0621, Recall@5:  0.0328, NDCG@5:  0.0677
+Precision@10: 0.0540, Recall@10: 0.0567, NDCG@10: 0.0688
+Precision@15: 0.0493, Recall@15: 0.0769, NDCG@15: 0.0745
+Precision@20: 0.0454, Recall@20: 0.0945, NDCG@20: 0.0804
+EarlyStopping counter: 10 out of 50
+
+Epoch: 364, Loss: 0.0419
+Precision@5:  0.0622, Recall@5:  0.0329, NDCG@5:  0.0680
+Precision@10: 0.0540, Recall@10: 0.0567, NDCG@10: 0.0690
+Precision@15: 0.0491, Recall@15: 0.0767, NDCG@15: 0.0745
+Precision@20: 0.0455, Recall@20: 0.0947, NDCG@20: 0.0807
+EarlyStopping counter: 11 out of 50
+
+Epoch: 365, Loss: 0.0419
+Precision@5:  0.0628, Recall@5:  0.0332, NDCG@5:  0.0683
+Precision@10: 0.0541, Recall@10: 0.0567, NDCG@10: 0.0690
+Precision@15: 0.0491, Recall@15: 0.0772, NDCG@15: 0.0747
+Precision@20: 0.0456, Recall@20: 0.0946, NDCG@20: 0.0807
+EarlyStopping counter: 12 out of 50
+
+Epoch: 366, Loss: 0.0416
+Precision@5:  0.0626, Recall@5:  0.0331, NDCG@5:  0.0682
+Precision@10: 0.0541, Recall@10: 0.0568, NDCG@10: 0.0690
+Precision@15: 0.0492, Recall@15: 0.0770, NDCG@15: 0.0747
+Precision@20: 0.0456, Recall@20: 0.0949, NDCG@20: 0.0808
+EarlyStopping counter: 13 out of 50
+
+Epoch: 367, Loss: 0.0421
+Precision@5:  0.0623, Recall@5:  0.0329, NDCG@5:  0.0681
+Precision@10: 0.0540, Recall@10: 0.0567, NDCG@10: 0.0690
+Precision@15: 0.0492, Recall@15: 0.0770, NDCG@15: 0.0747
+Precision@20: 0.0456, Recall@20: 0.0948, NDCG@20: 0.0808
+EarlyStopping counter: 14 out of 50
+
+Epoch: 368, Loss: 0.0418
+Precision@5:  0.0625, Recall@5:  0.0330, NDCG@5:  0.0681
+Precision@10: 0.0541, Recall@10: 0.0568, NDCG@10: 0.0690
+Precision@15: 0.0492, Recall@15: 0.0770, NDCG@15: 0.0746
+Precision@20: 0.0455, Recall@20: 0.0947, NDCG@20: 0.0806
+EarlyStopping counter: 15 out of 50
+
+Epoch: 369, Loss: 0.0417
+Precision@5:  0.0625, Recall@5:  0.0331, NDCG@5:  0.0681
+Precision@10: 0.0542, Recall@10: 0.0570, NDCG@10: 0.0690
+Precision@15: 0.0493, Recall@15: 0.0771, NDCG@15: 0.0746
+Precision@20: 0.0456, Recall@20: 0.0949, NDCG@20: 0.0808
+EarlyStopping counter: 16 out of 50
+
+Epoch: 370, Loss: 0.0416
+Precision@5:  0.0624, Recall@5:  0.0330, NDCG@5:  0.0680
+Precision@10: 0.0540, Recall@10: 0.0568, NDCG@10: 0.0689
+Precision@15: 0.0492, Recall@15: 0.0769, NDCG@15: 0.0745
+Precision@20: 0.0456, Recall@20: 0.0948, NDCG@20: 0.0806
+EarlyStopping counter: 17 out of 50
+
+Epoch: 371, Loss: 0.0416
+Precision@5:  0.0625, Recall@5:  0.0331, NDCG@5:  0.0680
+Precision@10: 0.0538, Recall@10: 0.0565, NDCG@10: 0.0687
+Precision@15: 0.0490, Recall@15: 0.0769, NDCG@15: 0.0744
+Precision@20: 0.0456, Recall@20: 0.0950, NDCG@20: 0.0807
+EarlyStopping counter: 18 out of 50
+
+Epoch: 372, Loss: 0.0416
+Precision@5:  0.0621, Recall@5:  0.0328, NDCG@5:  0.0679
+Precision@10: 0.0540, Recall@10: 0.0569, NDCG@10: 0.0690
+Precision@15: 0.0493, Recall@15: 0.0771, NDCG@15: 0.0746
+Precision@20: 0.0455, Recall@20: 0.0948, NDCG@20: 0.0807
+EarlyStopping counter: 19 out of 50
+
+Epoch: 373, Loss: 0.0419
+Precision@5:  0.0623, Recall@5:  0.0329, NDCG@5:  0.0680
+Precision@10: 0.0541, Recall@10: 0.0568, NDCG@10: 0.0690
+Precision@15: 0.0492, Recall@15: 0.0770, NDCG@15: 0.0746
+Precision@20: 0.0455, Recall@20: 0.0945, NDCG@20: 0.0806
+EarlyStopping counter: 20 out of 50
+
+Epoch: 374, Loss: 0.0415
+Precision@5:  0.0624, Recall@5:  0.0330, NDCG@5:  0.0681
+Precision@10: 0.0542, Recall@10: 0.0569, NDCG@10: 0.0691
+Precision@15: 0.0490, Recall@15: 0.0767, NDCG@15: 0.0745
+Precision@20: 0.0454, Recall@20: 0.0944, NDCG@20: 0.0806
+EarlyStopping counter: 21 out of 50
+
+Epoch: 375, Loss: 0.0419
+Precision@5:  0.0621, Recall@5:  0.0328, NDCG@5:  0.0679
+Precision@10: 0.0544, Recall@10: 0.0572, NDCG@10: 0.0693
+Precision@15: 0.0491, Recall@15: 0.0769, NDCG@15: 0.0746
+Precision@20: 0.0456, Recall@20: 0.0946, NDCG@20: 0.0807
+EarlyStopping counter: 22 out of 50
+
+Epoch: 376, Loss: 0.0414
+Precision@5:  0.0623, Recall@5:  0.0331, NDCG@5:  0.0678
+Precision@10: 0.0542, Recall@10: 0.0571, NDCG@10: 0.0690
+Precision@15: 0.0492, Recall@15: 0.0772, NDCG@15: 0.0746
+Precision@20: 0.0456, Recall@20: 0.0949, NDCG@20: 0.0807
+EarlyStopping counter: 23 out of 50
+
+Epoch: 377, Loss: 0.0415
+Precision@5:  0.0621, Recall@5:  0.0329, NDCG@5:  0.0679
+Precision@10: 0.0540, Recall@10: 0.0570, NDCG@10: 0.0690
+Precision@15: 0.0492, Recall@15: 0.0770, NDCG@15: 0.0746
+Precision@20: 0.0456, Recall@20: 0.0950, NDCG@20: 0.0808
+EarlyStopping counter: 24 out of 50
+
+Epoch: 378, Loss: 0.0416
+Precision@5:  0.0622, Recall@5:  0.0329, NDCG@5:  0.0678
+Precision@10: 0.0541, Recall@10: 0.0570, NDCG@10: 0.0690
+Precision@15: 0.0492, Recall@15: 0.0771, NDCG@15: 0.0746
+Precision@20: 0.0455, Recall@20: 0.0947, NDCG@20: 0.0806
+EarlyStopping counter: 25 out of 50
+
+Epoch: 379, Loss: 0.0414
+Precision@5:  0.0621, Recall@5:  0.0329, NDCG@5:  0.0676
+Precision@10: 0.0540, Recall@10: 0.0571, NDCG@10: 0.0689
+Precision@15: 0.0491, Recall@15: 0.0769, NDCG@15: 0.0744
+Precision@20: 0.0455, Recall@20: 0.0947, NDCG@20: 0.0805
+EarlyStopping counter: 26 out of 50
+
+Epoch: 380, Loss: 0.0413
+Precision@5:  0.0622, Recall@5:  0.0327, NDCG@5:  0.0677
+Precision@10: 0.0542, Recall@10: 0.0573, NDCG@10: 0.0690
+Precision@15: 0.0490, Recall@15: 0.0768, NDCG@15: 0.0743
+Precision@20: 0.0455, Recall@20: 0.0950, NDCG@20: 0.0806
+EarlyStopping counter: 27 out of 50
+
+Epoch: 381, Loss: 0.0417
+Precision@5:  0.0622, Recall@5:  0.0328, NDCG@5:  0.0676
+Precision@10: 0.0541, Recall@10: 0.0570, NDCG@10: 0.0688
+Precision@15: 0.0491, Recall@15: 0.0770, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0948, NDCG@20: 0.0804
+EarlyStopping counter: 28 out of 50
+
+Epoch: 382, Loss: 0.0413
+Precision@5:  0.0620, Recall@5:  0.0328, NDCG@5:  0.0675
+Precision@10: 0.0539, Recall@10: 0.0569, NDCG@10: 0.0688
+Precision@15: 0.0490, Recall@15: 0.0769, NDCG@15: 0.0743
+Precision@20: 0.0455, Recall@20: 0.0950, NDCG@20: 0.0805
+EarlyStopping counter: 29 out of 50
+
+Epoch: 383, Loss: 0.0411
+Precision@5:  0.0620, Recall@5:  0.0328, NDCG@5:  0.0676
+Precision@10: 0.0542, Recall@10: 0.0570, NDCG@10: 0.0690
+Precision@15: 0.0490, Recall@15: 0.0770, NDCG@15: 0.0744
+Precision@20: 0.0455, Recall@20: 0.0950, NDCG@20: 0.0806
+EarlyStopping counter: 30 out of 50
+
+Epoch: 384, Loss: 0.0413
+Precision@5:  0.0619, Recall@5:  0.0327, NDCG@5:  0.0675
+Precision@10: 0.0541, Recall@10: 0.0571, NDCG@10: 0.0690
+Precision@15: 0.0490, Recall@15: 0.0770, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0948, NDCG@20: 0.0805
+EarlyStopping counter: 31 out of 50
+
+Epoch: 385, Loss: 0.0413
+Precision@5:  0.0623, Recall@5:  0.0330, NDCG@5:  0.0678
+Precision@10: 0.0541, Recall@10: 0.0570, NDCG@10: 0.0690
+Precision@15: 0.0488, Recall@15: 0.0767, NDCG@15: 0.0743
+Precision@20: 0.0455, Recall@20: 0.0949, NDCG@20: 0.0806
+EarlyStopping counter: 32 out of 50
+
+Epoch: 386, Loss: 0.0411
+Precision@5:  0.0619, Recall@5:  0.0329, NDCG@5:  0.0676
+Precision@10: 0.0540, Recall@10: 0.0569, NDCG@10: 0.0689
+Precision@15: 0.0489, Recall@15: 0.0767, NDCG@15: 0.0743
+Precision@20: 0.0455, Recall@20: 0.0949, NDCG@20: 0.0806
+EarlyStopping counter: 33 out of 50
+
+Epoch: 387, Loss: 0.0412
+Precision@5:  0.0618, Recall@5:  0.0328, NDCG@5:  0.0676
+Precision@10: 0.0541, Recall@10: 0.0571, NDCG@10: 0.0690
+Precision@15: 0.0490, Recall@15: 0.0766, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0949, NDCG@20: 0.0806
+EarlyStopping counter: 34 out of 50
+
+Epoch: 388, Loss: 0.0411
+Precision@5:  0.0620, Recall@5:  0.0328, NDCG@5:  0.0677
+Precision@10: 0.0539, Recall@10: 0.0568, NDCG@10: 0.0689
+Precision@15: 0.0490, Recall@15: 0.0769, NDCG@15: 0.0745
+Precision@20: 0.0455, Recall@20: 0.0950, NDCG@20: 0.0807
+EarlyStopping counter: 35 out of 50
+
+Epoch: 389, Loss: 0.0410
+Precision@5:  0.0618, Recall@5:  0.0329, NDCG@5:  0.0675
+Precision@10: 0.0540, Recall@10: 0.0568, NDCG@10: 0.0688
+Precision@15: 0.0491, Recall@15: 0.0771, NDCG@15: 0.0744
+Precision@20: 0.0455, Recall@20: 0.0950, NDCG@20: 0.0806
+EarlyStopping counter: 36 out of 50
+
+Epoch: 390, Loss: 0.0413
+Precision@5:  0.0620, Recall@5:  0.0328, NDCG@5:  0.0677
+Precision@10: 0.0540, Recall@10: 0.0569, NDCG@10: 0.0689
+Precision@15: 0.0491, Recall@15: 0.0771, NDCG@15: 0.0745
+Precision@20: 0.0455, Recall@20: 0.0951, NDCG@20: 0.0807
+EarlyStopping counter: 37 out of 50
+
+Epoch: 391, Loss: 0.0410
+Precision@5:  0.0621, Recall@5:  0.0330, NDCG@5:  0.0676
+Precision@10: 0.0540, Recall@10: 0.0570, NDCG@10: 0.0688
+Precision@15: 0.0491, Recall@15: 0.0771, NDCG@15: 0.0744
+Precision@20: 0.0455, Recall@20: 0.0949, NDCG@20: 0.0805
+EarlyStopping counter: 38 out of 50
+
+Epoch: 392, Loss: 0.0409
+Precision@5:  0.0620, Recall@5:  0.0329, NDCG@5:  0.0678
+Precision@10: 0.0542, Recall@10: 0.0570, NDCG@10: 0.0691
+Precision@15: 0.0491, Recall@15: 0.0771, NDCG@15: 0.0745
+Precision@20: 0.0454, Recall@20: 0.0948, NDCG@20: 0.0806
+EarlyStopping counter: 39 out of 50
+
+Epoch: 393, Loss: 0.0409
+Precision@5:  0.0625, Recall@5:  0.0333, NDCG@5:  0.0681
+Precision@10: 0.0540, Recall@10: 0.0569, NDCG@10: 0.0689
+Precision@15: 0.0489, Recall@15: 0.0767, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0948, NDCG@20: 0.0807
+EarlyStopping counter: 40 out of 50
+
+Epoch: 394, Loss: 0.0410
+Precision@5:  0.0625, Recall@5:  0.0334, NDCG@5:  0.0679
+Precision@10: 0.0542, Recall@10: 0.0571, NDCG@10: 0.0690
+Precision@15: 0.0490, Recall@15: 0.0770, NDCG@15: 0.0744
+Precision@20: 0.0455, Recall@20: 0.0948, NDCG@20: 0.0806
+EarlyStopping counter: 41 out of 50
+
+Epoch: 395, Loss: 0.0408
+Precision@5:  0.0625, Recall@5:  0.0334, NDCG@5:  0.0680
+Precision@10: 0.0542, Recall@10: 0.0571, NDCG@10: 0.0690
+Precision@15: 0.0491, Recall@15: 0.0771, NDCG@15: 0.0745
+Precision@20: 0.0454, Recall@20: 0.0947, NDCG@20: 0.0806
+EarlyStopping counter: 42 out of 50
+
+Epoch: 396, Loss: 0.0409
+Precision@5:  0.0622, Recall@5:  0.0334, NDCG@5:  0.0679
+Precision@10: 0.0541, Recall@10: 0.0569, NDCG@10: 0.0690
+Precision@15: 0.0490, Recall@15: 0.0768, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0946, NDCG@20: 0.0806
+EarlyStopping counter: 43 out of 50
+
+Epoch: 397, Loss: 0.0409
+Precision@5:  0.0622, Recall@5:  0.0332, NDCG@5:  0.0677
+Precision@10: 0.0542, Recall@10: 0.0572, NDCG@10: 0.0690
+Precision@15: 0.0490, Recall@15: 0.0770, NDCG@15: 0.0744
+Precision@20: 0.0455, Recall@20: 0.0949, NDCG@20: 0.0806
+EarlyStopping counter: 44 out of 50
+
+Epoch: 398, Loss: 0.0410
+Precision@5:  0.0617, Recall@5:  0.0329, NDCG@5:  0.0676
+Precision@10: 0.0540, Recall@10: 0.0571, NDCG@10: 0.0690
+Precision@15: 0.0489, Recall@15: 0.0767, NDCG@15: 0.0743
+Precision@20: 0.0453, Recall@20: 0.0949, NDCG@20: 0.0806
+EarlyStopping counter: 45 out of 50
+
+Epoch: 399, Loss: 0.0410
+Precision@5:  0.0619, Recall@5:  0.0329, NDCG@5:  0.0677
+Precision@10: 0.0541, Recall@10: 0.0571, NDCG@10: 0.0691
+Precision@15: 0.0489, Recall@15: 0.0767, NDCG@15: 0.0744
+Precision@20: 0.0453, Recall@20: 0.0946, NDCG@20: 0.0805
+EarlyStopping counter: 46 out of 50
+
+Epoch: 400, Loss: 0.0406
+Precision@5:  0.0622, Recall@5:  0.0332, NDCG@5:  0.0678
+Precision@10: 0.0539, Recall@10: 0.0570, NDCG@10: 0.0689
+Precision@15: 0.0490, Recall@15: 0.0768, NDCG@15: 0.0744
+Precision@20: 0.0453, Recall@20: 0.0947, NDCG@20: 0.0805
+EarlyStopping counter: 47 out of 50
+
+Epoch: 401, Loss: 0.0407
+Precision@5:  0.0623, Recall@5:  0.0331, NDCG@5:  0.0678
+Precision@10: 0.0540, Recall@10: 0.0571, NDCG@10: 0.0689
+Precision@15: 0.0489, Recall@15: 0.0767, NDCG@15: 0.0743
+Precision@20: 0.0452, Recall@20: 0.0944, NDCG@20: 0.0804
+EarlyStopping counter: 48 out of 50
+
+Epoch: 402, Loss: 0.0407
+Precision@5:  0.0620, Recall@5:  0.0331, NDCG@5:  0.0678
+Precision@10: 0.0539, Recall@10: 0.0569, NDCG@10: 0.0689
+Precision@15: 0.0489, Recall@15: 0.0766, NDCG@15: 0.0744
+Precision@20: 0.0452, Recall@20: 0.0946, NDCG@20: 0.0805
+EarlyStopping counter: 49 out of 50
+
+Epoch: 403, Loss: 0.0407
+Precision@5:  0.0621, Recall@5:  0.0331, NDCG@5:  0.0679
+Precision@10: 0.0541, Recall@10: 0.0569, NDCG@10: 0.0691
+Precision@15: 0.0488, Recall@15: 0.0766, NDCG@15: 0.0744
+Precision@20: 0.0454, Recall@20: 0.0948, NDCG@20: 0.0807
+EarlyStopping counter: 50 out of 50
+
+Early stopping at epoch 353. Best Results:
+Precision@5:  0.0618, Recall@5:  0.0326, NDCG@5:  0.0674
+Precision@10: 0.0541, Recall@10: 0.0566, NDCG@10: 0.0687
+Precision@15: 0.0490, Recall@15: 0.0766, NDCG@15: 0.0742
+Precision@20: 0.0456, Recall@20: 0.0952, NDCG@20: 0.0806

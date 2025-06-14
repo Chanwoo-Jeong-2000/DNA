@@ -1,0 +1,177 @@
+2025-06-08 15:50:01,231 - [INFO] - {'dataset': 'cd_recsys', 'data_path': './data/', 'name': 'cd_recsys_LGN_mode_weight_mean_no_sample_nocosine_TAU_Adap_tau_Loss_2048_1024_lr_1e-3_l2_1e-1_t1_1.0_t2_1.0_nodrop_08_06_2025_15:50:01', 'train_ratio': 0.8, 'gnn': 'lgn', 'epoch': 1000, 'batch_size': 2048, 'test_batch_size': 2048, 'dim': 64, 'l2': 0.1, 'lr': 0.001, 'mess_dropout': False, 'mess_dropout_rate': 0.1, 'edge_dropout': False, 'edge_dropout_rate': 0.1, 'n_negs': 1024, 'pool': 'mean', 'cuda': True, 'gpu_id': 0, 'Ks': '[10, 20, 50]', 'context_hops': 3, 'eval_earlystop': 'recall@20', 'temperature': 1.0, 'temperature_2': 1.0, 'temperature_3': 1.0, 'u_norm': True, 'i_norm': True, 'out_dir': './weights/', 'log_dir': './log/', 'config_dir': './config/', 'restore': False, 'loss_fn': 'Adap_tau_Loss', 'sampling_method': 'no_sample', 'generate_mode': 'nocosine', 'tau_mode': 'weight_mean', 'cnt_lr': 100}
+2025-06-08 15:50:02,238 - [INFO] - load train.txt
+2025-06-08 15:50:04,598 - [INFO] - building the adj mat ...
+2025-06-08 15:50:04,830 - [INFO] - train set len is 604475
+2025-06-08 15:50:04,830 - [INFO] - test set len is 172951
+2025-06-08 15:50:04,830 - [INFO] - loading over ...
+2025-06-08 15:50:04,830 - [INFO] - users are 43169 items are 35648
+2025-06-08 15:50:10,408 - [INFO] - Evaluation Protocols is 1 @ 20
+2025-06-08 15:50:10,408 - [INFO] - start training ...
+2025-06-08 15:50:10,585 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:50:22,520 - [INFO] - nocosine
+2025-06-08 15:50:23,743 - [INFO] - nocosine
+2025-06-08 15:50:24,165 - [INFO] - E:0|TAU:9.84 9.84, train_time: 11.91, VALID_time: 1.665, loss: 1.447e+03, emb_loss:0.002132, best_valid(recall@20): -inf
+valid 	 N@10: 0.07266, R@10: 0.09407, P@10: 0.03256
+valid 	 N@20: 0.08726, R@20: 0.1393, P@20: 0.02458
+valid 	 N@50: 0.1086, R@50: 0.2177, P@50: 0.01582
+
+2025-06-08 15:50:24,221 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:50:35,486 - [INFO] - nocosine
+2025-06-08 15:50:35,925 - [INFO] - nocosine
+2025-06-08 15:50:36,354 - [INFO] - E:1|TAU:7.598 26.13, train_time: 11.25, VALID_time: 0.8841, loss: 1.188e+03, emb_loss:0.004238, best_valid(recall@20): 0.1393
+valid 	 N@10: 0.08043, R@10: 0.1036, P@10: 0.03575
+valid 	 N@20: 0.09556, R@20: 0.1506, P@20: 0.0267
+valid 	 N@50: 0.1176, R@50: 0.2314, P@50: 0.01695
+
+2025-06-08 15:50:36,412 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:50:47,733 - [INFO] - nocosine
+2025-06-08 15:50:48,175 - [INFO] - nocosine
+2025-06-08 15:50:48,597 - [INFO] - E:2|TAU:7.58 21.22, train_time: 11.3, VALID_time: 0.8817, loss: 1.109e+03, emb_loss:0.006062, best_valid(recall@20): 0.1506
+valid 	 N@10: 0.08264, R@10: 0.1057, P@10: 0.03646
+valid 	 N@20: 0.09823, R@20: 0.1541, P@20: 0.0273
+valid 	 N@50: 0.1208, R@50: 0.2367, P@50: 0.01734
+
+2025-06-08 15:50:48,648 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:51:00,126 - [INFO] - nocosine
+2025-06-08 15:51:00,553 - [INFO] - nocosine
+2025-06-08 15:51:00,965 - [INFO] - E:3|TAU:7.607 20.51, train_time: 11.46, VALID_time: 0.8561, loss: 1.082e+03, emb_loss:0.007791, best_valid(recall@20): 0.1541
+valid 	 N@10: 0.08442, R@10: 0.1082, P@10: 0.03733
+valid 	 N@20: 0.09992, R@20: 0.1564, P@20: 0.02774
+valid 	 N@50: 0.1225, R@50: 0.2392, P@50: 0.0175
+
+2025-06-08 15:51:01,019 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:51:12,437 - [INFO] - nocosine
+2025-06-08 15:51:12,866 - [INFO] - nocosine
+2025-06-08 15:51:13,275 - [INFO] - E:4|TAU:7.596 20.67, train_time: 11.4, VALID_time: 0.8583, loss: 1.067e+03, emb_loss:0.009506, best_valid(recall@20): 0.1564
+valid 	 N@10: 0.08527, R@10: 0.1095, P@10: 0.03771
+valid 	 N@20: 0.1008, R@20: 0.1576, P@20: 0.02793
+valid 	 N@50: 0.1234, R@50: 0.2407, P@50: 0.01761
+
+2025-06-08 15:51:13,337 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:51:25,025 - [INFO] - nocosine
+2025-06-08 15:51:25,650 - [INFO] - nocosine
+2025-06-08 15:51:26,069 - [INFO] - E:5|TAU:7.6 20.32, train_time: 11.67, VALID_time: 1.065, loss: 1.055e+03, emb_loss:0.01124, best_valid(recall@20): 0.1576
+valid 	 N@10: 0.08568, R@10: 0.1098, P@10: 0.03781
+valid 	 N@20: 0.1017, R@20: 0.1596, P@20: 0.02821
+valid 	 N@50: 0.1243, R@50: 0.2427, P@50: 0.01778
+
+2025-06-08 15:51:26,125 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:51:37,986 - [INFO] - nocosine
+2025-06-08 15:51:38,435 - [INFO] - nocosine
+2025-06-08 15:51:38,848 - [INFO] - E:6|TAU:7.61 20.82, train_time: 11.84, VALID_time: 0.8811, loss: 1.047e+03, emb_loss:0.01299, best_valid(recall@20): 0.1596
+valid 	 N@10: 0.08626, R@10: 0.1106, P@10: 0.03804
+valid 	 N@20: 0.1021, R@20: 0.1597, P@20: 0.02831
+valid 	 N@50: 0.1247, R@50: 0.2425, P@50: 0.01777
+
+2025-06-08 15:51:38,903 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:51:50,705 - [INFO] - nocosine
+2025-06-08 15:51:51,151 - [INFO] - nocosine
+2025-06-08 15:51:51,581 - [INFO] - E:7|TAU:7.603 19.39, train_time: 11.78, VALID_time: 0.8952, loss: 1.041e+03, emb_loss:0.01478, best_valid(recall@20): 0.1597
+valid 	 N@10: 0.0868, R@10: 0.1113, P@10: 0.03828
+valid 	 N@20: 0.1026, R@20: 0.1605, P@20: 0.0284
+valid 	 N@50: 0.1253, R@50: 0.2436, P@50: 0.01783
+
+2025-06-08 15:51:51,637 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:52:03,291 - [INFO] - nocosine
+2025-06-08 15:52:03,734 - [INFO] - nocosine
+2025-06-08 15:52:04,281 - [INFO] - E:8|TAU:7.602 21.06, train_time: 11.64, VALID_time: 1.008, loss: 1.036e+03, emb_loss:0.01659, best_valid(recall@20): 0.1605
+valid 	 N@10: 0.08703, R@10: 0.1112, P@10: 0.03822
+valid 	 N@20: 0.1031, R@20: 0.1611, P@20: 0.02851
+valid 	 N@50: 0.1257, R@50: 0.2441, P@50: 0.01786
+
+2025-06-08 15:52:04,338 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:52:16,002 - [INFO] - nocosine
+2025-06-08 15:52:16,622 - [INFO] - nocosine
+2025-06-08 15:52:17,041 - [INFO] - E:9|TAU:7.585 20.96, train_time: 11.64, VALID_time: 1.059, loss: 1.033e+03, emb_loss:0.01844, best_valid(recall@20): 0.1611
+valid 	 N@10: 0.08708, R@10: 0.1115, P@10: 0.03846
+valid 	 N@20: 0.103, R@20: 0.161, P@20: 0.02849
+valid 	 N@50: 0.1256, R@50: 0.2441, P@50: 0.01788
+
+2025-06-08 15:52:17,096 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:52:28,932 - [INFO] - nocosine
+2025-06-08 15:52:29,563 - [INFO] - nocosine
+2025-06-08 15:52:29,975 - [INFO] - E:10|TAU:7.588 20.36, train_time: 11.81, VALID_time: 1.064, loss: 1.029e+03, emb_loss:0.02029, best_valid(recall@20): 0.161
+valid 	 N@10: 0.08739, R@10: 0.1119, P@10: 0.03856
+valid 	 N@20: 0.1032, R@20: 0.161, P@20: 0.0285
+valid 	 N@50: 0.126, R@50: 0.2447, P@50: 0.01792
+
+2025-06-08 15:52:30,030 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:52:41,773 - [INFO] - nocosine
+2025-06-08 15:52:42,459 - [INFO] - nocosine
+2025-06-08 15:52:42,932 - [INFO] - E:11|TAU:7.583 20.83, train_time: 11.72, VALID_time: 1.183, loss: 1.027e+03, emb_loss:0.02219, best_valid(recall@20): 0.161
+valid 	 N@10: 0.08771, R@10: 0.1126, P@10: 0.03873
+valid 	 N@20: 0.1036, R@20: 0.162, P@20: 0.02862
+valid 	 N@50: 0.1262, R@50: 0.2451, P@50: 0.01796
+
+2025-06-08 15:52:42,998 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:52:54,655 - [INFO] - nocosine
+2025-06-08 15:52:55,089 - [INFO] - nocosine
+2025-06-08 15:52:55,509 - [INFO] - E:12|TAU:7.589 21.14, train_time: 11.64, VALID_time: 0.8724, loss: 1.025e+03, emb_loss:0.0241, best_valid(recall@20): 0.162
+valid 	 N@10: 0.08788, R@10: 0.1125, P@10: 0.0387
+valid 	 N@20: 0.1038, R@20: 0.162, P@20: 0.02868
+valid 	 N@50: 0.1265, R@50: 0.2454, P@50: 0.01798
+
+2025-06-08 15:52:55,574 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:53:07,384 - [INFO] - nocosine
+2025-06-08 15:53:07,885 - [INFO] - nocosine
+2025-06-08 15:53:08,351 - [INFO] - E:13|TAU:7.59 20.85, train_time: 11.79, VALID_time: 0.9858, loss: 1.023e+03, emb_loss:0.02601, best_valid(recall@20): 0.162
+valid 	 N@10: 0.08803, R@10: 0.1127, P@10: 0.0388
+valid 	 N@20: 0.104, R@20: 0.1624, P@20: 0.0287
+valid 	 N@50: 0.1267, R@50: 0.2456, P@50: 0.018
+
+2025-06-08 15:53:08,415 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:53:20,112 - [INFO] - nocosine
+2025-06-08 15:53:20,745 - [INFO] - nocosine
+2025-06-08 15:53:21,253 - [INFO] - E:14|TAU:7.581 20.14, train_time: 11.67, VALID_time: 1.162, loss: 1.021e+03, emb_loss:0.02794, best_valid(recall@20): 0.1624
+valid 	 N@10: 0.08821, R@10: 0.1131, P@10: 0.03896
+valid 	 N@20: 0.1041, R@20: 0.1627, P@20: 0.02873
+valid 	 N@50: 0.1267, R@50: 0.2453, P@50: 0.01799
+
+2025-06-08 15:53:21,306 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:53:32,964 - [INFO] - nocosine
+2025-06-08 15:53:33,415 - [INFO] - nocosine
+2025-06-08 15:53:33,842 - [INFO] - E:15|TAU:7.577 19.84, train_time: 11.64, VALID_time: 0.8961, loss: 1.02e+03, emb_loss:0.02988, best_valid(recall@20): 0.1627
+valid 	 N@10: 0.08843, R@10: 0.1128, P@10: 0.03885
+valid 	 N@20: 0.1045, R@20: 0.1631, P@20: 0.02877
+valid 	 N@50: 0.1271, R@50: 0.2459, P@50: 0.018
+
+2025-06-08 15:53:33,901 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:53:45,634 - [INFO] - nocosine
+2025-06-08 15:53:46,068 - [INFO] - nocosine
+2025-06-08 15:53:46,475 - [INFO] - E:16|TAU:7.591 19.71, train_time: 11.71, VALID_time: 0.8582, loss: 1.018e+03, emb_loss:0.03179, best_valid(recall@20): 0.1631
+valid 	 N@10: 0.08852, R@10: 0.1133, P@10: 0.03903
+valid 	 N@20: 0.1045, R@20: 0.1631, P@20: 0.0288
+valid 	 N@50: 0.127, R@50: 0.2457, P@50: 0.01799
+
+2025-06-08 15:53:46,527 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:53:58,176 - [INFO] - nocosine
+2025-06-08 15:53:58,621 - [INFO] - nocosine
+2025-06-08 15:53:59,048 - [INFO] - E:17|TAU:7.57 20.55, train_time: 11.63, VALID_time: 0.889, loss: 1.017e+03, emb_loss:0.0337, best_valid(recall@20): 0.1631
+valid 	 N@10: 0.08858, R@10: 0.1133, P@10: 0.03903
+valid 	 N@20: 0.1045, R@20: 0.163, P@20: 0.0288
+valid 	 N@50: 0.1271, R@50: 0.246, P@50: 0.01801
+
+2025-06-08 15:53:59,102 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:54:10,862 - [INFO] - nocosine
+2025-06-08 15:54:11,485 - [INFO] - nocosine
+2025-06-08 15:54:11,905 - [INFO] - E:18|TAU:7.573 20.0, train_time: 11.74, VALID_time: 1.063, loss: 1.016e+03, emb_loss:0.0356, best_valid(recall@20): 0.163
+valid 	 N@10: 0.08883, R@10: 0.1134, P@10: 0.03905
+valid 	 N@20: 0.1049, R@20: 0.1636, P@20: 0.02888
+valid 	 N@50: 0.1274, R@50: 0.2461, P@50: 0.01802
+
+2025-06-08 15:54:11,961 - [INFO] - current w_0 is 9.84049175478674
+2025-06-08 15:54:23,617 - [INFO] - nocosine
+2025-06-08 15:54:24,050 - [INFO] - nocosine
+2025-06-08 15:54:24,473 - [INFO] - E:19|TAU:7.565 18.83, train_time: 11.64, VALID_time: 0.8721, loss: 1.015e+03, emb_loss:0.03746, best_valid(recall@20): 0.1636
+valid 	 N@10: 0.08896, R@10: 0.1134, P@10: 0.03909
+valid 	 N@20: 0.1049, R@20: 0.1632, P@20: 0.02881
+valid 	 N@50: 0.1274, R@50: 0.2457, P@50: 0.018
+
+2025-06-08 15:54:24,505 - [INFO] - start to test!!
+
+2025-06-08 15:54:24,533 - [INFO] - nocosine
+2025-06-08 15:54:24,947 - [INFO] - 
+TEST 	 N@10: 0.08896, R@10: 0.1134, P@10: 0.03909
+TEST 	 N@20: 0.1049, R@20: 0.1632, P@20: 0.02881
+TEST 	 N@50: 0.1274, R@50: 0.2457, P@50: 0.018
+
