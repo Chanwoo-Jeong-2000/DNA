@@ -19,31 +19,31 @@ pip install numba
 
 # Run
 
-##### DNA-LightGCN and LightGCN (original)
+##### DNA-LightGCN and LightGCN
 ```
 cd LightGCN
 sh run_DNA-LightGCN.sh
 ```
 
-##### DNA-IMPGCN and IMPGCN (original)
+##### DNA-IMPGCN and IMPGCN
 ```
 cd IMRec
 sh run_DNA-IMPGCN.sh
 ```
 
-##### DNA-LayerGCN and LayerGCN (original)
+##### DNA-LayerGCN and LayerGCN
 ```
 cd IMRec
 sh run_DNA-LayerGCN.sh
 ```
 
-##### DNA-SimGCL and SimGCL (original)
+##### DNA-SimGCL and SimGCL
 ```
 cd SELFRec
 sh run_DNA-SimGCL.sh
 ```
 
-##### DNA-XSimGCL and XSimGCL (original)
+##### DNA-XSimGCL and XSimGC
 ```
 cd SELFRec
 sh run_DNA-XSimGCL.sh
