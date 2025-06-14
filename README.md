@@ -107,6 +107,10 @@ We compare DNA-XSimGCL (our best configuration) against Adap-τ, a recent debias
 |DNA-XSimGCL|**0.1106**|**0.0945**|**0.2405**|**0.1473**|**0.1698**|**0.1121**|
 |Improv.|+5.13%|+4.07%|+3.26%|+4.62%|+4.04%|+6.86%|
 
+# Compare with our results
+The **results4comparison** folder contains the results of our experiment.
+Each file includes the loss and performance metrics for every epoch, as well as the hyperparameters, dataset statistics, and training time.
+You can compare our results with your own reproduced results.
 
 # Settings
 All benchmark models are implemented according to the configurations outlined in their respective original papers. The scaling factor α in our proposed methodology is tuned within the range [1.0, 5.0] using a step size of 0.5. The experiments are conducted using a single NVIDIA GeForce RTX 2080 Ti GPU.
