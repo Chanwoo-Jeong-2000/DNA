@@ -1,7 +1,5 @@
 # [Under Review] GCNs Meet Long-Tail: Embedding Norm Bias in GCN-Based Recommendations
 
-**Note that sometimes, due to connectivity issues with Git anonymous access, certain files may not be activated properly. In such cases, downloading the files will allow you to view them.**
-
 # Requirements
 python 3.8.18, cuda 11.8, and the following installations:
 ```
