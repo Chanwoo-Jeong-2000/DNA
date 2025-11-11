@@ -1,4 +1,6 @@
-# [Under Review] GCNs Meet Long-Tail: Embedding Norm Bias in GCN-Based Recommendations
+# [Applied Soft Computing] GCNs Meet Long-Tail: Embedding Norm Bias in GCN-Based Recommendations
+
+[![View Paper](https://img.shields.io/badge/View%20Paper-PDF-red?logo=adobeacrobatreader)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5412649)
 
 # Requirements
 python 3.8.18, cuda 11.8, and the following installations:
@@ -54,3 +56,16 @@ You can compare our results with your own reproduced results.
 
 # Settings
 All benchmark models are implemented according to the configurations outlined in their respective original papers. The scaling factor α in our proposed methodology is tuned within the range [1.0, 5.0] using a step size of 0.5. The experiments are conducted using a single NVIDIA GeForce RTX 2080 Ti GPU.
+
+# Citation
+If you find DNA useful for your research or development, please cite the following our papers:
+```
+@article{choi5412646gcns,
+  title={GCNs Meet Long-Tail: Embedding Norm Bias in GCN-Based Recommendations},
+  author={Choi, Yeo Jun and Yun, Woo-Seong and Jeong, Chanwoo and Cho, Yoon-Sik},
+  journal={Available at SSRN 5412646}
+}
+```
+
+# Acknowledgments
+This work was partly supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (RS-2025- 00553785) and the Institute of Information and Communications Technology Planning and Evaluation (IITP) grant funded by the Korean government (MSIT) (RS-2021-II211341, Artificial Intelligence Graduate School Program of Chung-Ang University).
