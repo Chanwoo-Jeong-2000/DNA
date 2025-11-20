@@ -60,10 +60,13 @@ All benchmark models are implemented according to the configurations outlined in
 # Citation
 If you find DNA useful for your research or development, please cite the following our papers:
 ```
-@article{choi5412646gcns,
-  title={GCNs Meet Long-Tail: Embedding Norm Bias in GCN-Based Recommendations},
+@article{choi2025gcns,
+  title={GCNs meet long-tail: Embedding norm bias in GCN-based recommendations},
   author={Choi, Yeo Jun and Yun, Woo-Seong and Jeong, Chanwoo and Cho, Yoon-Sik},
-  journal={Available at SSRN 5412646}
+  journal={Applied Soft Computing},
+  pages={114226},
+  year={2025},
+  publisher={Elsevier}
 }
 ```
 
