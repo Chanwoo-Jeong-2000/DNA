@@ -1,6 +1,6 @@
 # [Applied Soft Computing] GCNs Meet Long-Tail: Embedding Norm Bias in GCN-Based Recommendations
 
-[![View Paper](https://img.shields.io/badge/View%20Paper-PDF-red?logo=adobeacrobatreader)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5412649)
+[![View Paper](https://img.shields.io/badge/View%20Paper-PDF-red?logo=adobeacrobatreader)](https://www.sciencedirect.com/science/article/abs/pii/S156849462501539X)
 
 # Requirements
 python 3.8.18, cuda 11.8, and the following installations:
@@ -71,4 +71,4 @@ If you find DNA useful for your research or development, please cite the followi
 ```
 
 # Acknowledgments
-This work was partly supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (RS-2025- 00553785) and the Institute of Information and Communications Technology Planning and Evaluation (IITP) grant funded by the Korean government (MSIT) (RS-2021-II211341, Artificial Intelligence Graduate School Program of Chung-Ang University).
+This work was partly supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (RS-2025-00553785) and the Institute of Information and Communications Technology Planning and Evaluation (IITP) grant funded by the Korean government (MSIT) (RS-2021-II211341, Artificial Intelligence Graduate School Program of Chung-Ang University).
